@@ -8,7 +8,7 @@ GAME
 	Mode = CAREER
 	Status = 1
 	Seed = 952155991
-	scene = 7
+	scene = 5
 	editor = None
 	flag = ContractConfigurator/Agencies/CollectScience
 	launchID = 19
@@ -221,7 +221,7 @@ GAME
 	{
 		name = ContractSystem
 		scene = 7, 8, 5, 6
-		update = 1299466.930533099
+		update = 1314914.6994150609
 		version = 1.3.1
 		WEIGHTS
 		{
@@ -388,7 +388,7 @@ GAME
 						{
 							name = ParameterDelegate`1
 							id = Destination: The Mun
-							state = Complete
+							state = Incomplete
 							disableOnStateChange = False
 							values = 0,0,0,0,0
 							ContractIdentifier = Strategia.STG_BodyProbes
@@ -442,7 +442,7 @@ GAME
 						{
 							name = ParameterDelegate`1
 							id = Destination: The Mun
-							state = Complete
+							state = Incomplete
 							disableOnStateChange = False
 							values = 0,0,0,0,0
 							ContractIdentifier = Strategia.STG_BodyProbes
@@ -496,7 +496,7 @@ GAME
 						{
 							name = ParameterDelegate`1
 							id = Destination: The Mun
-							state = Complete
+							state = Incomplete
 							disableOnStateChange = False
 							values = 0,0,0,0,0
 							ContractIdentifier = Strategia.STG_BodyProbes
@@ -550,7 +550,7 @@ GAME
 						{
 							name = ParameterDelegate`1
 							id = Destination: The Mun
-							state = Complete
+							state = Incomplete
 							disableOnStateChange = False
 							values = 0,0,0,0,0
 							ContractIdentifier = Strategia.STG_BodyProbes
@@ -604,7 +604,7 @@ GAME
 						{
 							name = ParameterDelegate`1
 							id = Destination: The Mun
-							state = Complete
+							state = Incomplete
 							disableOnStateChange = False
 							values = 0,0,0,0,0
 							ContractIdentifier = Strategia.STG_BodyProbes
@@ -658,7 +658,7 @@ GAME
 						{
 							name = ParameterDelegate`1
 							id = Destination: The Mun
-							state = Complete
+							state = Incomplete
 							disableOnStateChange = False
 							values = 0,0,0,0,0
 							ContractIdentifier = Strategia.STG_BodyProbes
@@ -712,7 +712,7 @@ GAME
 						{
 							name = ParameterDelegate`1
 							id = Destination: The Mun
-							state = Complete
+							state = Incomplete
 							disableOnStateChange = False
 							values = 0,0,0,0,0
 							ContractIdentifier = Strategia.STG_BodyProbes
@@ -766,7 +766,7 @@ GAME
 						{
 							name = ParameterDelegate`1
 							id = Destination: The Mun
-							state = Complete
+							state = Incomplete
 							disableOnStateChange = False
 							values = 0,0,0,0,0
 							ContractIdentifier = Strategia.STG_BodyProbes
@@ -820,7 +820,7 @@ GAME
 						{
 							name = ParameterDelegate`1
 							id = Destination: The Mun
-							state = Complete
+							state = Incomplete
 							disableOnStateChange = False
 							values = 0,0,0,0,0
 							ContractIdentifier = Strategia.STG_BodyProbes
@@ -874,7 +874,7 @@ GAME
 						{
 							name = ParameterDelegate`1
 							id = Destination: The Mun
-							state = Complete
+							state = Incomplete
 							disableOnStateChange = False
 							values = 0,0,0,0,0
 							ContractIdentifier = Strategia.STG_BodyProbes
@@ -928,7 +928,7 @@ GAME
 						{
 							name = ParameterDelegate`1
 							id = Destination: The Mun
-							state = Complete
+							state = Incomplete
 							disableOnStateChange = False
 							values = 0,0,0,0,0
 							ContractIdentifier = Strategia.STG_BodyProbes
@@ -982,7 +982,7 @@ GAME
 						{
 							name = ParameterDelegate`1
 							id = Destination: The Mun
-							state = Complete
+							state = Incomplete
 							disableOnStateChange = False
 							values = 0,0,0,0,0
 							ContractIdentifier = Strategia.STG_BodyProbes
@@ -1036,7 +1036,7 @@ GAME
 						{
 							name = ParameterDelegate`1
 							id = Destination: The Mun
-							state = Complete
+							state = Incomplete
 							disableOnStateChange = False
 							values = 0,0,0,0,0
 							ContractIdentifier = Strategia.STG_BodyProbes
@@ -1090,7 +1090,7 @@ GAME
 						{
 							name = ParameterDelegate`1
 							id = Destination: The Mun
-							state = Complete
+							state = Incomplete
 							disableOnStateChange = False
 							values = 0,0,0,0,0
 							ContractIdentifier = Strategia.STG_BodyProbes
@@ -1102,7 +1102,7 @@ GAME
 						{
 							name = ParameterDelegate`1
 							id = Biome: East Farside Crater
-							state = Complete
+							state = Incomplete
 							disableOnStateChange = False
 							values = 0,0,0,0,0
 							ContractIdentifier = Strategia.STG_BodyProbes
@@ -1144,7 +1144,7 @@ GAME
 						{
 							name = ParameterDelegate`1
 							id = Destination: The Mun
-							state = Complete
+							state = Incomplete
 							disableOnStateChange = False
 							values = 0,0,0,0,0
 							ContractIdentifier = Strategia.STG_BodyProbes
@@ -1198,7 +1198,7 @@ GAME
 						{
 							name = ParameterDelegate`1
 							id = Destination: The Mun
-							state = Complete
+							state = Incomplete
 							disableOnStateChange = False
 							values = 0,0,0,0,0
 							ContractIdentifier = Strategia.STG_BodyProbes
@@ -1252,7 +1252,7 @@ GAME
 						{
 							name = ParameterDelegate`1
 							id = Destination: The Mun
-							state = Complete
+							state = Incomplete
 							disableOnStateChange = False
 							values = 0,0,0,0,0
 							ContractIdentifier = Strategia.STG_BodyProbes
@@ -1284,112 +1284,6 @@ GAME
 							notes = 
 							completedMessage = 
 						}
-					}
-				}
-			}
-			CONTRACT
-			{
-				guid = d86d5c1a-42ad-49e1-b91a-99262706af1c
-				type = DMMagneticSurveyContract
-				prestige = 0
-				seed = -534461702
-				state = Offered
-				viewed = Unseen
-				agent = DMagic
-				deadlineType = Floating
-				expiryType = Floating
-				values = 129600,38841124.21875,54432,64800,74520,52,9,11,1309030.9329732,0,0,0
-				Mag_Survey_Target = 2
-				PARAM
-				{
-					name = DMLongOrbitParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					Time_Needed = 1,458,000.00
-					Time_Completed = 0.00
-					PARAM
-					{
-						name = DMOrbitalParameters
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						Type = 0
-						Orbital_Parameter = 0.220
-					}
-					PARAM
-					{
-						name = DMOrbitalParameters
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						Type = 1
-						Orbital_Parameter = 22.000
-					}
-					PARAM
-					{
-						name = DMPartRequestParameter
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						Body = 2
-						Requested_Parts = dmmagBoom,dmUSMagBoom|rpwsAnt,USRPWS
-						Vessels = 
-					}
-				}
-				PARAM
-				{
-					name = DMCompleteParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					Type = 1
-					Count_To_Complete = 4
-					PARAM
-					{
-						name = DMCollectScience
-						state = Incomplete
-						values = 8160,0,6,0,0
-						Name = Magnetometer Scan
-						Body = 2
-						Situation = 16
-						Biome = 
-						Type = 1
-						Returned_Science = 0
-					}
-					PARAM
-					{
-						name = DMCollectScience
-						state = Incomplete
-						values = 8928,0,4,0,0
-						Name = Magnetometer Scan
-						Body = 2
-						Situation = 32
-						Biome = 
-						Type = 1
-						Returned_Science = 0
-					}
-					PARAM
-					{
-						name = DMCollectScience
-						state = Incomplete
-						values = 10848,0,6,0,0
-						Name = Radio Plasma Wave Scan
-						Body = 2
-						Situation = 16
-						Biome = 
-						Type = 1
-						Returned_Science = 0
-					}
-					PARAM
-					{
-						name = DMCollectScience
-						state = Incomplete
-						values = 9216,0,4,0,0
-						Name = Radio Plasma Wave Scan
-						Body = 2
-						Situation = 32
-						Biome = 
-						Type = 1
-						Returned_Science = 0
 					}
 				}
 			}
@@ -1497,68 +1391,6 @@ GAME
 						Type = 1
 						Returned_Science = 0
 					}
-				}
-			}
-			CONTRACT
-			{
-				guid = 4a647d5d-d2b8-43f4-b512-bc878611f6e4
-				type = SatelliteContract
-				prestige = 1
-				seed = -1976241244
-				state = Offered
-				viewed = Unseen
-				agent = Jebediah Kerman's Junkyard and Spacecraft Parts Co
-				deadlineType = Floating
-				expiryType = Floating
-				values = 77142.8564071655,82157142.0736313,43448.2721328735,122469.819728999,55440.0012016296,11,13.62797,8.653847,1305158.0455533,0,0,0
-				targetBody = 2
-				deviation = 5
-				orbitType = 6
-				placementMode = 0
-				PARAM
-				{
-					name = VesselSystemsParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					typeString = probe
-					mannedStatus = 1
-					requireNew = True
-					checkModuleTypes = Antenna|Generator
-					checkModuleDescriptions = has an antenna|can generate power
-					launchID = 0
-				}
-				PARAM
-				{
-					name = SpecificOrbitParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					TargetBody = 2
-					deviationWindow = 5
-					orbitType = 6
-					inclination = 155.96219755464816
-					eccentricity = 0.1130980713988778
-					sma = 1684201.4340367836
-					lan = 146.92042139681075
-					argumentOfPeriapsis = 230.07474526300794
-					meanAnomalyAtEpoch = -1.3795719152830803
-					epoch = 0
-				}
-				PARAM
-				{
-					name = PartRequestParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					article = a
-					partDescription = thermometer
-					vesselDescription = satellite
-					partNames = sensorThermometer|dmUSPresTemp
-				}
-				PARAM
-				{
-					name = StabilityParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					holdSeconds = 10
 				}
 			}
 			CONTRACT
@@ -1808,6 +1640,96 @@ GAME
 					state = Incomplete
 					values = 0,0,0,0,0
 					holdSeconds = 10
+				}
+			}
+			CONTRACT
+			{
+				guid = 6fd352d7-4525-4b26-b7e8-f9d7ceab718f
+				type = ExplorationContract
+				prestige = 0
+				seed = -186893389
+				state = Offered
+				viewed = Unseen
+				agent = Kerbin World-Firsts Record-Keeping Society
+				deadlineType = None
+				expiryType = Floating
+				ignoresWeight = True
+				values = 108000,0,40320,74880,40320,5,10,0,1421926.82992224,0,0,0
+				targetBody = 2
+				bodyRatio = 0.263157904
+				PARAM
+				{
+					name = ProgressTrackingParameter
+					state = Incomplete
+					values = 115200,0,5,10,0
+					targetBody = 2
+					targetType = LANDING
+				}
+			}
+			CONTRACT
+			{
+				guid = 7415d292-299d-469b-bec1-c9e886ccd5b7
+				type = PartTest
+				prestige = 1
+				seed = -186893388
+				state = Offered
+				viewed = Unseen
+				agent = C7 Aerospace Division
+				deadlineType = Floating
+				expiryType = Floating
+				values = 43200,9201600,13500,33750,16875,4,8,8,1357126.82992224,0,0,0
+				part = JetEngine
+				haul = False
+				dest = 1
+				sit = FLYING
+				exp = True
+				PARAM
+				{
+					name = PartTest
+					state = Incomplete
+					values = 0,0,0,0,0
+					part = JetEngine
+					body = Kerbin
+					situation = FLYING
+					uniqueID = 0.61859191051618756
+					haul = False
+					repeatability = BODYANDSITUATION
+					PARAM
+					{
+						name = ReachDestination
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						dest = 1
+						title = 
+					}
+					PARAM
+					{
+						name = ReachSituation
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						sit = FLYING
+						title = 
+					}
+					PARAM
+					{
+						name = ReachAltitudeEnvelope
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						minAlt = 11000
+						maxAlt = 13000
+					}
+					PARAM
+					{
+						name = ReachSpeedEnvelope
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						minSpd = 150
+						maxSpd = 240
+					}
 				}
 			}
 			CONTRACT_FINISHED
@@ -4057,7 +3979,7 @@ GAME
 	{
 		name = SentinelScenario
 		scene = 7, 8, 5
-		NextSpawnTime = 1305654.7831914201
+		NextSpawnTime = 1336585.8610196449
 	}
 	SCENARIO
 	{
@@ -6493,7 +6415,7 @@ GAME
 			}
 			3205259630
 			{
-				msg_signal = True
+				msg_signal = False
 				msg_belt = False
 				cfg_ec = True
 				cfg_supply = True
@@ -6561,49 +6483,49 @@ GAME
 			Dres
 			{
 				storm_time = 7165697.2537029982
-				storm_age = 433552.00809954951
+				storm_age = 438709.60295590467
 				storm_state = 0
 				msg_storm = 0
 			}
 			Eeloo
 			{
 				storm_time = 5176477.8975660345
-				storm_age = 196474.18222679474
+				storm_age = 198811.46409783736
 				storm_state = 0
 				msg_storm = 0
 			}
 			Kerbin
 			{
 				storm_time = 6725531.2100823643
-				storm_age = 1301911.8500681799
+				storm_age = 1317399.7787685432
 				storm_state = 0
 				msg_storm = 0
 			}
 			Moho
 			{
 				storm_time = 6824322.4395179758
-				storm_age = 3364120.3188266926
+				storm_age = 3404140.8571542883
 				storm_state = 0
 				msg_storm = 0
 			}
 			Eve
 			{
 				storm_time = 4113620.5208458104
-				storm_age = 1800715.1277172482
+				storm_age = 1822136.5504546321
 				storm_state = 0
 				msg_storm = 0
 			}
 			Duna
 			{
 				storm_time = 7987904.7919753492
-				storm_age = 854278.29098824889
+				storm_age = 864440.9219996701
 				storm_state = 0
 				msg_storm = 0
 			}
 			Jool
 			{
 				storm_time = 4800854.1079987092
-				storm_age = 257452.76217789494
+				storm_age = 260515.4586451278
 				storm_state = 0
 				msg_storm = 0
 			}
@@ -6728,41 +6650,6 @@ GAME
 		scene = 5, 6, 7, 8
 		KACAlarmListStorage
 		{
-			list
-			{
-				Item
-				{
-					VesselID = a5f7d198-5a21-48f5-86e6-1bda79cfea4e
-					ID = 4d0c9961067448cda29c6064bb021346
-					Name = Warp to ManNode
-					NotesStorage = 
-					TypeOfAlarm = Maneuver
-					AlarmTimeStorage = 1303979.7822455752
-					AlarmMarginSecs = 180.00000000034106
-					Enabled = True
-					AlarmAction = Converted
-					AlarmActionConverted = True
-					ManNodesStorage = 1303979.78224558,0,0,0,-0.003649622,0.9834587,-0.0005405163,0.1810951
-					XferOriginBodyName = 
-					XferTargetBodyName = 
-					RepeatAlarm = False
-					RepeatAlarmPeriodStorage = 0
-					PlaySound = False
-					TargetObjectStorage = 
-					ContractGUIDStorage = 00000000-0000-0000-0000-000000000000
-					ContractAlarmType = Expire
-					Triggered = False
-					Actioned = False
-					AlarmWindowClosed = False
-					Actions
-					{
-						Warp = KillWarp
-						Message = No
-						DeleteWhenDone = True
-						PlaySound = False
-					}
-				}
-			}
 		}
 	}
 	SCENARIO
@@ -6773,8 +6660,8 @@ GAME
 	FLIGHTSTATE
 	{
 		version = 1.3.1
-		UT = 1299471.8105331035
-		activeVessel = 14
+		UT = 1314919.7794150657
+		activeVessel = 0
 		mapViewFiltering = 7166
 		commNetUIModeTracking = Network
 		commNetUIModeFlight = Path
@@ -7702,7 +7589,7 @@ GAME
 				{
 					name = ModuleCryoTank
 					isEnabled = True
-					LastUpdateTime = 1153139.54045459
+					LastUpdateTime = 1168587.50933655
 					CoolingEnabled = False
 					BoiloffOccuring = False
 					stagingEnabled = True
@@ -11237,7 +11124,7 @@ GAME
 				{
 					name = ModuleCryoTank
 					isEnabled = True
-					LastUpdateTime = 1104139.78528657
+					LastUpdateTime = 1119587.83416854
 					CoolingEnabled = False
 					BoiloffOccuring = False
 					stagingEnabled = True
@@ -15144,7 +15031,7 @@ GAME
 				{
 					name = ModuleCryoTank
 					isEnabled = True
-					LastUpdateTime = 641039.586268879
+					LastUpdateTime = 656487.495150841
 					CoolingEnabled = False
 					BoiloffOccuring = False
 					stagingEnabled = True
@@ -22257,7 +22144,7 @@ GAME
 				{
 					name = ModuleCryoTank
 					isEnabled = True
-					LastUpdateTime = 174718.083459913
+					LastUpdateTime = 190166.032341875
 					CoolingEnabled = False
 					BoiloffOccuring = False
 					stagingEnabled = True
@@ -24859,7 +24746,7 @@ GAME
 				{
 					name = ModuleCryoTank
 					isEnabled = True
-					LastUpdateTime = 173897.080920092
+					LastUpdateTime = 189344.969802054
 					CoolingEnabled = False
 					BoiloffOccuring = True
 					stagingEnabled = True
@@ -25053,7 +24940,7 @@ GAME
 				{
 					name = ModuleCryoTank
 					isEnabled = True
-					LastUpdateTime = 173897.080920092
+					LastUpdateTime = 189344.969802054
 					CoolingEnabled = False
 					BoiloffOccuring = True
 					stagingEnabled = True
@@ -25082,7 +24969,7 @@ GAME
 				RESOURCE
 				{
 					name = LqdHydrogen
-					amount = 1519.0664362911496
+					amount = 1508.7414904278342
 					maxAmount = 2400
 					flowState = True
 					isTweakable = True
@@ -25247,7 +25134,7 @@ GAME
 				{
 					name = ModuleCryoTank
 					isEnabled = True
-					LastUpdateTime = 173897.080920092
+					LastUpdateTime = 189344.969802054
 					CoolingEnabled = False
 					BoiloffOccuring = True
 					stagingEnabled = True
@@ -26151,7 +26038,7 @@ GAME
 				{
 					name = ModuleCryoTank
 					isEnabled = True
-					LastUpdateTime = 96574.1465246016
+					LastUpdateTime = 112022.095406564
 					CoolingEnabled = False
 					BoiloffOccuring = False
 					stagingEnabled = True
@@ -27879,7 +27766,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 200
+					amount = 195.13307240807089
 					maxAmount = 200
 					flowState = True
 					isTweakable = True
@@ -28732,7 +28619,7 @@ GAME
 				{
 					name = ModuleCryoTank
 					isEnabled = True
-					LastUpdateTime = 69305.6078126929
+					LastUpdateTime = 84753.6766946551
 					CoolingEnabled = False
 					BoiloffOccuring = False
 					stagingEnabled = True
@@ -30460,7 +30347,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 171.91596720963932
+					amount = 200
 					maxAmount = 200
 					flowState = True
 					isTweakable = True
@@ -30901,33 +30788,33 @@ GAME
 			landedAt = 
 			displaylandedAt = 
 			splashed = False
-			met = 10236.629570382414
+			met = 25669.478452330455
 			lct = 1289235.1609627211
-			lastUT = 1299471.8105331035
+			lastUT = 1314904.6394150516
 			root = 0
-			lat = -0.29893438301861941
-			lon = -147.17493310619659
-			alt = 2535998.8810369652
+			lat = 0.1110946723619631
+			lon = -15.413578170188863
+			alt = 2927085.4169581588
 			hgt = -1
-			nrm = -0.0432766601,0.0799428225,-0.995859385
-			rot = 0.324387014,0.301907897,0.62641269,0.641273558
-			CoM = 3.04076195E-07,0.175822094,3.57627385E-07
+			nrm = -0.28308627,0.119499952,0.951620698
+			rot = 0.521974802,0.640467644,0.472866297,0.306171596
+			CoM = 1.86264515E-08,0.175904691,-7.4505806E-09
 			stg = 0
 			prst = False
 			ref = 0
 			ctrl = True
-			cPch = 0.184
-			cHdg = -4.544
+			cPch = 0.09999999
+			cHdg = -2.072
 			cMod = 0
 			ORBIT
 			{
-				SMA = 3660618.8930029967
-				ECC = 0.11918595998094542
-				INC = 0.42277863682365041
-				LPE = 271.71009181164959
-				LAN = 100.78692451933682
-				MNA = -0.65206862264440035
-				EPH = 1299471.8105331035
+				SMA = 3666628.9317563153
+				ECC = 0.12077077652044051
+				INC = 0.42487045718004079
+				LPE = 270.49558645667014
+				LAN = 102.37447023852087
+				MNA = 1.5881097444826089
+				EPH = 1314904.6394150516
 				REF = 2
 				IDENT = Mun
 			}
@@ -30956,8 +30843,8 @@ GAME
 				attN = top2, -1
 				mass = 0.0199999996
 				shielded = False
-				temp = 179.0224845582477
-				tempExt = 179.39713097252766
+				temp = 183.1409350051824
+				tempExt = 183.40540309705526
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -30965,7 +30852,7 @@ GAME
 				autostrutMode = Off
 				rigidAttachment = False
 				flag = ContractConfigurator/Agencies/CollectScience
-				rTrf = microEngine
+				rTrf = microEngine (Mun Relay 3)
 				modCost = 0
 				EVENTS
 				{
@@ -31192,8 +31079,8 @@ GAME
 				attN = bottom, 0
 				mass = 0.0249999985
 				shielded = False
-				temp = 178.99541296342016
-				tempExt = 178.96263146135814
+				temp = 183.17497298319734
+				tempExt = 183.13854006968694
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -31313,7 +31200,7 @@ GAME
 				{
 					name = ModuleCryoTank
 					isEnabled = True
-					LastUpdateTime = 0
+					LastUpdateTime = 25684.4984523444
 					CoolingEnabled = False
 					BoiloffOccuring = False
 					stagingEnabled = True
@@ -31342,7 +31229,7 @@ GAME
 				RESOURCE
 				{
 					name = LiquidFuel
-					amount = 17.982542475449307
+					amount = 15.666458203673644
 					maxAmount = 18
 					flowState = True
 					isTweakable = True
@@ -31353,7 +31240,7 @@ GAME
 				RESOURCE
 				{
 					name = Oxidizer
-					amount = 21.978663024521367
+					amount = 19.147893222669239
 					maxAmount = 22
 					flowState = True
 					isTweakable = True
@@ -31386,8 +31273,8 @@ GAME
 				attN = bottom, -1
 				mass = 0.0700000003
 				shielded = False
-				temp = 179.00367196599956
-				tempExt = 179.13274090904537
+				temp = 183.19347120604886
+				tempExt = 183.40063862231858
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -31613,8 +31500,8 @@ GAME
 				attN = bottom, -1
 				mass = 0.0700000003
 				shielded = False
-				temp = 178.99317097068359
-				tempExt = 178.92938302787999
+				temp = 183.17615899171679
+				tempExt = 183.29932651133802
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -31841,8 +31728,8 @@ GAME
 				srfN = srfAttach, 1
 				mass = 0.00499999989
 				shielded = False
-				temp = 178.98853813347668
-				tempExt = 178.92605651724509
+				temp = 183.16717022675093
+				tempExt = 183.09790824828872
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -32053,8 +31940,8 @@ GAME
 				srfN = srfAttach, 1
 				mass = 0.00499999989
 				shielded = False
-				temp = 178.9886330987303
-				tempExt = 178.92628637982216
+				temp = 183.16784486819788
+				tempExt = 183.10000420527982
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -32265,8 +32152,8 @@ GAME
 				srfN = srfAttach, 1
 				mass = 0.00499999989
 				shielded = False
-				temp = 178.98886033541891
-				tempExt = 178.92865451899036
+				temp = 183.17093478096334
+				tempExt = 183.13582633671132
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -32477,8 +32364,8 @@ GAME
 				srfN = srfAttach, 1
 				mass = 0.00499999989
 				shielded = False
-				temp = 178.9981576162204
-				tempExt = 179.00651316448935
+				temp = 183.16756066783847
+				tempExt = 183.10035265243366
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -32688,8 +32575,8 @@ GAME
 				attN = top, -1
 				mass = 0.0799999982
 				shielded = False
-				temp = 178.98917315500236
-				tempExt = 178.93556505373206
+				temp = 183.17236005354215
+				tempExt = 183.1023884419063
 				tempExtUnexp = 4
 				expt = 0
 				state = 0
@@ -33041,7 +32928,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 147.99009704589844
+					amount = 199.9892235271156
 					maxAmount = 200
 					flowState = True
 					isTweakable = True
@@ -33073,8 +32960,8 @@ GAME
 				srfN = srfAttach, 8
 				mass = 0.0149999997
 				shielded = False
-				temp = 178.97765273735305
-				tempExt = 178.91522788045805
+				temp = 183.16785751652074
+				tempExt = 183.14009206539379
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -33250,8 +33137,8 @@ GAME
 				srfN = srfAttach, 8
 				mass = 0.0149999997
 				shielded = False
-				temp = 178.99164470223846
-				tempExt = 179.09802203597201
+				temp = 183.1574318776747
+				tempExt = 183.09825764576161
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -33438,8 +33325,8 @@ GAME
 			CTRLSTATE
 			{
 				pitch = 0
-				yaw = 0.000224067378
-				roll = 6.14426199E-07
+				yaw = -0.00243002642
+				roll = 0.0220390614
 				trimPitch = 0
 				trimYaw = 0
 				trimRoll = 0
@@ -33864,6 +33751,6 @@ GAME
 	}
 	MESSAGESYSTEM
 	{
-		flash = True
+		flash = False
 	}
 }
