@@ -8,7 +8,7 @@ GAME
 	Mode = CAREER
 	Status = 1
 	Seed = 952155991
-	scene = 5
+	scene = 7
 	editor = None
 	flag = ContractConfigurator/Agencies/CollectScience
 	launchID = 20
@@ -221,7 +221,7 @@ GAME
 	{
 		name = ContractSystem
 		scene = 7, 8, 5, 6
-		update = 1355019.811078799
+		update = 1354709.7602875535
 		version = 1.3.1
 		WEIGHTS
 		{
@@ -232,7 +232,7 @@ GAME
 			CrossBelt = 42
 			DMAsteroidSurveyContract = 30
 			DMSurveyContract = 30
-			DMMagneticSurveyContract = 28
+			DMMagneticSurveyContract = 29
 			DMReconContract = 30
 			DMAnomalyContract = 30
 			ConfiguredContract = 30
@@ -264,7 +264,7 @@ GAME
 			Eve = 30
 			Moho = 30
 			Minmus = 29
-			Mun = 59
+			Mun = 84
 			Kerbin = 87
 			Sun = 30
 		}
@@ -467,7 +467,7 @@ GAME
 				PARAM
 				{
 					name = VesselSystemsParameter
-					state = Incomplete
+					state = Complete
 					disableOnStateChange = False
 					values = 0,0,0,0,0
 					typeString = probe
@@ -496,7 +496,7 @@ GAME
 				PARAM
 				{
 					name = StabilityParameter
-					state = Incomplete
+					state = Complete
 					disableOnStateChange = False
 					values = 0,0,0,0,0
 					holdSeconds = 10
@@ -637,6 +637,112 @@ GAME
 						values = 0,0,0,0,0
 						sit = SPLASHED
 						title = 
+					}
+				}
+			}
+			CONTRACT
+			{
+				guid = 81df0f0f-89b5-4509-8e32-23320a2f2e3c
+				type = DMMagneticSurveyContract
+				prestige = 1
+				seed = -1538714539
+				state = Offered
+				viewed = Seen
+				agent = DMagic
+				deadlineType = Floating
+				expiryType = Floating
+				values = 172800,54945005.2734375,129938,154688,177891,124,16,22,1367754.771235,0,0,0
+				Mag_Survey_Target = 3
+				PARAM
+				{
+					name = DMLongOrbitParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					Time_Needed = 1,620,000.00
+					Time_Completed = 0.00
+					PARAM
+					{
+						name = DMOrbitalParameters
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						Type = 0
+						Orbital_Parameter = 0.315
+					}
+					PARAM
+					{
+						name = DMOrbitalParameters
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						Type = 1
+						Orbital_Parameter = 32.000
+					}
+					PARAM
+					{
+						name = DMPartRequestParameter
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						Body = 3
+						Requested_Parts = dmmagBoom,dmUSMagBoom|rpwsAnt,USRPWS
+						Vessels = 
+					}
+				}
+				PARAM
+				{
+					name = DMCompleteParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					Type = 1
+					Count_To_Complete = 4
+					PARAM
+					{
+						name = DMCollectScience
+						state = Incomplete
+						values = 13950,0,10,0,0
+						Name = Magnetometer Scan
+						Body = 3
+						Situation = 16
+						Biome = 
+						Type = 1
+						Returned_Science = 0
+					}
+					PARAM
+					{
+						name = DMCollectScience
+						state = Incomplete
+						values = 16650,0,6,0,0
+						Name = Magnetometer Scan
+						Body = 3
+						Situation = 32
+						Biome = 
+						Type = 1
+						Returned_Science = 0
+					}
+					PARAM
+					{
+						name = DMCollectScience
+						state = Incomplete
+						values = 12750,0,10,0,0
+						Name = Radio Plasma Wave Scan
+						Body = 3
+						Situation = 16
+						Biome = 
+						Type = 1
+						Returned_Science = 0
+					}
+					PARAM
+					{
+						name = DMCollectScience
+						state = Incomplete
+						values = 14400,0,6,0,0
+						Name = Radio Plasma Wave Scan
+						Body = 3
+						Situation = 32
+						Biome = 
+						Type = 1
+						Returned_Science = 0
 					}
 				}
 			}
@@ -890,6 +996,962 @@ GAME
 			}
 			CONTRACT
 			{
+				guid = e9a54dcc-61a0-40f2-ac9a-5595c044dd27
+				type = ConfiguredContract
+				prestige = 2
+				seed = 1432155594
+				state = Active
+				viewed = Read
+				agent = Strategia
+				deadlineType = None
+				expiryType = Floating
+				autoAccept = True
+				ignoresWeight = True
+				values = 633780,0,120000,30000,225000,0,75,750,829049.305246563,195269.305246563,0,0
+				subtype = STG_BodyProbes
+				title = Mun Probes
+				description = Why send Kerbal to other planets when we can be more effective in gathering science by sending out uncrewed probes?  Shall we send a probe to perform experiments on The Mun?
+				synopsis = Land probes in three different biomes on The Mun.
+				completedMessage = You've successfully performed an automated exploration of The Mun!
+				hash = 1100950491
+				targetBody = Mun
+				UNIQUE_DATA
+				{
+					strategyName = String:Mun Probes
+				}
+				PARAM
+				{
+					name = AtLeast
+					id = AtLeast
+					state = Incomplete
+					values = 0,0,0,0,0
+					ContractIdentifier = Strategia.STG_BodyProbes
+					title = Land probes in THREE different biomes on the Mun
+					notes = 
+					completedMessage = 
+					count = 3
+					PARAM
+					{
+						name = ReachState
+						id = ReachState
+						enabled = False
+						state = Complete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = Strategia.STG_BodyProbes
+						title = Midlands
+						notes = 
+						completedMessage = 
+						hideChildren = True
+						targetBody = Mun
+						biome = Midlands
+						situation = LANDED
+						situation = SPLASHED
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Destination: The Mun
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = Strategia.STG_BodyProbes
+							title = Destination: The Mun
+							notes = 
+							completedMessage = 
+						}
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Biome: Midlands
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = Strategia.STG_BodyProbes
+							title = Biome: Midlands
+							notes = 
+							completedMessage = 
+						}
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Situation: Landed or Splashed down
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = Strategia.STG_BodyProbes
+							title = Situation: Landed or Splashed down
+							notes = 
+							completedMessage = 
+						}
+					}
+					PARAM
+					{
+						name = ReachState
+						id = ReachState
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = Strategia.STG_BodyProbes
+						title = Northern Basin
+						notes = 
+						completedMessage = 
+						hideChildren = True
+						allowStateReset = False
+						targetBody = Mun
+						biome = Northern Basin
+						situation = LANDED
+						situation = SPLASHED
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Destination: The Mun
+							state = Complete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = Strategia.STG_BodyProbes
+							title = Destination: The Mun
+							notes = 
+							completedMessage = 
+						}
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Biome: Northern Basin
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = Strategia.STG_BodyProbes
+							title = Biome: Northern Basin
+							notes = 
+							completedMessage = 
+						}
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Situation: Landed or Splashed down
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = Strategia.STG_BodyProbes
+							title = Situation: Landed or Splashed down
+							notes = 
+							completedMessage = 
+						}
+					}
+					PARAM
+					{
+						name = ReachState
+						id = ReachState
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = Strategia.STG_BodyProbes
+						title = East Crater
+						notes = 
+						completedMessage = 
+						hideChildren = True
+						allowStateReset = False
+						targetBody = Mun
+						biome = East Crater
+						situation = LANDED
+						situation = SPLASHED
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Destination: The Mun
+							state = Complete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = Strategia.STG_BodyProbes
+							title = Destination: The Mun
+							notes = 
+							completedMessage = 
+						}
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Biome: East Crater
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = Strategia.STG_BodyProbes
+							title = Biome: East Crater
+							notes = 
+							completedMessage = 
+						}
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Situation: Landed or Splashed down
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = Strategia.STG_BodyProbes
+							title = Situation: Landed or Splashed down
+							notes = 
+							completedMessage = 
+						}
+					}
+					PARAM
+					{
+						name = ReachState
+						id = ReachState
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = Strategia.STG_BodyProbes
+						title = Northwest Crater
+						notes = 
+						completedMessage = 
+						hideChildren = True
+						allowStateReset = False
+						targetBody = Mun
+						biome = Northwest Crater
+						situation = LANDED
+						situation = SPLASHED
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Destination: The Mun
+							state = Complete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = Strategia.STG_BodyProbes
+							title = Destination: The Mun
+							notes = 
+							completedMessage = 
+						}
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Biome: Northwest Crater
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = Strategia.STG_BodyProbes
+							title = Biome: Northwest Crater
+							notes = 
+							completedMessage = 
+						}
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Situation: Landed or Splashed down
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = Strategia.STG_BodyProbes
+							title = Situation: Landed or Splashed down
+							notes = 
+							completedMessage = 
+						}
+					}
+					PARAM
+					{
+						name = ReachState
+						id = ReachState
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = Strategia.STG_BodyProbes
+						title = Southwest Crater
+						notes = 
+						completedMessage = 
+						hideChildren = True
+						allowStateReset = False
+						targetBody = Mun
+						biome = Southwest Crater
+						situation = LANDED
+						situation = SPLASHED
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Destination: The Mun
+							state = Complete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = Strategia.STG_BodyProbes
+							title = Destination: The Mun
+							notes = 
+							completedMessage = 
+						}
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Biome: Southwest Crater
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = Strategia.STG_BodyProbes
+							title = Biome: Southwest Crater
+							notes = 
+							completedMessage = 
+						}
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Situation: Landed or Splashed down
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = Strategia.STG_BodyProbes
+							title = Situation: Landed or Splashed down
+							notes = 
+							completedMessage = 
+						}
+					}
+					PARAM
+					{
+						name = ReachState
+						id = ReachState
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = Strategia.STG_BodyProbes
+						title = Farside Crater
+						notes = 
+						completedMessage = 
+						hideChildren = True
+						allowStateReset = False
+						targetBody = Mun
+						biome = Farside Crater
+						situation = LANDED
+						situation = SPLASHED
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Destination: The Mun
+							state = Complete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = Strategia.STG_BodyProbes
+							title = Destination: The Mun
+							notes = 
+							completedMessage = 
+						}
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Biome: Farside Crater
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = Strategia.STG_BodyProbes
+							title = Biome: Farside Crater
+							notes = 
+							completedMessage = 
+						}
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Situation: Landed or Splashed down
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = Strategia.STG_BodyProbes
+							title = Situation: Landed or Splashed down
+							notes = 
+							completedMessage = 
+						}
+					}
+					PARAM
+					{
+						name = ReachState
+						id = ReachState
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = Strategia.STG_BodyProbes
+						title = Canyons
+						notes = 
+						completedMessage = 
+						hideChildren = True
+						allowStateReset = False
+						targetBody = Mun
+						biome = Canyons
+						situation = LANDED
+						situation = SPLASHED
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Destination: The Mun
+							state = Complete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = Strategia.STG_BodyProbes
+							title = Destination: The Mun
+							notes = 
+							completedMessage = 
+						}
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Biome: Canyons
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = Strategia.STG_BodyProbes
+							title = Biome: Canyons
+							notes = 
+							completedMessage = 
+						}
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Situation: Landed or Splashed down
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = Strategia.STG_BodyProbes
+							title = Situation: Landed or Splashed down
+							notes = 
+							completedMessage = 
+						}
+					}
+					PARAM
+					{
+						name = ReachState
+						id = ReachState
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = Strategia.STG_BodyProbes
+						title = Polar Crater
+						notes = 
+						completedMessage = 
+						hideChildren = True
+						allowStateReset = False
+						targetBody = Mun
+						biome = Polar Crater
+						situation = LANDED
+						situation = SPLASHED
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Destination: The Mun
+							state = Complete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = Strategia.STG_BodyProbes
+							title = Destination: The Mun
+							notes = 
+							completedMessage = 
+						}
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Biome: Polar Crater
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = Strategia.STG_BodyProbes
+							title = Biome: Polar Crater
+							notes = 
+							completedMessage = 
+						}
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Situation: Landed or Splashed down
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = Strategia.STG_BodyProbes
+							title = Situation: Landed or Splashed down
+							notes = 
+							completedMessage = 
+						}
+					}
+					PARAM
+					{
+						name = ReachState
+						id = ReachState
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = Strategia.STG_BodyProbes
+						title = Poles
+						notes = 
+						completedMessage = 
+						hideChildren = True
+						allowStateReset = False
+						targetBody = Mun
+						biome = Poles
+						situation = LANDED
+						situation = SPLASHED
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Destination: The Mun
+							state = Complete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = Strategia.STG_BodyProbes
+							title = Destination: The Mun
+							notes = 
+							completedMessage = 
+						}
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Biome: Poles
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = Strategia.STG_BodyProbes
+							title = Biome: Poles
+							notes = 
+							completedMessage = 
+						}
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Situation: Landed or Splashed down
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = Strategia.STG_BodyProbes
+							title = Situation: Landed or Splashed down
+							notes = 
+							completedMessage = 
+						}
+					}
+					PARAM
+					{
+						name = ReachState
+						id = ReachState
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = Strategia.STG_BodyProbes
+						title = Polar Lowlands
+						notes = 
+						completedMessage = 
+						hideChildren = True
+						allowStateReset = False
+						targetBody = Mun
+						biome = Polar Lowlands
+						situation = LANDED
+						situation = SPLASHED
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Destination: The Mun
+							state = Complete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = Strategia.STG_BodyProbes
+							title = Destination: The Mun
+							notes = 
+							completedMessage = 
+						}
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Biome: Polar Lowlands
+							state = Complete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = Strategia.STG_BodyProbes
+							title = Biome: Polar Lowlands
+							notes = 
+							completedMessage = 
+						}
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Situation: Landed or Splashed down
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = Strategia.STG_BodyProbes
+							title = Situation: Landed or Splashed down
+							notes = 
+							completedMessage = 
+						}
+					}
+					PARAM
+					{
+						name = ReachState
+						id = ReachState
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = Strategia.STG_BodyProbes
+						title = Highlands
+						notes = 
+						completedMessage = 
+						hideChildren = True
+						allowStateReset = False
+						targetBody = Mun
+						biome = Highlands
+						situation = LANDED
+						situation = SPLASHED
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Destination: The Mun
+							state = Complete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = Strategia.STG_BodyProbes
+							title = Destination: The Mun
+							notes = 
+							completedMessage = 
+						}
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Biome: Highlands
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = Strategia.STG_BodyProbes
+							title = Biome: Highlands
+							notes = 
+							completedMessage = 
+						}
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Situation: Landed or Splashed down
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = Strategia.STG_BodyProbes
+							title = Situation: Landed or Splashed down
+							notes = 
+							completedMessage = 
+						}
+					}
+					PARAM
+					{
+						name = ReachState
+						id = ReachState
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = Strategia.STG_BodyProbes
+						title = Highland Craters
+						notes = 
+						completedMessage = 
+						hideChildren = True
+						allowStateReset = False
+						targetBody = Mun
+						biome = Highland Craters
+						situation = LANDED
+						situation = SPLASHED
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Destination: The Mun
+							state = Complete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = Strategia.STG_BodyProbes
+							title = Destination: The Mun
+							notes = 
+							completedMessage = 
+						}
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Biome: Highland Craters
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = Strategia.STG_BodyProbes
+							title = Biome: Highland Craters
+							notes = 
+							completedMessage = 
+						}
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Situation: Landed or Splashed down
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = Strategia.STG_BodyProbes
+							title = Situation: Landed or Splashed down
+							notes = 
+							completedMessage = 
+						}
+					}
+					PARAM
+					{
+						name = ReachState
+						id = ReachState
+						enabled = False
+						state = Complete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = Strategia.STG_BodyProbes
+						title = Midland Craters
+						notes = 
+						completedMessage = 
+						hideChildren = True
+						targetBody = Mun
+						biome = Midland Craters
+						situation = LANDED
+						situation = SPLASHED
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Destination: The Mun
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = Strategia.STG_BodyProbes
+							title = Destination: The Mun
+							notes = 
+							completedMessage = 
+						}
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Biome: Midland Craters
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = Strategia.STG_BodyProbes
+							title = Biome: Midland Craters
+							notes = 
+							completedMessage = 
+						}
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Situation: Landed or Splashed down
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = Strategia.STG_BodyProbes
+							title = Situation: Landed or Splashed down
+							notes = 
+							completedMessage = 
+						}
+					}
+					PARAM
+					{
+						name = ReachState
+						id = ReachState
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = Strategia.STG_BodyProbes
+						title = East Farside Crater
+						notes = 
+						completedMessage = 
+						hideChildren = True
+						allowStateReset = False
+						targetBody = Mun
+						biome = East Farside Crater
+						situation = LANDED
+						situation = SPLASHED
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Destination: The Mun
+							state = Complete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = Strategia.STG_BodyProbes
+							title = Destination: The Mun
+							notes = 
+							completedMessage = 
+						}
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Biome: East Farside Crater
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = Strategia.STG_BodyProbes
+							title = Biome: East Farside Crater
+							notes = 
+							completedMessage = 
+						}
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Situation: Landed or Splashed down
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = Strategia.STG_BodyProbes
+							title = Situation: Landed or Splashed down
+							notes = 
+							completedMessage = 
+						}
+					}
+					PARAM
+					{
+						name = ReachState
+						id = ReachState
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = Strategia.STG_BodyProbes
+						title = Twin Craters
+						notes = 
+						completedMessage = 
+						hideChildren = True
+						allowStateReset = False
+						targetBody = Mun
+						biome = Twin Craters
+						situation = LANDED
+						situation = SPLASHED
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Destination: The Mun
+							state = Complete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = Strategia.STG_BodyProbes
+							title = Destination: The Mun
+							notes = 
+							completedMessage = 
+						}
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Biome: Twin Craters
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = Strategia.STG_BodyProbes
+							title = Biome: Twin Craters
+							notes = 
+							completedMessage = 
+						}
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Situation: Landed or Splashed down
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = Strategia.STG_BodyProbes
+							title = Situation: Landed or Splashed down
+							notes = 
+							completedMessage = 
+						}
+					}
+					PARAM
+					{
+						name = ReachState
+						id = ReachState
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = Strategia.STG_BodyProbes
+						title = Lowlands
+						notes = 
+						completedMessage = 
+						hideChildren = True
+						allowStateReset = False
+						targetBody = Mun
+						biome = Lowlands
+						situation = LANDED
+						situation = SPLASHED
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Destination: The Mun
+							state = Complete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = Strategia.STG_BodyProbes
+							title = Destination: The Mun
+							notes = 
+							completedMessage = 
+						}
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Biome: Lowlands
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = Strategia.STG_BodyProbes
+							title = Biome: Lowlands
+							notes = 
+							completedMessage = 
+						}
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Situation: Landed or Splashed down
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = Strategia.STG_BodyProbes
+							title = Situation: Landed or Splashed down
+							notes = 
+							completedMessage = 
+						}
+					}
+					PARAM
+					{
+						name = ReachState
+						id = ReachState
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						ContractIdentifier = Strategia.STG_BodyProbes
+						title = Farside Basin
+						notes = 
+						completedMessage = 
+						hideChildren = True
+						allowStateReset = False
+						targetBody = Mun
+						biome = Farside Basin
+						situation = LANDED
+						situation = SPLASHED
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Destination: The Mun
+							state = Complete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = Strategia.STG_BodyProbes
+							title = Destination: The Mun
+							notes = 
+							completedMessage = 
+						}
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Biome: Farside Basin
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = Strategia.STG_BodyProbes
+							title = Biome: Farside Basin
+							notes = 
+							completedMessage = 
+						}
+						PARAM
+						{
+							name = ParameterDelegate`1
+							id = Situation: Landed or Splashed down
+							state = Incomplete
+							disableOnStateChange = False
+							values = 0,0,0,0,0
+							ContractIdentifier = Strategia.STG_BodyProbes
+							title = Situation: Landed or Splashed down
+							notes = 
+							completedMessage = 
+						}
+					}
+				}
+			}
+			CONTRACT
+			{
 				guid = ebf9e35e-2a63-4fdf-8c39-016cbf3b5910
 				type = SatelliteContract
 				prestige = 2
@@ -958,134 +2020,6 @@ GAME
 					state = Incomplete
 					values = 0,0,0,0,0
 					holdSeconds = 10
-				}
-			}
-			CONTRACT
-			{
-				guid = 00e78c01-4610-43be-9d5b-10fe1964f357
-				type = SurveyContract
-				prestige = 2
-				seed = -1062939376
-				state = Offered
-				viewed = Unseen
-				agent = Probodobodyne Inc
-				deadlineType = Floating
-				expiryType = Floating
-				values = 129600,46008000,54000,95400,54000,0,17.36,24.8,1484511.8710787,0,0,0
-				targetBody = 1
-				centerLatitude = -7.3292550461128716
-				centerLongitude = 171.24063793161912
-				dataName = temperature
-				anomalyName = fluctuations
-				reportName = measurements
-				locationName = Kerbin^N
-				focusedSurvey = False
-				targetBand = LOW
-				contextual = False
-				PARAM
-				{
-					name = SurveyWaypointParameter
-					state = Incomplete
-					values = 15840,0,4,4,0
-					targetBody = 1
-					actionDescription = Measure the temperature
-					experiment = temperatureScan
-					flightThreshold = 24100
-					band = 2
-					clusterState = MIXED
-					verified = True
-					contextual = False
-					wpSeed = -1983635057
-					wpIndex = 0
-					wpTexture = thermometer
-					wpLatitude = -8.7349998519793495
-					wpLongitude = 173.3862423993514
-					wpLandlocked = False
-					wpNavigationId = 1d90605b-88d4-44be-9b59-de22a1b5940d
-				}
-				PARAM
-				{
-					name = SurveyWaypointParameter
-					state = Incomplete
-					values = 15840,0,4,4,0
-					targetBody = 1
-					actionDescription = Measure the temperature
-					experiment = temperatureScan
-					flightThreshold = 21800
-					band = 2
-					clusterState = MIXED
-					verified = True
-					contextual = False
-					wpSeed = -1983635057
-					wpIndex = 1
-					wpTexture = thermometer
-					wpLatitude = -6.7556823379770732
-					wpLongitude = 170.16077755881341
-					wpLandlocked = False
-					wpNavigationId = 13b3edb6-fd15-4810-ac18-82cb7fe232ed
-				}
-				PARAM
-				{
-					name = SurveyWaypointParameter
-					state = Incomplete
-					values = 15840,0,4,4,0
-					targetBody = 1
-					actionDescription = Measure the temperature
-					experiment = temperatureScan
-					flightThreshold = 23600
-					band = 2
-					clusterState = MIXED
-					verified = True
-					contextual = False
-					wpSeed = -1983635057
-					wpIndex = 2
-					wpTexture = thermometer
-					wpLatitude = -7.4880231604537251
-					wpLongitude = 173.11560927165971
-					wpLandlocked = False
-					wpNavigationId = ad82e7e9-1576-448b-b45c-53733635113c
-				}
-				PARAM
-				{
-					name = SurveyWaypointParameter
-					state = Incomplete
-					values = 15840,0,4,4,0
-					targetBody = 1
-					actionDescription = Measure the temperature
-					experiment = temperatureScan
-					flightThreshold = 22000
-					band = 2
-					clusterState = MIXED
-					verified = True
-					contextual = False
-					wpSeed = -1983635057
-					wpIndex = 3
-					wpTexture = thermometer
-					wpLatitude = -7.8633786985208562
-					wpLongitude = 170.48727938573867
-					wpLandlocked = False
-					wpNavigationId = 4cc75bb6-bbb2-403f-b10e-6e6b16d75e7b
-				}
-				PARAM
-				{
-					name = SurveyWaypointParameter
-					state = Incomplete
-					values = 15840,0,4,4,0
-					targetBody = 1
-					actionDescription = Measure the temperature
-					experiment = temperatureScan
-					flightThreshold = 21400
-					band = 2
-					clusterState = MIXED
-					verified = True
-					contextual = False
-					wpSeed = -1983635057
-					wpIndex = 4
-					wpTexture = thermometer
-					wpLatitude = -5.3809107007273287
-					wpLongitude = 171.11110535518299
-					wpLandlocked = False
-					wpNavigationId = 69c4136a-2b58-46f2-87c6-fd6c5a0d4479
 				}
 			}
 			CONTRACT_FINISHED
@@ -1968,963 +2902,6 @@ GAME
 					location = Surface
 				}
 			}
-			CONTRACT_FINISHED
-			{
-				guid = e9a54dcc-61a0-40f2-ac9a-5595c044dd27
-				type = ConfiguredContract
-				prestige = 2
-				seed = 1432155594
-				state = Completed
-				viewed = Read
-				agent = Strategia
-				deadlineType = None
-				expiryType = Floating
-				autoAccept = True
-				ignoresWeight = True
-				values = 633780,0,120000,30000,225000,0,75,750,829049.305246563,195269.305246563,0,1354911.8310787
-				subtype = STG_BodyProbes
-				title = Mun Probes
-				description = Why send Kerbal to other planets when we can be more effective in gathering science by sending out uncrewed probes?  Shall we send a probe to perform experiments on The Mun?
-				synopsis = Land probes in three different biomes on The Mun.
-				completedMessage = You've successfully performed an automated exploration of The Mun!
-				hash = 1100950491
-				targetBody = Mun
-				UNIQUE_DATA
-				{
-					strategyName = String:Mun Probes
-				}
-				PARAM
-				{
-					name = AtLeast
-					id = AtLeast
-					enabled = False
-					state = Complete
-					values = 0,0,0,0,0
-					ContractIdentifier = Strategia.STG_BodyProbes
-					title = Land probes in THREE different biomes on the Mun
-					notes = 
-					completedMessage = 
-					count = 3
-					PARAM
-					{
-						name = ReachState
-						id = ReachState
-						enabled = False
-						state = Complete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = Strategia.STG_BodyProbes
-						title = Midlands
-						notes = 
-						completedMessage = 
-						hideChildren = True
-						targetBody = Mun
-						biome = Midlands
-						situation = LANDED
-						situation = SPLASHED
-						PARAM
-						{
-							name = ParameterDelegate`1
-							id = Destination: The Mun
-							state = Incomplete
-							disableOnStateChange = False
-							values = 0,0,0,0,0
-							ContractIdentifier = Strategia.STG_BodyProbes
-							title = Destination: The Mun
-							notes = 
-							completedMessage = 
-						}
-						PARAM
-						{
-							name = ParameterDelegate`1
-							id = Biome: Midlands
-							state = Incomplete
-							disableOnStateChange = False
-							values = 0,0,0,0,0
-							ContractIdentifier = Strategia.STG_BodyProbes
-							title = Biome: Midlands
-							notes = 
-							completedMessage = 
-						}
-						PARAM
-						{
-							name = ParameterDelegate`1
-							id = Situation: Landed or Splashed down
-							state = Incomplete
-							disableOnStateChange = False
-							values = 0,0,0,0,0
-							ContractIdentifier = Strategia.STG_BodyProbes
-							title = Situation: Landed or Splashed down
-							notes = 
-							completedMessage = 
-						}
-					}
-					PARAM
-					{
-						name = ReachState
-						id = ReachState
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = Strategia.STG_BodyProbes
-						title = Northern Basin
-						notes = 
-						completedMessage = 
-						hideChildren = True
-						allowStateReset = False
-						targetBody = Mun
-						biome = Northern Basin
-						situation = LANDED
-						situation = SPLASHED
-						PARAM
-						{
-							name = ParameterDelegate`1
-							id = Destination: The Mun
-							state = Incomplete
-							disableOnStateChange = False
-							values = 0,0,0,0,0
-							ContractIdentifier = Strategia.STG_BodyProbes
-							title = Destination: The Mun
-							notes = 
-							completedMessage = 
-						}
-						PARAM
-						{
-							name = ParameterDelegate`1
-							id = Biome: Northern Basin
-							state = Incomplete
-							disableOnStateChange = False
-							values = 0,0,0,0,0
-							ContractIdentifier = Strategia.STG_BodyProbes
-							title = Biome: Northern Basin
-							notes = 
-							completedMessage = 
-						}
-						PARAM
-						{
-							name = ParameterDelegate`1
-							id = Situation: Landed or Splashed down
-							state = Incomplete
-							disableOnStateChange = False
-							values = 0,0,0,0,0
-							ContractIdentifier = Strategia.STG_BodyProbes
-							title = Situation: Landed or Splashed down
-							notes = 
-							completedMessage = 
-						}
-					}
-					PARAM
-					{
-						name = ReachState
-						id = ReachState
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = Strategia.STG_BodyProbes
-						title = East Crater
-						notes = 
-						completedMessage = 
-						hideChildren = True
-						allowStateReset = False
-						targetBody = Mun
-						biome = East Crater
-						situation = LANDED
-						situation = SPLASHED
-						PARAM
-						{
-							name = ParameterDelegate`1
-							id = Destination: The Mun
-							state = Incomplete
-							disableOnStateChange = False
-							values = 0,0,0,0,0
-							ContractIdentifier = Strategia.STG_BodyProbes
-							title = Destination: The Mun
-							notes = 
-							completedMessage = 
-						}
-						PARAM
-						{
-							name = ParameterDelegate`1
-							id = Biome: East Crater
-							state = Incomplete
-							disableOnStateChange = False
-							values = 0,0,0,0,0
-							ContractIdentifier = Strategia.STG_BodyProbes
-							title = Biome: East Crater
-							notes = 
-							completedMessage = 
-						}
-						PARAM
-						{
-							name = ParameterDelegate`1
-							id = Situation: Landed or Splashed down
-							state = Incomplete
-							disableOnStateChange = False
-							values = 0,0,0,0,0
-							ContractIdentifier = Strategia.STG_BodyProbes
-							title = Situation: Landed or Splashed down
-							notes = 
-							completedMessage = 
-						}
-					}
-					PARAM
-					{
-						name = ReachState
-						id = ReachState
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = Strategia.STG_BodyProbes
-						title = Northwest Crater
-						notes = 
-						completedMessage = 
-						hideChildren = True
-						allowStateReset = False
-						targetBody = Mun
-						biome = Northwest Crater
-						situation = LANDED
-						situation = SPLASHED
-						PARAM
-						{
-							name = ParameterDelegate`1
-							id = Destination: The Mun
-							state = Incomplete
-							disableOnStateChange = False
-							values = 0,0,0,0,0
-							ContractIdentifier = Strategia.STG_BodyProbes
-							title = Destination: The Mun
-							notes = 
-							completedMessage = 
-						}
-						PARAM
-						{
-							name = ParameterDelegate`1
-							id = Biome: Northwest Crater
-							state = Incomplete
-							disableOnStateChange = False
-							values = 0,0,0,0,0
-							ContractIdentifier = Strategia.STG_BodyProbes
-							title = Biome: Northwest Crater
-							notes = 
-							completedMessage = 
-						}
-						PARAM
-						{
-							name = ParameterDelegate`1
-							id = Situation: Landed or Splashed down
-							state = Incomplete
-							disableOnStateChange = False
-							values = 0,0,0,0,0
-							ContractIdentifier = Strategia.STG_BodyProbes
-							title = Situation: Landed or Splashed down
-							notes = 
-							completedMessage = 
-						}
-					}
-					PARAM
-					{
-						name = ReachState
-						id = ReachState
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = Strategia.STG_BodyProbes
-						title = Southwest Crater
-						notes = 
-						completedMessage = 
-						hideChildren = True
-						allowStateReset = False
-						targetBody = Mun
-						biome = Southwest Crater
-						situation = LANDED
-						situation = SPLASHED
-						PARAM
-						{
-							name = ParameterDelegate`1
-							id = Destination: The Mun
-							state = Incomplete
-							disableOnStateChange = False
-							values = 0,0,0,0,0
-							ContractIdentifier = Strategia.STG_BodyProbes
-							title = Destination: The Mun
-							notes = 
-							completedMessage = 
-						}
-						PARAM
-						{
-							name = ParameterDelegate`1
-							id = Biome: Southwest Crater
-							state = Incomplete
-							disableOnStateChange = False
-							values = 0,0,0,0,0
-							ContractIdentifier = Strategia.STG_BodyProbes
-							title = Biome: Southwest Crater
-							notes = 
-							completedMessage = 
-						}
-						PARAM
-						{
-							name = ParameterDelegate`1
-							id = Situation: Landed or Splashed down
-							state = Incomplete
-							disableOnStateChange = False
-							values = 0,0,0,0,0
-							ContractIdentifier = Strategia.STG_BodyProbes
-							title = Situation: Landed or Splashed down
-							notes = 
-							completedMessage = 
-						}
-					}
-					PARAM
-					{
-						name = ReachState
-						id = ReachState
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = Strategia.STG_BodyProbes
-						title = Farside Crater
-						notes = 
-						completedMessage = 
-						hideChildren = True
-						allowStateReset = False
-						targetBody = Mun
-						biome = Farside Crater
-						situation = LANDED
-						situation = SPLASHED
-						PARAM
-						{
-							name = ParameterDelegate`1
-							id = Destination: The Mun
-							state = Incomplete
-							disableOnStateChange = False
-							values = 0,0,0,0,0
-							ContractIdentifier = Strategia.STG_BodyProbes
-							title = Destination: The Mun
-							notes = 
-							completedMessage = 
-						}
-						PARAM
-						{
-							name = ParameterDelegate`1
-							id = Biome: Farside Crater
-							state = Incomplete
-							disableOnStateChange = False
-							values = 0,0,0,0,0
-							ContractIdentifier = Strategia.STG_BodyProbes
-							title = Biome: Farside Crater
-							notes = 
-							completedMessage = 
-						}
-						PARAM
-						{
-							name = ParameterDelegate`1
-							id = Situation: Landed or Splashed down
-							state = Incomplete
-							disableOnStateChange = False
-							values = 0,0,0,0,0
-							ContractIdentifier = Strategia.STG_BodyProbes
-							title = Situation: Landed or Splashed down
-							notes = 
-							completedMessage = 
-						}
-					}
-					PARAM
-					{
-						name = ReachState
-						id = ReachState
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = Strategia.STG_BodyProbes
-						title = Canyons
-						notes = 
-						completedMessage = 
-						hideChildren = True
-						allowStateReset = False
-						targetBody = Mun
-						biome = Canyons
-						situation = LANDED
-						situation = SPLASHED
-						PARAM
-						{
-							name = ParameterDelegate`1
-							id = Destination: The Mun
-							state = Incomplete
-							disableOnStateChange = False
-							values = 0,0,0,0,0
-							ContractIdentifier = Strategia.STG_BodyProbes
-							title = Destination: The Mun
-							notes = 
-							completedMessage = 
-						}
-						PARAM
-						{
-							name = ParameterDelegate`1
-							id = Biome: Canyons
-							state = Incomplete
-							disableOnStateChange = False
-							values = 0,0,0,0,0
-							ContractIdentifier = Strategia.STG_BodyProbes
-							title = Biome: Canyons
-							notes = 
-							completedMessage = 
-						}
-						PARAM
-						{
-							name = ParameterDelegate`1
-							id = Situation: Landed or Splashed down
-							state = Incomplete
-							disableOnStateChange = False
-							values = 0,0,0,0,0
-							ContractIdentifier = Strategia.STG_BodyProbes
-							title = Situation: Landed or Splashed down
-							notes = 
-							completedMessage = 
-						}
-					}
-					PARAM
-					{
-						name = ReachState
-						id = ReachState
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = Strategia.STG_BodyProbes
-						title = Polar Crater
-						notes = 
-						completedMessage = 
-						hideChildren = True
-						allowStateReset = False
-						targetBody = Mun
-						biome = Polar Crater
-						situation = LANDED
-						situation = SPLASHED
-						PARAM
-						{
-							name = ParameterDelegate`1
-							id = Destination: The Mun
-							state = Incomplete
-							disableOnStateChange = False
-							values = 0,0,0,0,0
-							ContractIdentifier = Strategia.STG_BodyProbes
-							title = Destination: The Mun
-							notes = 
-							completedMessage = 
-						}
-						PARAM
-						{
-							name = ParameterDelegate`1
-							id = Biome: Polar Crater
-							state = Incomplete
-							disableOnStateChange = False
-							values = 0,0,0,0,0
-							ContractIdentifier = Strategia.STG_BodyProbes
-							title = Biome: Polar Crater
-							notes = 
-							completedMessage = 
-						}
-						PARAM
-						{
-							name = ParameterDelegate`1
-							id = Situation: Landed or Splashed down
-							state = Incomplete
-							disableOnStateChange = False
-							values = 0,0,0,0,0
-							ContractIdentifier = Strategia.STG_BodyProbes
-							title = Situation: Landed or Splashed down
-							notes = 
-							completedMessage = 
-						}
-					}
-					PARAM
-					{
-						name = ReachState
-						id = ReachState
-						enabled = False
-						state = Complete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = Strategia.STG_BodyProbes
-						title = Poles
-						notes = 
-						completedMessage = 
-						hideChildren = True
-						targetBody = Mun
-						biome = Poles
-						situation = LANDED
-						situation = SPLASHED
-						PARAM
-						{
-							name = ParameterDelegate`1
-							id = Destination: The Mun
-							state = Incomplete
-							disableOnStateChange = False
-							values = 0,0,0,0,0
-							ContractIdentifier = Strategia.STG_BodyProbes
-							title = Destination: The Mun
-							notes = 
-							completedMessage = 
-						}
-						PARAM
-						{
-							name = ParameterDelegate`1
-							id = Biome: Poles
-							state = Incomplete
-							disableOnStateChange = False
-							values = 0,0,0,0,0
-							ContractIdentifier = Strategia.STG_BodyProbes
-							title = Biome: Poles
-							notes = 
-							completedMessage = 
-						}
-						PARAM
-						{
-							name = ParameterDelegate`1
-							id = Situation: Landed or Splashed down
-							state = Incomplete
-							disableOnStateChange = False
-							values = 0,0,0,0,0
-							ContractIdentifier = Strategia.STG_BodyProbes
-							title = Situation: Landed or Splashed down
-							notes = 
-							completedMessage = 
-						}
-					}
-					PARAM
-					{
-						name = ReachState
-						id = ReachState
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = Strategia.STG_BodyProbes
-						title = Polar Lowlands
-						notes = 
-						completedMessage = 
-						hideChildren = True
-						allowStateReset = False
-						targetBody = Mun
-						biome = Polar Lowlands
-						situation = LANDED
-						situation = SPLASHED
-						PARAM
-						{
-							name = ParameterDelegate`1
-							id = Destination: The Mun
-							state = Incomplete
-							disableOnStateChange = False
-							values = 0,0,0,0,0
-							ContractIdentifier = Strategia.STG_BodyProbes
-							title = Destination: The Mun
-							notes = 
-							completedMessage = 
-						}
-						PARAM
-						{
-							name = ParameterDelegate`1
-							id = Biome: Polar Lowlands
-							state = Incomplete
-							disableOnStateChange = False
-							values = 0,0,0,0,0
-							ContractIdentifier = Strategia.STG_BodyProbes
-							title = Biome: Polar Lowlands
-							notes = 
-							completedMessage = 
-						}
-						PARAM
-						{
-							name = ParameterDelegate`1
-							id = Situation: Landed or Splashed down
-							state = Incomplete
-							disableOnStateChange = False
-							values = 0,0,0,0,0
-							ContractIdentifier = Strategia.STG_BodyProbes
-							title = Situation: Landed or Splashed down
-							notes = 
-							completedMessage = 
-						}
-					}
-					PARAM
-					{
-						name = ReachState
-						id = ReachState
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = Strategia.STG_BodyProbes
-						title = Highlands
-						notes = 
-						completedMessage = 
-						hideChildren = True
-						allowStateReset = False
-						targetBody = Mun
-						biome = Highlands
-						situation = LANDED
-						situation = SPLASHED
-						PARAM
-						{
-							name = ParameterDelegate`1
-							id = Destination: The Mun
-							state = Incomplete
-							disableOnStateChange = False
-							values = 0,0,0,0,0
-							ContractIdentifier = Strategia.STG_BodyProbes
-							title = Destination: The Mun
-							notes = 
-							completedMessage = 
-						}
-						PARAM
-						{
-							name = ParameterDelegate`1
-							id = Biome: Highlands
-							state = Incomplete
-							disableOnStateChange = False
-							values = 0,0,0,0,0
-							ContractIdentifier = Strategia.STG_BodyProbes
-							title = Biome: Highlands
-							notes = 
-							completedMessage = 
-						}
-						PARAM
-						{
-							name = ParameterDelegate`1
-							id = Situation: Landed or Splashed down
-							state = Incomplete
-							disableOnStateChange = False
-							values = 0,0,0,0,0
-							ContractIdentifier = Strategia.STG_BodyProbes
-							title = Situation: Landed or Splashed down
-							notes = 
-							completedMessage = 
-						}
-					}
-					PARAM
-					{
-						name = ReachState
-						id = ReachState
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = Strategia.STG_BodyProbes
-						title = Highland Craters
-						notes = 
-						completedMessage = 
-						hideChildren = True
-						allowStateReset = False
-						targetBody = Mun
-						biome = Highland Craters
-						situation = LANDED
-						situation = SPLASHED
-						PARAM
-						{
-							name = ParameterDelegate`1
-							id = Destination: The Mun
-							state = Incomplete
-							disableOnStateChange = False
-							values = 0,0,0,0,0
-							ContractIdentifier = Strategia.STG_BodyProbes
-							title = Destination: The Mun
-							notes = 
-							completedMessage = 
-						}
-						PARAM
-						{
-							name = ParameterDelegate`1
-							id = Biome: Highland Craters
-							state = Incomplete
-							disableOnStateChange = False
-							values = 0,0,0,0,0
-							ContractIdentifier = Strategia.STG_BodyProbes
-							title = Biome: Highland Craters
-							notes = 
-							completedMessage = 
-						}
-						PARAM
-						{
-							name = ParameterDelegate`1
-							id = Situation: Landed or Splashed down
-							state = Incomplete
-							disableOnStateChange = False
-							values = 0,0,0,0,0
-							ContractIdentifier = Strategia.STG_BodyProbes
-							title = Situation: Landed or Splashed down
-							notes = 
-							completedMessage = 
-						}
-					}
-					PARAM
-					{
-						name = ReachState
-						id = ReachState
-						enabled = False
-						state = Complete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = Strategia.STG_BodyProbes
-						title = Midland Craters
-						notes = 
-						completedMessage = 
-						hideChildren = True
-						targetBody = Mun
-						biome = Midland Craters
-						situation = LANDED
-						situation = SPLASHED
-						PARAM
-						{
-							name = ParameterDelegate`1
-							id = Destination: The Mun
-							state = Incomplete
-							disableOnStateChange = False
-							values = 0,0,0,0,0
-							ContractIdentifier = Strategia.STG_BodyProbes
-							title = Destination: The Mun
-							notes = 
-							completedMessage = 
-						}
-						PARAM
-						{
-							name = ParameterDelegate`1
-							id = Biome: Midland Craters
-							state = Incomplete
-							disableOnStateChange = False
-							values = 0,0,0,0,0
-							ContractIdentifier = Strategia.STG_BodyProbes
-							title = Biome: Midland Craters
-							notes = 
-							completedMessage = 
-						}
-						PARAM
-						{
-							name = ParameterDelegate`1
-							id = Situation: Landed or Splashed down
-							state = Incomplete
-							disableOnStateChange = False
-							values = 0,0,0,0,0
-							ContractIdentifier = Strategia.STG_BodyProbes
-							title = Situation: Landed or Splashed down
-							notes = 
-							completedMessage = 
-						}
-					}
-					PARAM
-					{
-						name = ReachState
-						id = ReachState
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = Strategia.STG_BodyProbes
-						title = East Farside Crater
-						notes = 
-						completedMessage = 
-						hideChildren = True
-						allowStateReset = False
-						targetBody = Mun
-						biome = East Farside Crater
-						situation = LANDED
-						situation = SPLASHED
-						PARAM
-						{
-							name = ParameterDelegate`1
-							id = Destination: The Mun
-							state = Incomplete
-							disableOnStateChange = False
-							values = 0,0,0,0,0
-							ContractIdentifier = Strategia.STG_BodyProbes
-							title = Destination: The Mun
-							notes = 
-							completedMessage = 
-						}
-						PARAM
-						{
-							name = ParameterDelegate`1
-							id = Biome: East Farside Crater
-							state = Incomplete
-							disableOnStateChange = False
-							values = 0,0,0,0,0
-							ContractIdentifier = Strategia.STG_BodyProbes
-							title = Biome: East Farside Crater
-							notes = 
-							completedMessage = 
-						}
-						PARAM
-						{
-							name = ParameterDelegate`1
-							id = Situation: Landed or Splashed down
-							state = Incomplete
-							disableOnStateChange = False
-							values = 0,0,0,0,0
-							ContractIdentifier = Strategia.STG_BodyProbes
-							title = Situation: Landed or Splashed down
-							notes = 
-							completedMessage = 
-						}
-					}
-					PARAM
-					{
-						name = ReachState
-						id = ReachState
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = Strategia.STG_BodyProbes
-						title = Twin Craters
-						notes = 
-						completedMessage = 
-						hideChildren = True
-						allowStateReset = False
-						targetBody = Mun
-						biome = Twin Craters
-						situation = LANDED
-						situation = SPLASHED
-						PARAM
-						{
-							name = ParameterDelegate`1
-							id = Destination: The Mun
-							state = Incomplete
-							disableOnStateChange = False
-							values = 0,0,0,0,0
-							ContractIdentifier = Strategia.STG_BodyProbes
-							title = Destination: The Mun
-							notes = 
-							completedMessage = 
-						}
-						PARAM
-						{
-							name = ParameterDelegate`1
-							id = Biome: Twin Craters
-							state = Incomplete
-							disableOnStateChange = False
-							values = 0,0,0,0,0
-							ContractIdentifier = Strategia.STG_BodyProbes
-							title = Biome: Twin Craters
-							notes = 
-							completedMessage = 
-						}
-						PARAM
-						{
-							name = ParameterDelegate`1
-							id = Situation: Landed or Splashed down
-							state = Incomplete
-							disableOnStateChange = False
-							values = 0,0,0,0,0
-							ContractIdentifier = Strategia.STG_BodyProbes
-							title = Situation: Landed or Splashed down
-							notes = 
-							completedMessage = 
-						}
-					}
-					PARAM
-					{
-						name = ReachState
-						id = ReachState
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = Strategia.STG_BodyProbes
-						title = Lowlands
-						notes = 
-						completedMessage = 
-						hideChildren = True
-						allowStateReset = False
-						targetBody = Mun
-						biome = Lowlands
-						situation = LANDED
-						situation = SPLASHED
-						PARAM
-						{
-							name = ParameterDelegate`1
-							id = Destination: The Mun
-							state = Incomplete
-							disableOnStateChange = False
-							values = 0,0,0,0,0
-							ContractIdentifier = Strategia.STG_BodyProbes
-							title = Destination: The Mun
-							notes = 
-							completedMessage = 
-						}
-						PARAM
-						{
-							name = ParameterDelegate`1
-							id = Biome: Lowlands
-							state = Incomplete
-							disableOnStateChange = False
-							values = 0,0,0,0,0
-							ContractIdentifier = Strategia.STG_BodyProbes
-							title = Biome: Lowlands
-							notes = 
-							completedMessage = 
-						}
-						PARAM
-						{
-							name = ParameterDelegate`1
-							id = Situation: Landed or Splashed down
-							state = Incomplete
-							disableOnStateChange = False
-							values = 0,0,0,0,0
-							ContractIdentifier = Strategia.STG_BodyProbes
-							title = Situation: Landed or Splashed down
-							notes = 
-							completedMessage = 
-						}
-					}
-					PARAM
-					{
-						name = ReachState
-						id = ReachState
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						ContractIdentifier = Strategia.STG_BodyProbes
-						title = Farside Basin
-						notes = 
-						completedMessage = 
-						hideChildren = True
-						allowStateReset = False
-						targetBody = Mun
-						biome = Farside Basin
-						situation = LANDED
-						situation = SPLASHED
-						PARAM
-						{
-							name = ParameterDelegate`1
-							id = Destination: The Mun
-							state = Incomplete
-							disableOnStateChange = False
-							values = 0,0,0,0,0
-							ContractIdentifier = Strategia.STG_BodyProbes
-							title = Destination: The Mun
-							notes = 
-							completedMessage = 
-						}
-						PARAM
-						{
-							name = ParameterDelegate`1
-							id = Biome: Farside Basin
-							state = Incomplete
-							disableOnStateChange = False
-							values = 0,0,0,0,0
-							ContractIdentifier = Strategia.STG_BodyProbes
-							title = Biome: Farside Basin
-							notes = 
-							completedMessage = 
-						}
-						PARAM
-						{
-							name = ParameterDelegate`1
-							id = Situation: Landed or Splashed down
-							state = Incomplete
-							disableOnStateChange = False
-							values = 0,0,0,0,0
-							ContractIdentifier = Strategia.STG_BodyProbes
-							title = Situation: Landed or Splashed down
-							notes = 
-							completedMessage = 
-						}
-					}
-				}
-			}
 		}
 	}
 	SCENARIO
@@ -2937,7 +2914,7 @@ GAME
 	{
 		name = Funding
 		scene = 7, 8, 5, 6
-		funds = 950695.03479166247
+		funds = 920695.03479166247
 	}
 	SCENARIO
 	{
@@ -3147,7 +3124,7 @@ GAME
 	{
 		name = ResearchAndDevelopment
 		scene = 7, 8, 5, 6
-		sci = 402.903534
+		sci = 389.836884
 		Tech
 		{
 			id = start
@@ -4067,9 +4044,9 @@ GAME
 			id = seismicScan@MunSrfLandedMidlandCraters
 			title = Seismic Scan from The Mun's Midland Craters
 			dsc = 2.5
-			scv = 0.628350079
+			scv = 0.702476978
 			sbv = 4
-			sci = 32.7051926
+			sci = 26.1820278
 			cap = 88
 		}
 		Science
@@ -4117,55 +4094,15 @@ GAME
 			id = seismicScan@MunSrfLandedMidlands
 			title = Seismic Scan from The Mun's Midlands
 			dsc = 2.5
-			scv = 0.589685917
+			scv = 0.664043605
 			sbv = 4
-			sci = 36.1076393
+			sci = 29.5641632
 			cap = 88
 		}
 		Science
 		{
 			id = magScan@MunSrfLandedMidlands
 			title = Magnetometer Scan from The Mun's Midlands
-			dsc = 1
-			scv = 1
-			sbv = 4
-			sci = 0
-			cap = 16
-		}
-		Science
-		{
-			id = temperatureScan@MunSrfLandedPoles
-			title = Temperature Scan from The Mun's Poles
-			dsc = 1
-			scv = 1
-			sbv = 4
-			sci = 0
-			cap = 32
-		}
-		Science
-		{
-			id = barometerScan@MunSrfLandedPoles
-			title = Atmospheric Pressure Scan from The Mun's Poles
-			dsc = 1
-			scv = 1
-			sbv = 4
-			sci = 0
-			cap = 48
-		}
-		Science
-		{
-			id = seismicScan@MunSrfLandedPoles
-			title = Seismic Scan from The Mun's Poles
-			dsc = 2.5
-			scv = 1
-			sbv = 4
-			sci = 0
-			cap = 88
-		}
-		Science
-		{
-			id = magScan@MunSrfLandedPoles
-			title = Magnetometer Scan from The Mun's Poles
 			dsc = 1
 			scv = 1
 			sbv = 4
@@ -4182,7 +4119,7 @@ GAME
 	{
 		name = Reputation
 		scene = 7, 8, 5, 6
-		rep = 427.404297
+		rep = 358.212433
 	}
 	SCENARIO
 	{
@@ -4202,6 +4139,41 @@ GAME
 				EFFECT
 				{
 					name = ExplorationFundingEffect
+				}
+			}
+			STRATEGY
+			{
+				name = MoonProgram2
+				date = 195269.30524656264
+				factor = 0.100000001
+				EFFECT
+				{
+					name = IncompatibleGroupRequirement
+				}
+				EFFECT
+				{
+					name = CurrencyOperationByBody
+				}
+				EFFECT
+				{
+					name = CurrencyOperationByBody
+				}
+				EFFECT
+				{
+					name = ContractEffect
+				}
+				EFFECT
+				{
+					name = ContractWeightBooster
+					bonusGiven = True
+				}
+				EFFECT
+				{
+					name = OrbitBodyRequirement
+				}
+				EFFECT
+				{
+					name = OrbitBodyRequirement
 				}
 			}
 		}
@@ -4558,7 +4530,7 @@ GAME
 			Contracts_Window_Mission
 			{
 				MissionName = MasterMission
-				ActiveListID = b674b8b7-c7c1-4b04-b7d9-a6024df7aef7|N|False,ca27116e-2275-48a7-9687-c66ddb19df87|N|False,2874da8b-a31b-43b3-ba36-fb200986a787|N|True
+				ActiveListID = b674b8b7-c7c1-4b04-b7d9-a6024df7aef7|N|False,ca27116e-2275-48a7-9687-c66ddb19df87|N|False,2874da8b-a31b-43b3-ba36-fb200986a787|N|True,e9a54dcc-61a0-40f2-ac9a-5595c044dd27|N|False
 				HiddenListID = 
 				VesselIDs = 
 				AscendingSort = True
@@ -7247,8 +7219,8 @@ GAME
 					{
 						seismicScan@MunSrfLandedMidlandCraters
 						{
-							size = 28.845260479325923
-							buff = 0.71399507292835518
+							size = 32.478607256304429
+							buff = 1.1576255978183241
 							send = True
 						}
 						magScan@MunSrfLandedMidlandCraters
@@ -7323,8 +7295,8 @@ GAME
 					{
 						seismicScan@MunSrfLandedMidlands
 						{
-							size = 26.402606152398103
-							buff = 1.0301176960201177
+							size = 30.019748619527572
+							buff = 1.5026484280827079
 							send = True
 						}
 						temperatureScan@MunSrfLandedMidlands
@@ -7409,30 +7381,6 @@ GAME
 					location = 3475205169
 					files
 					{
-						seismicScan@MunSrfLandedPoles
-						{
-							size = 48.842057167986539
-							buff = 1.1579428320130543
-							send = True
-						}
-						temperatureScan@MunSrfLandedPoles
-						{
-							size = 8
-							buff = 0
-							send = True
-						}
-						barometerScan@MunSrfLandedPoles
-						{
-							size = 12
-							buff = 0
-							send = True
-						}
-						magScan@MunSrfLandedPoles
-						{
-							size = 4
-							buff = 0
-							send = True
-						}
 					}
 					samples
 					{
@@ -7476,49 +7424,49 @@ GAME
 			Dres
 			{
 				storm_time = 7165697.2537029982
-				storm_age = 452080.63902905071
+				storm_age = 451974.69219013304
 				storm_state = 0
 				msg_storm = 0
 			}
 			Eeloo
 			{
 				storm_time = 5176477.8975660345
-				storm_age = 204870.85260320379
+				storm_age = 204822.8404360883
 				storm_state = 0
 				msg_storm = 0
 			}
 			Kerbin
 			{
 				storm_time = 6725531.2100823643
-				storm_age = 1357552.1243635938
+				storm_age = 1357233.9735793006
 				storm_state = 0
 				msg_storm = 0
 			}
 			Moho
 			{
 				storm_time = 6824322.4395179758
-				storm_age = 3507893.0655336468
+				storm_age = 3507070.6087460122
 				storm_state = 0
 				msg_storm = 0
 			}
 			Eve
 			{
 				storm_time = 4113620.5208458104
-				storm_age = 1877672.408597033
+				storm_age = 1877232.1723824749
 				storm_state = 0
 				msg_storm = 0
 			}
 			Duna
 			{
 				storm_time = 7987904.7919753492
-				storm_age = 890787.50210856413
+				storm_age = 890578.74173851893
 				storm_state = 0
 				msg_storm = 0
 			}
 			Jool
 			{
 				storm_time = 4800854.1079987092
-				storm_age = 268455.4846010239
+				storm_age = 268392.57089081267
 				storm_state = 0
 				msg_storm = 0
 			}
@@ -7561,8 +7509,8 @@ GAME
 		scene = 7, 5
 		STRATEGIES
 		{
-			MoonProgram0 = True
-			MoonProgram1 = True
+			MoonProgram0 = False
+			MoonProgram1 = False
 			PlanetaryProgram0 = False
 			PlanetaryProgram1 = False
 			PlanetaryProgram2 = False
@@ -7576,7 +7524,7 @@ GAME
 			MassiveLaunches2 = True
 			MassiveLaunches3 = False
 			SlotMachine1 = True
-			SlotMachine2 = True
+			SlotMachine2 = False
 			SlotMachine3 = False
 			PilotFocus1 = True
 			PilotFocus2 = True
@@ -7588,13 +7536,13 @@ GAME
 			ScientistFocus2 = True
 			ScientistFocus3 = False
 			TechStagnation1 = True
-			TechStagnation2 = True
+			TechStagnation2 = False
 			TechStagnation3 = False
 			FreeIceCream1 = True
 			FreeIceCream2 = True
 			FreeIceCream3 = False
 			MediaCircus1 = True
-			MediaCircus2 = True
+			MediaCircus2 = False
 			MediaCircus3 = False
 			BoldlyGo1 = True
 			BoldlyGo2 = True
@@ -7606,12 +7554,12 @@ GAME
 			LocalScience2 = True
 			LocalScience3 = False
 			MoonProgram2 = False
-			MoonProgram3 = True
-			PlanetaryProgram5 = True
-			PlanetaryProgram6 = True
-			PlanetaryProgram7 = True
-			PlanetaryProgram8 = True
-			PlanetaryProgram9 = True
+			MoonProgram3 = False
+			PlanetaryProgram5 = False
+			PlanetaryProgram6 = False
+			PlanetaryProgram7 = False
+			PlanetaryProgram8 = False
+			PlanetaryProgram9 = False
 			ImpactorProbes = False
 			FlyByProbes = False
 			Local Science I = True
@@ -7634,17 +7582,6 @@ GAME
 			Scientist Focus II = True
 			Massive Scale Launches II = True
 			To Boldly Go II = True
-			The Mun Program = True
-			The Minmus Program = True
-			Contract Slot Machine II = True
-			Stagnated Research II = True
-			Media Circus II = True
-			Minmus Probes = True
-			Moho Probes = True
-			Eve Probes = True
-			Duna Probes = True
-			Dres Probes = True
-			Eeloo Probes = True
 		}
 		MSG_STRATEGIES
 		{
@@ -7701,8 +7638,8 @@ GAME
 	FLIGHTSTATE
 	{
 		version = 1.3.1
-		UT = 1355029.6510788081
-		activeVessel = 0
+		UT = 1354711.4602875551
+		activeVessel = 19
 		mapViewFiltering = 3070
 		commNetUIModeTracking = Network
 		commNetUIModeFlight = Path
@@ -8630,7 +8567,7 @@ GAME
 				{
 					name = ModuleCryoTank
 					isEnabled = True
-					LastUpdateTime = 1208697.40100029
+					LastUpdateTime = 1208379.15020904
 					CoolingEnabled = False
 					BoiloffOccuring = False
 					stagingEnabled = True
@@ -12170,7 +12107,7 @@ GAME
 				{
 					name = ModuleCryoTank
 					isEnabled = True
-					LastUpdateTime = 1159697.48583228
+					LastUpdateTime = 1159379.45504103
 					CoolingEnabled = False
 					BoiloffOccuring = False
 					stagingEnabled = True
@@ -16077,7 +16014,7 @@ GAME
 				{
 					name = ModuleCryoTank
 					isEnabled = True
-					LastUpdateTime = 696597.326814583
+					LastUpdateTime = 696279.31602333
 					CoolingEnabled = False
 					BoiloffOccuring = False
 					stagingEnabled = True
@@ -23190,7 +23127,7 @@ GAME
 				{
 					name = ModuleCryoTank
 					isEnabled = True
-					LastUpdateTime = 230275.884005618
+					LastUpdateTime = 229957.653214365
 					CoolingEnabled = False
 					BoiloffOccuring = False
 					stagingEnabled = True
@@ -25792,7 +25729,7 @@ GAME
 				{
 					name = ModuleCryoTank
 					isEnabled = True
-					LastUpdateTime = 229454.801465796
+					LastUpdateTime = 229136.570674543
 					CoolingEnabled = False
 					BoiloffOccuring = True
 					stagingEnabled = True
@@ -25986,7 +25923,7 @@ GAME
 				{
 					name = ModuleCryoTank
 					isEnabled = True
-					LastUpdateTime = 229454.801465796
+					LastUpdateTime = 229136.570674543
 					CoolingEnabled = False
 					BoiloffOccuring = True
 					stagingEnabled = True
@@ -26015,7 +25952,7 @@ GAME
 				RESOURCE
 				{
 					name = LqdHydrogen
-					amount = 1481.9741526483333
+					amount = 1482.186199241035
 					maxAmount = 2400
 					flowState = True
 					isTweakable = True
@@ -26180,7 +26117,7 @@ GAME
 				{
 					name = ModuleCryoTank
 					isEnabled = True
-					LastUpdateTime = 229454.801465796
+					LastUpdateTime = 229136.570674543
 					CoolingEnabled = False
 					BoiloffOccuring = True
 					stagingEnabled = True
@@ -27084,7 +27021,7 @@ GAME
 				{
 					name = ModuleCryoTank
 					isEnabled = True
-					LastUpdateTime = 152131.947070306
+					LastUpdateTime = 151813.676279053
 					CoolingEnabled = False
 					BoiloffOccuring = False
 					stagingEnabled = True
@@ -28812,7 +28749,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 167.34388671599555
+					amount = 197.89631768926986
 					maxAmount = 200
 					flowState = True
 					isTweakable = True
@@ -29665,7 +29602,7 @@ GAME
 				{
 					name = ModuleCryoTank
 					isEnabled = True
-					LastUpdateTime = 124863.528358398
+					LastUpdateTime = 124545.277567144
 					CoolingEnabled = False
 					BoiloffOccuring = False
 					stagingEnabled = True
@@ -31393,7 +31330,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 0
+					amount = 7.282499247217193
 					maxAmount = 200
 					flowState = True
 					isTweakable = True
@@ -32246,7 +32183,7 @@ GAME
 				{
 					name = ModuleCryoTank
 					isEnabled = True
-					LastUpdateTime = 65794.450116087
+					LastUpdateTime = 65476.1993248339
 					CoolingEnabled = False
 					BoiloffOccuring = False
 					stagingEnabled = True
@@ -35937,7 +35874,7 @@ GAME
 				{
 					name = ModuleCryoTank
 					isEnabled = True
-					LastUpdateTime = 40012.6516636519
+					LastUpdateTime = 39694.4008723989
 					CoolingEnabled = False
 					BoiloffOccuring = True
 					stagingEnabled = True
@@ -35966,7 +35903,7 @@ GAME
 				RESOURCE
 				{
 					name = LqdHydrogen
-					amount = 1387.842892174933
+					amount = 1388.0550987672445
 					maxAmount = 9600
 					flowState = True
 					isTweakable = True
@@ -38570,7 +38507,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 484.95101574747434
+					amount = 413.29140861538338
 					maxAmount = 1000
 					flowState = True
 					isTweakable = True
@@ -38956,7 +38893,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 96.99020314948784
+					amount = 82.658281723068839
 					maxAmount = 200
 					flowState = True
 					isTweakable = True
@@ -40691,13 +40628,13 @@ GAME
 			cMod = 0
 			ORBIT
 			{
-				SMA = 24387907.499088436
-				ECC = 0.99999999999999989
-				INC = 0.0047688712976971569
+				SMA = 0
+				ECC = 1
+				INC = 13.689032900321424
 				LPE = 90
-				LAN = 144.92708430332573
-				MNA = 3.1415926207170166
-				EPH = 1354969.7910787524
+				LAN = 278.70190384102978
+				MNA = 0
+				EPH = 1353226.757684899
 				REF = 2
 				IDENT = Mun
 			}
@@ -41083,7 +41020,7 @@ GAME
 				{
 					name = ModuleCryoTank
 					isEnabled = True
-					LastUpdateTime = 7781.84943611757
+					LastUpdateTime = 7463.83864486474
 					CoolingEnabled = False
 					BoiloffOccuring = False
 					stagingEnabled = True
@@ -44919,13 +44856,13 @@ GAME
 			cMod = 0
 			ORBIT
 			{
-				SMA = 24387907.499088436
-				ECC = 0.99999999999999989
-				INC = 0.0047688712976971569
-				LPE = 90
-				LAN = 144.92708430332573
-				MNA = 3.1415926207170166
-				EPH = 1354969.7910787524
+				SMA = 0
+				ECC = 1
+				INC = 27.066360066886084
+				LPE = 270
+				LAN = 274.67720703994246
+				MNA = 0
+				EPH = 1353226.757684899
 				REF = 2
 				IDENT = Mun
 			}
@@ -45311,7 +45248,7 @@ GAME
 				{
 					name = ModuleCryoTank
 					isEnabled = True
-					LastUpdateTime = 6259.61839302024
+					LastUpdateTime = 5941.3876017672
 					CoolingEnabled = False
 					BoiloffOccuring = False
 					stagingEnabled = True
@@ -49122,38 +49059,38 @@ GAME
 			pid = 630d67f143c64f9bbf023ce9c656d14f
 			name = Mun Lander 3
 			type = Lander
-			sit = LANDED
-			landed = True
+			sit = SUB_ORBITAL
+			landed = False
 			landedAt = 
 			displaylandedAt = 
 			splashed = False
-			met = 1721.3133938331157
+			met = 1463.0026026358828
 			lct = 1353248.4376849192
-			lastUT = 1354969.7910787524
+			lastUT = 1354711.4602875551
 			root = 0
-			lat = -87.436833225447103
-			lon = 119.50570272286828
-			alt = 23849.524319117889
-			hgt = 0.617783308
-			nrm = -0.147848606,0.969792604,0.194017962
-			rot = -0.245851085,0.0313877761,0.968783021,0.00561527442
-			CoM = -1.76485628E-07,0.295568645,-5.01051545E-07
+			lat = -85.326018025555882
+			lon = 150.59701896907504
+			alt = 43992.413871386903
+			hgt = 19993.6309
+			nrm = -0.0733950064,0.605261445,-0.792636037
+			rot = -0.654069901,0.344238877,0.612553418,0.280125737
+			CoM = 1.39325732E-06,0.266159832,1.25914664E-06
 			stg = 1
 			prst = False
 			ref = 3475205169
 			ctrl = True
-			cPch = 0.1880001
-			cHdg = -2.244001
+			cPch = 0.6
+			cHdg = -10.86
 			cMod = 0
 			ORBIT
 			{
-				SMA = 24387907.499088436
-				ECC = 0.99999999999999989
-				INC = 0.0047688712976971569
-				LPE = 90
-				LAN = 144.92708430332573
-				MNA = 3.1415926207170166
-				EPH = 1354969.7910787524
+				SMA = 473589.93669331557
+				ECC = 0.88543011713732456
+				INC = 92.164748062351535
+				LPE = 78.834268871113665
+				LAN = 182.63508695936446
+				MNA = -2.2386251433595743
+				EPH = 1354711.4602875551
 				REF = 2
 				IDENT = Mun
 			}
@@ -49182,8 +49119,8 @@ GAME
 				attN = top2, -1
 				mass = 0.0199999996
 				shielded = False
-				temp = 222.63870034317975
-				tempExt = 222.43072399103326
+				temp = 220.07402404167428
+				tempExt = 219.65507536962636
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -49191,7 +49128,7 @@ GAME
 				autostrutMode = Off
 				rigidAttachment = False
 				flag = ContractConfigurator/Agencies/CollectScience
-				rTrf = microEngine (Mun Lander 3)
+				rTrf = microEngine
 				modCost = 0
 				EVENTS
 				{
@@ -49418,8 +49355,8 @@ GAME
 				attN = bottom, 0
 				mass = 0.0249999985
 				shielded = False
-				temp = 222.04431526706867
-				tempExt = 221.93971827500459
+				temp = 220.26474149381696
+				tempExt = 219.42712156700409
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -49539,7 +49476,7 @@ GAME
 				{
 					name = ModuleCryoTank
 					isEnabled = True
-					LastUpdateTime = 1781.09339388879
+					LastUpdateTime = 0
 					CoolingEnabled = False
 					BoiloffOccuring = False
 					stagingEnabled = True
@@ -49568,7 +49505,7 @@ GAME
 				RESOURCE
 				{
 					name = LiquidFuel
-					amount = 1.2267419649029769
+					amount = 9.3085219351161328
 					maxAmount = 18
 					flowState = True
 					isTweakable = True
@@ -49579,7 +49516,7 @@ GAME
 				RESOURCE
 				{
 					name = Oxidizer
-					amount = 1.499350303001362
+					amount = 11.377081853472063
 					maxAmount = 22
 					flowState = True
 					isTweakable = True
@@ -49613,8 +49550,8 @@ GAME
 				srfN = srfAttach, 1
 				mass = 0.00499999989
 				shielded = False
-				temp = 222.02563028832125
-				tempExt = 221.860842710377
+				temp = 220.18086235222626
+				tempExt = 219.51576659133082
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -49825,8 +49762,8 @@ GAME
 				srfN = srfAttach, 1
 				mass = 0.00499999989
 				shielded = False
-				temp = 222.02567039192121
-				tempExt = 221.86099257162402
+				temp = 220.18140077384334
+				tempExt = 219.51929978053928
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -50037,8 +49974,8 @@ GAME
 				srfN = srfAttach, 1
 				mass = 0.00499999989
 				shielded = False
-				temp = 222.46071042292897
-				tempExt = 222.53857433556638
+				temp = 220.1809193099532
+				tempExt = 219.51655642295404
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -50249,8 +50186,8 @@ GAME
 				srfN = srfAttach, 1
 				mass = 0.00499999989
 				shielded = False
-				temp = 222.02567549781739
-				tempExt = 221.8608838659114
+				temp = 220.18115327736533
+				tempExt = 219.51600736538887
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -50461,8 +50398,8 @@ GAME
 				srfN = srfAttach, 1
 				mass = 0.00797161553
 				shielded = False
-				temp = 221.98728737711093
-				tempExt = 221.76083441075315
+				temp = 219.93491267967673
+				tempExt = 219.25442129687369
 				tempExtUnexp = 4
 				expt = 0
 				state = 0
@@ -50510,7 +50447,7 @@ GAME
 					isEnabled = True
 					springTweakable = 1
 					damperTweakable = 1
-					suspensionPos = (0.0525925197, -0.64258945, -0.000101157326)
+					suspensionPos = (0.0525944866, -0.642582119, -0.000100173849)
 					autoBoost = 0
 					stagingEnabled = True
 					EVENTS
@@ -50713,8 +50650,8 @@ GAME
 				srfN = srfAttach, 1
 				mass = 0.00797161553
 				shielded = False
-				temp = 222.18003273758981
-				tempExt = 222.32037558429147
+				temp = 219.99743111069628
+				tempExt = 219.76186401460401
 				tempExtUnexp = 4
 				expt = 0
 				state = 0
@@ -50762,7 +50699,7 @@ GAME
 					isEnabled = True
 					springTweakable = 1
 					damperTweakable = 1
-					suspensionPos = (0.0525964983, -0.6425758, -0.000100397367)
+					suspensionPos = (0.0525948294, -0.642582238, -0.000100218553)
 					autoBoost = 0
 					stagingEnabled = True
 					EVENTS
@@ -50965,8 +50902,8 @@ GAME
 				srfN = srfAttach, 1
 				mass = 0.00797161553
 				shielded = False
-				temp = 222.65176624075909
-				tempExt = 222.91576216831675
+				temp = 220.02508197397992
+				tempExt = 219.83083469305345
 				tempExtUnexp = 4
 				expt = 0
 				state = 0
@@ -50990,7 +50927,7 @@ GAME
 					name = ModuleWheelBase
 					isEnabled = True
 					wheelType = LEG
-					isGrounded = True
+					isGrounded = False
 					autoFriction = False
 					frictionMultiplier = 1
 					stagingEnabled = True
@@ -51014,7 +50951,7 @@ GAME
 					isEnabled = True
 					springTweakable = 1
 					damperTweakable = 1
-					suspensionPos = (0.0525905527, -0.575595319, -9.91903871E-05)
+					suspensionPos = (0.0525947101, -0.642581999, -0.000100144047)
 					autoBoost = 0
 					stagingEnabled = True
 					EVENTS
@@ -51217,8 +51154,8 @@ GAME
 				srfN = srfAttach, 1
 				mass = 0.00797161553
 				shielded = False
-				temp = 222.33974691553834
-				tempExt = 222.54189726078096
+				temp = 219.98709491548033
+				tempExt = 219.31770399594336
 				tempExtUnexp = 4
 				expt = 0
 				state = 0
@@ -51242,7 +51179,7 @@ GAME
 					name = ModuleWheelBase
 					isEnabled = True
 					wheelType = LEG
-					isGrounded = True
+					isGrounded = False
 					autoFriction = False
 					frictionMultiplier = 1
 					stagingEnabled = True
@@ -51266,7 +51203,7 @@ GAME
 					isEnabled = True
 					springTweakable = 1
 					damperTweakable = 1
-					suspensionPos = (0.052596245, -0.531443357, -0.000100270707)
+					suspensionPos = (0.0525947995, -0.642582119, -0.00010005464)
 					autoBoost = 0
 					stagingEnabled = True
 					EVENTS
@@ -51468,8 +51405,8 @@ GAME
 				attN = top, -1
 				mass = 0.0199999996
 				shielded = False
-				temp = 223.58429072375219
-				tempExt = 223.15247183713714
+				temp = 220.4480001480575
+				tempExt = 220.02412373468221
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -51662,8 +51599,8 @@ GAME
 				attN = top, -1
 				mass = 0.0199999996
 				shielded = False
-				temp = 223.58422202857096
-				tempExt = 223.15331235396658
+				temp = 220.4550217540542
+				tempExt = 220.0300929876382
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -51856,8 +51793,8 @@ GAME
 				attN = top, 13
 				mass = 0.0799999982
 				shielded = False
-				temp = 221.90093647425689
-				tempExt = 221.78111812864049
+				temp = 220.39976730832151
+				tempExt = 219.63460917925974
 				tempExtUnexp = 4
 				expt = 0
 				state = 0
@@ -52202,7 +52139,6 @@ GAME
 						0 = Escape,Mun
 						0 = Orbit,Mun
 						0 = Suborbit,Mun
-						0 = Land,Mun
 					}
 					UPGRADESAPPLIED
 					{
@@ -52211,7 +52147,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 189.66781793810944
+					amount = 154.01846313476563
 					maxAmount = 200
 					flowState = True
 					isTweakable = True
@@ -52244,8 +52180,8 @@ GAME
 				attN = bottom, 12
 				mass = 0.00999999978
 				shielded = False
-				temp = 221.8028520132311
-				tempExt = 221.62834077649228
+				temp = 220.36759505440159
+				tempExt = 219.59797505433795
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -52347,7 +52283,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 189.66779328524169
+					amount = 154.01834102068071
 					maxAmount = 200
 					flowState = True
 					isTweakable = True
@@ -52379,8 +52315,8 @@ GAME
 				attN = bottom, 13
 				mass = 0.0149999997
 				shielded = False
-				temp = 221.57974120905934
-				tempExt = 221.73320072574492
+				temp = 220.41857093429621
+				tempExt = 219.45291328245114
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -52592,8 +52528,8 @@ GAME
 				srfN = srfAttach, 13
 				mass = 0.00499999989
 				shielded = False
-				temp = 221.76425681714031
-				tempExt = 221.59200538115812
+				temp = 220.40889793197846
+				tempExt = 219.59425672390938
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -52753,8 +52689,8 @@ GAME
 				srfN = srfAttach, 13
 				mass = 0.00499999989
 				shielded = False
-				temp = 221.72383083307977
-				tempExt = 221.57335337815482
+				temp = 220.3550317576979
+				tempExt = 219.74271301932063
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -52918,8 +52854,8 @@ GAME
 				srfN = srfAttach, 13
 				mass = 0.00499999989
 				shielded = False
-				temp = 221.72436605683779
-				tempExt = 221.5744413123611
+				temp = 220.38648565196203
+				tempExt = 219.71517477641675
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -53080,8 +53016,8 @@ GAME
 				attN = bottom, -1
 				mass = 0.00999999978
 				shielded = False
-				temp = 221.34826499862754
-				tempExt = 221.41610308569511
+				temp = 220.25547777880698
+				tempExt = 219.65075152407195
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -53310,9 +53246,9 @@ GAME
 			}
 			CTRLSTATE
 			{
-				pitch = -0.0938586742
-				yaw = -0.0429692157
-				roll = 0.00130123028
+				pitch = -0.315870821
+				yaw = 0.0881963
+				roll = -0.00083010731
 				trimPitch = 0
 				trimYaw = 0
 				trimRoll = 0

@@ -221,7 +221,7 @@ GAME
 	{
 		name = ContractSystem
 		scene = 7, 8, 5, 6
-		update = 1355019.811078799
+		update = 1355039.8110788176
 		version = 1.3.1
 		WEIGHTS
 		{
@@ -7247,8 +7247,8 @@ GAME
 					{
 						seismicScan@MunSrfLandedMidlandCraters
 						{
-							size = 28.845260479325923
-							buff = 0.71399507292835518
+							size = 28.658752822885823
+							buff = 0.90050272936846187
 							send = True
 						}
 						magScan@MunSrfLandedMidlandCraters
@@ -7323,8 +7323,8 @@ GAME
 					{
 						seismicScan@MunSrfLandedMidlands
 						{
-							size = 26.402606152398103
-							buff = 1.0301176960201177
+							size = 26.220033253431971
+							buff = 1.2126905949862437
 							send = True
 						}
 						temperatureScan@MunSrfLandedMidlands
@@ -7411,8 +7411,8 @@ GAME
 					{
 						seismicScan@MunSrfLandedPoles
 						{
-							size = 48.842057167986539
-							buff = 1.1579428320130543
+							size = 48.670011524465366
+							buff = 1.3299884755342544
 							send = True
 						}
 						temperatureScan@MunSrfLandedPoles
@@ -7476,49 +7476,49 @@ GAME
 			Dres
 			{
 				storm_time = 7165697.2537029982
-				storm_age = 452080.63902905071
+				storm_age = 452086.00046190846
 				storm_state = 0
 				msg_storm = 0
 			}
 			Eeloo
 			{
 				storm_time = 5176477.8975660345
-				storm_age = 204870.85260320379
+				storm_age = 204873.28225578222
 				storm_state = 0
 				msg_storm = 0
 			}
 			Kerbin
 			{
 				storm_time = 6725531.2100823643
-				storm_age = 1357552.1243635938
+				storm_age = 1357568.2243632339
 				storm_state = 0
 				msg_storm = 0
 			}
 			Moho
 			{
 				storm_time = 6824322.4395179758
-				storm_age = 3507893.0655336468
+				storm_age = 3507934.667598926
 				storm_state = 0
 				msg_storm = 0
 			}
 			Eve
 			{
 				storm_time = 4113620.5208458104
-				storm_age = 1877672.408597033
+				storm_age = 1877694.6769228731
 				storm_state = 0
 				msg_storm = 0
 			}
 			Duna
 			{
 				storm_time = 7987904.7919753492
-				storm_age = 890787.50210856413
+				storm_age = 890798.15827696258
 				storm_state = 0
 				msg_storm = 0
 			}
 			Jool
 			{
 				storm_time = 4800854.1079987092
-				storm_age = 268455.4846010239
+				storm_age = 268458.69602994836
 				storm_state = 0
 				msg_storm = 0
 			}
@@ -7701,7 +7701,7 @@ GAME
 	FLIGHTSTATE
 	{
 		version = 1.3.1
-		UT = 1355029.6510788081
+		UT = 1355045.7910788232
 		activeVessel = 0
 		mapViewFiltering = 3070
 		commNetUIModeTracking = Network
@@ -8630,7 +8630,7 @@ GAME
 				{
 					name = ModuleCryoTank
 					isEnabled = True
-					LastUpdateTime = 1208697.40100029
+					LastUpdateTime = 1208713.48100031
 					CoolingEnabled = False
 					BoiloffOccuring = False
 					stagingEnabled = True
@@ -12170,7 +12170,7 @@ GAME
 				{
 					name = ModuleCryoTank
 					isEnabled = True
-					LastUpdateTime = 1159697.48583228
+					LastUpdateTime = 1159713.80583229
 					CoolingEnabled = False
 					BoiloffOccuring = False
 					stagingEnabled = True
@@ -16077,7 +16077,7 @@ GAME
 				{
 					name = ModuleCryoTank
 					isEnabled = True
-					LastUpdateTime = 696597.326814583
+					LastUpdateTime = 696613.646814598
 					CoolingEnabled = False
 					BoiloffOccuring = False
 					stagingEnabled = True
@@ -23190,7 +23190,7 @@ GAME
 				{
 					name = ModuleCryoTank
 					isEnabled = True
-					LastUpdateTime = 230275.884005618
+					LastUpdateTime = 230291.964005633
 					CoolingEnabled = False
 					BoiloffOccuring = False
 					stagingEnabled = True
@@ -25792,7 +25792,7 @@ GAME
 				{
 					name = ModuleCryoTank
 					isEnabled = True
-					LastUpdateTime = 229454.801465796
+					LastUpdateTime = 229470.881465811
 					CoolingEnabled = False
 					BoiloffOccuring = True
 					stagingEnabled = True
@@ -25986,7 +25986,7 @@ GAME
 				{
 					name = ModuleCryoTank
 					isEnabled = True
-					LastUpdateTime = 229454.801465796
+					LastUpdateTime = 229470.881465811
 					CoolingEnabled = False
 					BoiloffOccuring = True
 					stagingEnabled = True
@@ -26015,7 +26015,7 @@ GAME
 				RESOURCE
 				{
 					name = LqdHydrogen
-					amount = 1481.9741526483333
+					amount = 1481.9634326781581
 					maxAmount = 2400
 					flowState = True
 					isTweakable = True
@@ -26180,7 +26180,7 @@ GAME
 				{
 					name = ModuleCryoTank
 					isEnabled = True
-					LastUpdateTime = 229454.801465796
+					LastUpdateTime = 229470.881465811
 					CoolingEnabled = False
 					BoiloffOccuring = True
 					stagingEnabled = True
@@ -27084,7 +27084,7 @@ GAME
 				{
 					name = ModuleCryoTank
 					isEnabled = True
-					LastUpdateTime = 152131.947070306
+					LastUpdateTime = 152148.027070321
 					CoolingEnabled = False
 					BoiloffOccuring = False
 					stagingEnabled = True
@@ -28812,7 +28812,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 167.34388671599555
+					amount = 163.6766867979637
 					maxAmount = 200
 					flowState = True
 					isTweakable = True
@@ -29665,7 +29665,7 @@ GAME
 				{
 					name = ModuleCryoTank
 					isEnabled = True
-					LastUpdateTime = 124863.528358398
+					LastUpdateTime = 124879.608358413
 					CoolingEnabled = False
 					BoiloffOccuring = False
 					stagingEnabled = True
@@ -31393,7 +31393,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 0
+					amount = 0.33121271388058027
 					maxAmount = 200
 					flowState = True
 					isTweakable = True
@@ -32246,7 +32246,7 @@ GAME
 				{
 					name = ModuleCryoTank
 					isEnabled = True
-					LastUpdateTime = 65794.450116087
+					LastUpdateTime = 65810.530116102
 					CoolingEnabled = False
 					BoiloffOccuring = False
 					stagingEnabled = True
@@ -33974,7 +33974,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 200
+					amount = 199.79491804360885
 					maxAmount = 200
 					flowState = True
 					isTweakable = True
@@ -35937,7 +35937,7 @@ GAME
 				{
 					name = ModuleCryoTank
 					isEnabled = True
-					LastUpdateTime = 40012.6516636519
+					LastUpdateTime = 40028.7116636669
 					CoolingEnabled = False
 					BoiloffOccuring = True
 					stagingEnabled = True
@@ -35966,7 +35966,7 @@ GAME
 				RESOURCE
 				{
 					name = LqdHydrogen
-					amount = 1387.842892174933
+					amount = 1387.8321722047579
 					maxAmount = 9600
 					flowState = True
 					isTweakable = True
@@ -38570,7 +38570,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 484.95101574747434
+					amount = 484.41501575945335
 					maxAmount = 1000
 					flowState = True
 					isTweakable = True
@@ -38956,7 +38956,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 96.99020314948784
+					amount = 96.883003151883642
 					maxAmount = 200
 					flowState = True
 					isTweakable = True
@@ -41083,7 +41083,7 @@ GAME
 				{
 					name = ModuleCryoTank
 					isEnabled = True
-					LastUpdateTime = 7781.84943611757
+					LastUpdateTime = 7798.16943613277
 					CoolingEnabled = False
 					BoiloffOccuring = False
 					stagingEnabled = True
@@ -45311,7 +45311,7 @@ GAME
 				{
 					name = ModuleCryoTank
 					isEnabled = True
-					LastUpdateTime = 6259.61839302024
+					LastUpdateTime = 6275.69839303521
 					CoolingEnabled = False
 					BoiloffOccuring = False
 					stagingEnabled = True
@@ -49539,7 +49539,7 @@ GAME
 				{
 					name = ModuleCryoTank
 					isEnabled = True
-					LastUpdateTime = 1781.09339388879
+					LastUpdateTime = 1797.17339390377
 					CoolingEnabled = False
 					BoiloffOccuring = False
 					stagingEnabled = True
@@ -52211,7 +52211,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 189.66781793810944
+					amount = 192.4983697843715
 					maxAmount = 200
 					flowState = True
 					isTweakable = True
@@ -52347,7 +52347,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 189.66779328524169
+					amount = 192.49835188527743
 					maxAmount = 200
 					flowState = True
 					isTweakable = True
