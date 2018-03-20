@@ -221,7 +221,7 @@ GAME
 	{
 		name = ContractSystem
 		scene = 7, 8, 5, 6
-		update = 2614799.0139233861
+		update = 2673317.2215504381
 		version = 1.3.1
 		WEIGHTS
 		{
@@ -232,7 +232,7 @@ GAME
 			CrossBelt = 42
 			DMAsteroidSurveyContract = 30
 			DMSurveyContract = 30
-			DMMagneticSurveyContract = 25
+			DMMagneticSurveyContract = 24
 			DMReconContract = 30
 			DMAnomalyContract = 30
 			ConfiguredContract = 30
@@ -240,14 +240,14 @@ GAME
 			SurveyContract = 10
 			StationContract = 26
 			SentinelContract = 30
-			SatelliteContract = 56
+			SatelliteContract = 54
 			ISRUContract = 30
 			ExplorationContract = 30
-			BaseContract = 30
+			BaseContract = 29
 			ARMContract = 30
-			RecoverAsset = 42
+			RecoverAsset = 41
 			PlantFlag = 30
-			PartTest = 46
+			PartTest = 45
 			GrandTour = 30
 			CollectScience = 90
 			Eeloo = 30
@@ -264,8 +264,8 @@ GAME
 			Eve = 30
 			Moho = 30
 			Minmus = 51
-			Mun = 90
-			Kerbin = 76
+			Mun = 64
+			Kerbin = 72
 			Sun = 28
 		}
 		CONTRACTS
@@ -402,42 +402,6 @@ GAME
 			}
 			CONTRACT
 			{
-				guid = 0645d6ba-bddc-4876-8a6a-cce70a653a49
-				type = RecoverAsset
-				prestige = 0
-				seed = 690326800
-				state = Offered
-				viewed = Seen
-				agent = Maxo Construction Toys
-				deadlineType = Floating
-				expiryType = Floating
-				values = 64800,46008000,28080,64152,28080,0,9,14,2632498.01797565,0,0,0
-				targetBody = 1
-				kerbalName = Barbara Kerman
-				partName = mk1pod
-				partID = 0
-				recoveryLocation = 1
-				recoveryType = 1
-				PARAM
-				{
-					name = AcquireCrew
-					state = Incomplete
-					values = 7128,0,0,4,0
-					title = Save Barbara Kerman
-					winOn = 0
-				}
-				PARAM
-				{
-					name = RecoverKerbal
-					state = Incomplete
-					values = 0,0,0,0,0
-					title = Recover Barbara Kerman on Kerbin
-					failOn = All
-					winOn = All
-				}
-			}
-			CONTRACT
-			{
 				guid = 2874da8b-a31b-43b3-ba36-fb200986a787
 				type = RecoverAsset
 				prestige = 0
@@ -472,160 +436,6 @@ GAME
 					failOn = All
 					winOn = All
 					kerbal = Maudan Kerman
-				}
-			}
-			CONTRACT
-			{
-				guid = 2ae32ccb-c91c-4c64-a023-b6766ebdbea7
-				type = PartTest
-				prestige = 0
-				seed = -969936059
-				state = Offered
-				viewed = Seen
-				agent = O.M.B. Demolition Enterprises
-				deadlineType = Floating
-				expiryType = Floating
-				values = 43200,9201600,2160,7811.99964523315,2834.99987125397,1,0.952381,2,2631666.36333317,0,0,0
-				part = stackSeparatorMini
-				haul = False
-				dest = 1
-				sit = LANDED
-				exp = False
-				PARAM
-				{
-					name = PartTest
-					state = Incomplete
-					values = 0,0,0,0,0
-					part = stackSeparatorMini
-					body = Kerbin
-					situation = LANDED
-					uniqueID = 0.76866147190735745
-					haul = False
-					repeatability = ALWAYS
-					PARAM
-					{
-						name = ReachDestination
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						dest = 1
-						title = 
-					}
-					PARAM
-					{
-						name = ReachSituation
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						sit = LANDED
-						title = 
-					}
-				}
-			}
-			CONTRACT
-			{
-				guid = 633ced67-82d6-401b-b519-d4d9e498d428
-				type = DMMagneticSurveyContract
-				prestige = 1
-				seed = -2093840103
-				state = Offered
-				viewed = Seen
-				agent = DMagic
-				deadlineType = Floating
-				expiryType = Floating
-				values = 151200,74325605.2734375,87885,104625,120319,84,14,18,2753013.70394203,0,0,0
-				Mag_Survey_Target = 2
-				PARAM
-				{
-					name = DMLongOrbitParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					Time_Needed = 3,240,000.00
-					Time_Completed = 0.00
-					PARAM
-					{
-						name = DMOrbitalParameters
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						Type = 0
-						Orbital_Parameter = 0.350
-					}
-					PARAM
-					{
-						name = DMOrbitalParameters
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						Type = 1
-						Orbital_Parameter = 44.000
-					}
-					PARAM
-					{
-						name = DMPartRequestParameter
-						state = Incomplete
-						disableOnStateChange = False
-						values = 0,0,0,0,0
-						Body = 2
-						Requested_Parts = dmmagBoom,dmUSMagBoom|rpwsAnt,USRPWS
-						Vessels = 
-					}
-				}
-				PARAM
-				{
-					name = DMCompleteParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					Type = 1
-					Count_To_Complete = 4
-					PARAM
-					{
-						name = DMCollectScience
-						state = Incomplete
-						values = 11400,0,8,0,0
-						Name = Magnetometer Scan
-						Body = 2
-						Situation = 16
-						Biome = 
-						Type = 1
-						Returned_Science = 0
-					}
-					PARAM
-					{
-						name = DMCollectScience
-						state = Incomplete
-						values = 13800,0,5,0,0
-						Name = Magnetometer Scan
-						Body = 2
-						Situation = 32
-						Biome = 
-						Type = 1
-						Returned_Science = 0
-					}
-					PARAM
-					{
-						name = DMCollectScience
-						state = Incomplete
-						values = 13680,0,8,0,0
-						Name = Radio Plasma Wave Scan
-						Body = 2
-						Situation = 16
-						Biome = 
-						Type = 1
-						Returned_Science = 0
-					}
-					PARAM
-					{
-						name = DMCollectScience
-						state = Incomplete
-						values = 12720,0,5,0,0
-						Name = Radio Plasma Wave Scan
-						Body = 2
-						Situation = 32
-						Biome = 
-						Type = 1
-						Returned_Science = 0
-					}
 				}
 			}
 			CONTRACT
@@ -755,69 +565,6 @@ GAME
 			}
 			CONTRACT
 			{
-				guid = b2155cda-320f-443c-950f-d70b66447d5e
-				type = SatelliteContract
-				prestige = 1
-				seed = -795518564
-				state = Offered
-				viewed = Read
-				agent = DMagic
-				deadlineType = Floating
-				expiryType = Floating
-				values = 64800,46008000,14400,36900,14400,0,5,4,2660766.84102969,0,0,0
-				targetBody = 1
-				deviation = 5
-				orbitType = 6
-				placementMode = 1
-				PARAM
-				{
-					name = SpecificVesselParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					TargetBody = 1
-					targetVesselID = 2f1f47154a8e4e0ebb72423d4ad1d070
-					targetVesselPartCount = 12
-					targetVesselName = Contract sat 1
-					targetVesselSituation = ORBITING
-					partIDs = 4004951496|3675918547|346268934|1013860189|1385577738|3277144776|3462414911|3729962619|3704499069|1942292925|96895835|3008470080
-				}
-				PARAM
-				{
-					name = VesselSystemsParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					typeString = probe
-					mannedStatus = 1
-					requireNew = False
-					checkModuleTypes = Antenna|Generator
-					checkModuleDescriptions = has an antenna|can generate power
-				}
-				PARAM
-				{
-					name = SpecificOrbitParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					TargetBody = 1
-					deviationWindow = 5
-					orbitType = 6
-					inclination = 9.7310788149407532
-					eccentricity = 0.068556709782545563
-					sma = 46195186.541410819
-					lan = 190.04884332283606
-					argumentOfPeriapsis = 266.24541126105169
-					meanAnomalyAtEpoch = -0.00025468792811415657
-					epoch = 1543200.6569930192
-				}
-				PARAM
-				{
-					name = StabilityParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					holdSeconds = 10
-				}
-			}
-			CONTRACT
-			{
 				guid = d7858df3-44c4-4fb8-86ae-a94d31cab828
 				type = SatelliteContract
 				prestige = 1
@@ -922,88 +669,6 @@ GAME
 					title = Recover Willo Kerman on Kerbin
 					failOn = All
 					winOn = All
-				}
-			}
-			CONTRACT
-			{
-				guid = 11180b96-02a0-4849-820d-93124f0ea188
-				type = BaseContract
-				prestige = 2
-				seed = -2093266974
-				state = Offered
-				viewed = Seen
-				agent = Rokea Inc
-				deadlineType = Floating
-				expiryType = Floating
-				values = 16343.8258996599,97474577.6655714,248873.517480719,723461.045035522,255539.766027421,0,47.06821,50,2618157.56984169,0,0,0
-				targetBody = 2
-				capacity = 11
-				contextual = False
-				PARAM
-				{
-					name = VesselSystemsParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					typeString = outpost
-					mannedStatus = 2
-					requireNew = True
-					checkModuleTypes = Antenna|Generator|Dock
-					checkModuleDescriptions = has an antenna|has a docking port|can generate power
-					launchID = 0
-				}
-				PARAM
-				{
-					name = CrewCapacityParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					targetCapacity = 11
-				}
-				PARAM
-				{
-					name = ResourcePossessionParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					goalResource = 6000
-					resourceName = LiquidFuel
-					resourceTitle = liquid fuel
-					vesselName = outpost
-				}
-				PARAM
-				{
-					name = ResourcePossessionParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					goalResource = 7500
-					resourceName = ElectricCharge
-					resourceTitle = electric charge
-					vesselName = outpost
-				}
-				PARAM
-				{
-					name = ResourcePossessionParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					goalResource = 1500
-					resourceName = MonoPropellant
-					resourceTitle = monopropellant
-					vesselName = outpost
-				}
-				PARAM
-				{
-					name = StabilityParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					holdSeconds = 10
-				}
-				PARAM
-				{
-					name = LocationAndSituationParameter
-					state = Incomplete
-					values = 0,0,0,0,0
-					targetBody = 2
-					targetSituation = LANDED
-					noun = outpost
-					finalObjective = False
 				}
 			}
 			CONTRACT
@@ -1172,42 +837,183 @@ GAME
 			}
 			CONTRACT
 			{
-				guid = 33b61513-3430-463c-83e4-1b463188d576
-				type = ConfiguredContract
-				prestige = 2
-				seed = 322737712
-				state = Active
+				guid = ccd87b3d-a252-4052-bc92-d1de37bf5ca2
+				type = PartTest
+				prestige = 0
+				seed = -1922605959
+				state = Offered
 				viewed = Unseen
-				agent = Strategia
-				deadlineType = None
+				agent = Kerbal Motion LLC
+				deadlineType = Floating
 				expiryType = Floating
-				autoAccept = True
-				ignoresWeight = True
-				values = 1212480,0,120000,30000,225000,0,75,750,3820969.69537801,2608489.69537801,0,0
-				subtype = STG_BodyProgram
-				title = The Mun Program
-				description = Now that we've proven we can get a Kerbal to orbit and back, we need to continue to break new barriers.  We have a choice of nearby bodies that we can get to.  We choose to go to The Mun, not because it is easy, but because it is hard.
-				synopsis = Plant a flag on The Mun.
-				completedMessage = You've successfully landed the first Kerbal on The Mun!
-				hash = -1991579226
-				targetBody = Mun
-				UNIQUE_DATA
+				values = 43200,9201600,6480,16200,8100,2,4,4,2675840.40438284,0,0,0
+				part = roverWheel2
+				haul = False
+				dest = 1
+				sit = SPLASHED
+				exp = False
+				PARAM
 				{
-					strategyName = String:The Mun Program
+					name = PartTest
+					state = Incomplete
+					values = 0,0,0,0,0
+					part = roverWheel2
+					body = Kerbin
+					situation = SPLASHED
+					uniqueID = 0.26818796445996873
+					haul = False
+					repeatability = ONCEPERPART
+					PARAM
+					{
+						name = ReachDestination
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						dest = 1
+						title = 
+					}
+					PARAM
+					{
+						name = ReachSituation
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						sit = SPLASHED
+						title = 
+					}
+				}
+			}
+			CONTRACT
+			{
+				guid = 68554e1e-c6d5-4d82-b871-4937ba7c71a4
+				type = StationContract
+				prestige = 0
+				seed = -1922605958
+				state = Offered
+				viewed = Unseen
+				agent = Periapsis Rocket Supplies Co
+				deadlineType = Floating
+				expiryType = Floating
+				values = 129600,64411200,40320,104580,40320,0,19,14,2762240.40438284,0,0,0
+				targetBody = 1
+				capacity = 5
+				contextual = False
+				PARAM
+				{
+					name = VesselSystemsParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					typeString = station
+					mannedStatus = 2
+					requireNew = True
+					checkModuleTypes = Antenna|Generator|Dock
+					checkModuleDescriptions = has an antenna|has a docking port|can generate power
+					launchID = 0
 				}
 				PARAM
 				{
-					name = PlantFlagCustom
-					id = PlantFlag
+					name = CrewCapacityParameter
 					state = Incomplete
-					disableOnStateChange = False
 					values = 0,0,0,0,0
-					ContractIdentifier = Strategia.STG_BodyProgram
-					title = 
-					notes = 
-					completedMessage = 
-					allowStateReset = True
-					targetBody = Mun
+					targetCapacity = 5
+				}
+				PARAM
+				{
+					name = CrewTraitParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					targetTrait = Scientist
+					targetCount = 1
+					vesselDescription = station
+				}
+				PARAM
+				{
+					name = StabilityParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					holdSeconds = 10
+				}
+				PARAM
+				{
+					name = LocationAndSituationParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					targetBody = 1
+					targetSituation = ORBITING
+					noun = station
+					finalObjective = False
+				}
+			}
+			CONTRACT
+			{
+				guid = 6d1ecb33-28f0-4e21-ac86-de7f9402b317
+				type = RecoverAsset
+				prestige = 1
+				seed = -472865173
+				state = Offered
+				viewed = Unseen
+				agent = Moving Parts Experts Group
+				deadlineType = Floating
+				expiryType = Floating
+				values = 119866.805219491,42552715.8529195,37234.0779380036,93572.104046165,40154.3993974685,0,10.29526,16.66667,2782703.5050125,0,0,0
+				targetBody = 1
+				kerbalName = Sandard Kerman
+				partName = MK1CrewCabin
+				partID = 0
+				recoveryLocation = 2
+				recoveryType = 1
+				PARAM
+				{
+					name = AcquireCrew
+					state = Incomplete
+					values = 8910,0,0,5,0
+					title = Save Sandard Kerman
+					winOn = 0
+				}
+				PARAM
+				{
+					name = RecoverKerbal
+					state = Incomplete
+					values = 0,0,0,0,0
+					title = Recover Sandard Kerman on Kerbin
+					failOn = All
+					winOn = All
+				}
+			}
+			CONTRACT
+			{
+				guid = cadaa28b-ba10-4a75-846e-459cdcae99b9
+				type = RecoverAsset
+				prestige = 2
+				seed = -105535879
+				state = Offered
+				viewed = Unseen
+				agent = Vac-Co Advanced Suction Systems
+				deadlineType = Floating
+				expiryType = Floating
+				values = 20970.874786377,89335926.5899658,94576.2482691306,248480.89943557,105594.841044388,0,11.16873,21,2693179.30057451,0,0,0
+				targetBody = 2
+				kerbalName = Trisey Kerman
+				partName = InflatableHAB
+				partID = 0
+				recoveryLocation = 2
+				recoveryType = 1
+				PARAM
+				{
+					name = AcquireCrew
+					state = Incomplete
+					values = 21384,0,0,6,0
+					title = Save Trisey Kerman
+					winOn = 0
+				}
+				PARAM
+				{
+					name = RecoverKerbal
+					state = Incomplete
+					values = 0,0,0,0,0
+					title = Recover Trisey Kerman on Kerbin
+					failOn = All
+					winOn = All
 				}
 			}
 			CONTRACT_FINISHED
@@ -3663,6 +3469,46 @@ GAME
 					}
 				}
 			}
+			CONTRACT_FINISHED
+			{
+				guid = 33b61513-3430-463c-83e4-1b463188d576
+				type = ConfiguredContract
+				prestige = 2
+				seed = 322737712
+				state = Completed
+				viewed = Unseen
+				agent = Strategia
+				deadlineType = None
+				expiryType = Floating
+				autoAccept = True
+				ignoresWeight = True
+				values = 1212480,0,120000,30000,225000,0,75,750,3820969.69537801,2608489.69537801,0,2672208.42578813
+				subtype = STG_BodyProgram
+				title = The Mun Program
+				description = Now that we've proven we can get a Kerbal to orbit and back, we need to continue to break new barriers.  We have a choice of nearby bodies that we can get to.  We choose to go to The Mun, not because it is easy, but because it is hard.
+				synopsis = Plant a flag on The Mun.
+				completedMessage = You've successfully landed the first Kerbal on The Mun!
+				hash = -1991579226
+				targetBody = Mun
+				UNIQUE_DATA
+				{
+					strategyName = String:The Mun Program
+				}
+				PARAM
+				{
+					name = PlantFlagCustom
+					id = PlantFlag
+					state = Complete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					ContractIdentifier = Strategia.STG_BodyProgram
+					title = 
+					notes = 
+					completedMessage = 
+					allowStateReset = True
+					targetBody = Mun
+				}
+			}
 		}
 	}
 	SCENARIO
@@ -3675,7 +3521,7 @@ GAME
 	{
 		name = Funding
 		scene = 7, 8, 5, 6
-		funds = 1872722.8329237588
+		funds = 1995509.8954237588
 	}
 	SCENARIO
 	{
@@ -3764,7 +3610,7 @@ GAME
 				}
 				Escape
 				{
-					completedUnmanned = 233259.12816171293
+					completed = 233259.12816171293
 				}
 				Landing
 				{
@@ -3827,7 +3673,7 @@ GAME
 				reached = 233259.12816171293
 				Orbit
 				{
-					completedUnmanned = 1179430.8929732009
+					completed = 1179430.8929732009
 					vessel
 					{
 						name = Relay Bus Cryo
@@ -3840,7 +3686,7 @@ GAME
 				}
 				Landing
 				{
-					completedUnmanned = 1348578.4345410801
+					completed = 1348578.4345410801
 					vessel
 					{
 						name = Mun Lander 1
@@ -3856,9 +3702,29 @@ GAME
 						flag = ContractConfigurator/Agencies/CollectScience
 					}
 				}
+				Spacewalk
+				{
+					completed = 2672585.4598118109
+					crew
+					{
+						crews = Valentina Kerman
+					}
+				}
+				SurfaceEVA
+				{
+					completed = 2672184.3657881124
+					crew
+					{
+						crews = Valentina Kerman
+					}
+				}
+				FlagPlant
+				{
+					completed = 2672208.4257881348
+				}
 				Suborbit
 				{
-					completedUnmanned = 1348040.2009489543
+					completed = 1348040.2009489543
 					vessel
 					{
 						name = Mun Lander 1
@@ -3867,7 +3733,7 @@ GAME
 				}
 				Flyby
 				{
-					completedUnmanned = 233259.12816171293
+					completed = 233259.12816171293
 				}
 				ReturnFromFlyBy
 				{
@@ -3933,7 +3799,7 @@ GAME
 	{
 		name = ResearchAndDevelopment
 		scene = 7, 8, 5, 6
-		sci = 380.290588
+		sci = 503.290558
 		Tech
 		{
 			id = start
@@ -4198,6 +4064,7 @@ GAME
 			cost = 90
 			part = solarPanels4
 			part = setiMiniSolarRetr
+			part = batteryBankLarge
 		}
 		Science
 		{
@@ -5184,9 +5051,9 @@ GAME
 			id = temperatureScan@MinmusSrfLandedLesserFlats
 			title = Temperature Scan from Minmus' Lesser Flats
 			dsc = 1
-			scv = 1
+			scv = 0
 			sbv = 5
-			sci = 0
+			sci = 40
 			cap = 40
 		}
 		Science
@@ -5194,9 +5061,9 @@ GAME
 			id = barometerScan@MinmusSrfLandedLesserFlats
 			title = Atmospheric Pressure Scan from Minmus' Lesser Flats
 			dsc = 1
-			scv = 1
+			scv = 0
 			sbv = 5
-			sci = 0
+			sci = 60
 			cap = 60
 		}
 		Science
@@ -5214,9 +5081,9 @@ GAME
 			id = magScan@MinmusSrfLandedLesserFlats
 			title = Magnetometer Scan from Minmus' Lesser Flats
 			dsc = 1
-			scv = 1
+			scv = 0
 			sbv = 5
-			sci = 0
+			sci = 20
 			cap = 20
 		}
 		Science
@@ -5259,6 +5126,146 @@ GAME
 			sci = 20
 			cap = 20
 		}
+		Science
+		{
+			id = crewReport@MunSrfLandedFarsideCrater
+			title = Crew Report from The Mun's Farside Crater
+			dsc = 1
+			scv = 1
+			sbv = 4
+			sci = 0
+			cap = 20
+		}
+		Science
+		{
+			id = temperatureScan@MunSrfLandedFarsideCrater
+			title = Temperature Scan from The Mun's Farside Crater
+			dsc = 1
+			scv = 1
+			sbv = 4
+			sci = 0
+			cap = 32
+		}
+		Science
+		{
+			id = mysteryGoo@MunSrfLandedFarsideCrater
+			title = Mystery Goo™ Observation from The Mun's Farside Crater
+			dsc = 1
+			scv = 1
+			sbv = 4
+			sci = 0
+			cap = 52
+		}
+		Science
+		{
+			id = dmlaserblastscan@MunSrfLandedFarsideCrater
+			title = Laser Surface Scan from The Mun's Farside Crater
+			dsc = 3
+			scv = 1
+			sbv = 4
+			sci = 0
+			cap = 24
+		}
+		Science
+		{
+			id = mobileMaterialsLab@MunSrfLandedFarsideCrater
+			title = Materials Study from The Mun's Farside Crater
+			dsc = 1
+			scv = 1
+			sbv = 4
+			sci = 0
+			cap = 128
+		}
+		Science
+		{
+			id = surfaceSample@MunSrfLandedFarsideCrater
+			title = Surface Sample from The Mun's Farside Crater
+			dsc = 1
+			scv = 1
+			sbv = 4
+			sci = 0
+			cap = 160
+		}
+		Science
+		{
+			id = evaReport@MunSrfLandedFarsideCrater
+			title = EVA Report from The Mun's Farside Crater
+			dsc = 1
+			scv = 1
+			sbv = 4
+			sci = 0
+			cap = 32
+		}
+		Science
+		{
+			id = evaReport@MunInSpaceLowFarsideCrater
+			title = EVA Report from space just above The Mun's Farside Crater
+			dsc = 1
+			scv = 1
+			sbv = 3
+			sci = 0
+			cap = 24
+		}
+		Science
+		{
+			id = crewReport@MunInSpaceLow
+			title = Crew Report while in space near The Mun
+			dsc = 1
+			scv = 1
+			sbv = 3
+			sci = 0
+			cap = 15
+		}
+		Science
+		{
+			id = mysteryGoo@MunInSpaceLow
+			title = Mystery Goo™ Observation while in space near The Mun
+			dsc = 1
+			scv = 1
+			sbv = 3
+			sci = 0
+			cap = 39
+		}
+		Science
+		{
+			id = evaReport@MunInSpaceLowMidlands
+			title = EVA Report from space just above The Mun's Midlands
+			dsc = 1
+			scv = 1
+			sbv = 3
+			sci = 0
+			cap = 24
+		}
+		Science
+		{
+			id = evaReport@MunInSpaceLowHighlands
+			title = EVA Report from space just above The Mun's Highlands
+			dsc = 1
+			scv = 1
+			sbv = 3
+			sci = 0
+			cap = 24
+		}
+		Science
+		{
+			id = evaReport@MunInSpaceLowLowlands
+			title = EVA Report from space just above The Mun's Lowlands
+			dsc = 1
+			scv = 1
+			sbv = 3
+			sci = 0
+			cap = 24
+		}
+		Science
+		{
+			id = evaReport@MunInSpaceLowMidlandCraters
+			title = EVA Report from space just above The Mun's Midland Craters
+			dsc = 1
+			scv = 1
+			sbv = 3
+			sci = 0
+			cap = 24
+		}
 	}
 	SCENARIO
 	{
@@ -5269,7 +5276,7 @@ GAME
 	{
 		name = Reputation
 		scene = 7, 8, 5, 6
-		rep = 495.591309
+		rep = 551.852234
 	}
 	SCENARIO
 	{
@@ -5277,41 +5284,6 @@ GAME
 		scene = 7, 8, 5, 6
 		STRATEGIES
 		{
-			STRATEGY
-			{
-				name = MoonProgram0
-				date = 2608489.6953780055
-				factor = 0.100000001
-				EFFECT
-				{
-					name = IncompatibleGroupRequirement
-				}
-				EFFECT
-				{
-					name = CurrencyOperationByBody
-				}
-				EFFECT
-				{
-					name = CurrencyOperationByBody
-				}
-				EFFECT
-				{
-					name = ContractEffect
-				}
-				EFFECT
-				{
-					name = ContractWeightBooster
-					bonusGiven = True
-				}
-				EFFECT
-				{
-					name = ReturnFromOrbitMannedRequirement
-				}
-				EFFECT
-				{
-					name = ReachedBodyMannedRequirement
-				}
-			}
 			STRATEGY
 			{
 				name = BoldlyGo2
@@ -5628,7 +5600,7 @@ GAME
 	{
 		name = SentinelScenario
 		scene = 7, 8, 5
-		NextSpawnTime = 2616361.0085147819
+		NextSpawnTime = 2674144.630143079
 	}
 	SCENARIO
 	{
@@ -5680,7 +5652,7 @@ GAME
 			Contracts_Window_Mission
 			{
 				MissionName = MasterMission
-				ActiveListID = b674b8b7-c7c1-4b04-b7d9-a6024df7aef7|N|True,2874da8b-a31b-43b3-ba36-fb200986a787|N|True,33b61513-3430-463c-83e4-1b463188d576|N|True
+				ActiveListID = b674b8b7-c7c1-4b04-b7d9-a6024df7aef7|N|True,2874da8b-a31b-43b3-ba36-fb200986a787|N|True
 				HiddenListID = 
 				VesselIDs = 
 				AscendingSort = True
@@ -5816,13 +5788,13 @@ GAME
 					{
 						problem = 0
 						message = 0
-						time_since = 446.03490215167403
+						time_since = 5073.5654682610184
 					}
 					drinking
 					{
 						problem = 0
 						message = 0
-						time_since = 446.03490215167403
+						time_since = 5073.5654682610184
 					}
 					breathing
 					{
@@ -5838,13 +5810,13 @@ GAME
 					}
 					stress
 					{
-						problem = 6.578204395953843E-05
+						problem = 0.0099120515480805808
 						message = 0
 						time_since = 0
 					}
 					radiation
 					{
-						problem = 0.00040990450775767661
+						problem = 1.1846487075530054
 						message = 0
 						time_since = 0
 					}
@@ -8395,7 +8367,7 @@ GAME
 			{
 				msg_signal = False
 				msg_belt = False
-				cfg_ec = True
+				cfg_ec = False
 				cfg_supply = True
 				cfg_signal = False
 				cfg_malfunction = True
@@ -8427,7 +8399,7 @@ GAME
 				{
 					ElectricCharge
 					{
-						message = 0
+						message = 2
 					}
 					Food
 					{
@@ -8459,7 +8431,7 @@ GAME
 			{
 				msg_signal = False
 				msg_belt = False
-				cfg_ec = True
+				cfg_ec = False
 				cfg_supply = True
 				cfg_signal = False
 				cfg_malfunction = True
@@ -8491,7 +8463,7 @@ GAME
 				{
 					ElectricCharge
 					{
-						message = 0
+						message = 2
 					}
 					Food
 					{
@@ -8523,7 +8495,7 @@ GAME
 			{
 				msg_signal = False
 				msg_belt = False
-				cfg_ec = True
+				cfg_ec = False
 				cfg_supply = True
 				cfg_signal = False
 				cfg_malfunction = True
@@ -9312,30 +9284,70 @@ GAME
 							buff = 0
 							send = False
 						}
-						temperatureScan@MinmusSrfLandedLesserFlats
-						{
-							size = 7.9771549622141045
-							buff = 0.022845037785915706
-							send = True
-						}
-						magScan@MinmusSrfLandedLesserFlats
-						{
-							size = 3.9925103120429579
-							buff = 0.0074896879570421886
-							send = True
-						}
-						geigerCounter@MinmusSrfLanded
-						{
-							size = 7.9942887265871558
-							buff = 0.0057112734128476669
-							send = True
-						}
-						barometerScan@MinmusSrfLandedLesserFlats
-						{
-							size = 11.981275776349715
-							buff = 0.018724223650284075
-							send = True
-						}
+					}
+					samples
+					{
+					}
+				}
+				supplies
+				{
+					ElectricCharge
+					{
+						message = 0
+					}
+					Food
+					{
+						message = 0
+					}
+					Water
+					{
+						message = 0
+					}
+					Oxygen
+					{
+						message = 0
+					}
+					Nitrogen
+					{
+						message = 0
+					}
+					Hydrogen
+					{
+						message = 0
+					}
+					Ammonia
+					{
+						message = 0
+					}
+				}
+			}
+			2718480712
+			{
+				msg_signal = False
+				msg_belt = False
+				cfg_ec = False
+				cfg_supply = True
+				cfg_signal = True
+				cfg_malfunction = True
+				cfg_storm = True
+				cfg_script = True
+				cfg_highlights = True
+				cfg_showlink = True
+				storm_time = 0
+				storm_age = 0
+				storm_state = 0
+				group = NONE
+				computer
+				{
+					scripts
+					{
+					}
+				}
+				drive
+				{
+					location = 937480557
+					files
+					{
 					}
 					samples
 					{
@@ -9373,7 +9385,7 @@ GAME
 					}
 				}
 			}
-			2718480712
+			3529116171
 			{
 				msg_signal = False
 				msg_belt = False
@@ -9397,7 +9409,325 @@ GAME
 				}
 				drive
 				{
-					location = 937480557
+					location = 3529116171
+					files
+					{
+						temperatureScan@MunSrfLandedFarsideCrater
+						{
+							size = 8
+							buff = 0
+							send = False
+						}
+						crewReport@MunSrfLandedFarsideCrater
+						{
+							size = 5
+							buff = 0
+							send = False
+						}
+						dmlaserblastscan@MunSrfLandedFarsideCrater
+						{
+							size = 18
+							buff = 0
+							send = False
+						}
+						evaReport@MunInSpaceLowFarsideCrater
+						{
+							size = 8
+							buff = 0
+							send = False
+						}
+						crewReport@MunInSpaceLow
+						{
+							size = 5
+							buff = 0
+							send = False
+						}
+						evaReport@MunInSpaceLowMidlands
+						{
+							size = 8
+							buff = 0
+							send = False
+						}
+						evaReport@MunInSpaceLowHighlands
+						{
+							size = 8
+							buff = 0
+							send = False
+						}
+						evaReport@MunInSpaceLowLowlands
+						{
+							size = 8
+							buff = 0
+							send = False
+						}
+						evaReport@MunInSpaceLowMidlandCraters
+						{
+							size = 8
+							buff = 0
+							send = False
+						}
+					}
+					samples
+					{
+						mobileMaterialsLab@MunSrfLandedFarsideCrater
+						{
+							size = 25
+							analyze = False
+						}
+						mysteryGoo@MunSrfLandedFarsideCrater
+						{
+							size = 10
+							analyze = False
+						}
+						surfaceSample@MunSrfLandedFarsideCrater
+						{
+							size = 30
+							analyze = False
+						}
+						mysteryGoo@MunInSpaceLow
+						{
+							size = 10
+							analyze = False
+						}
+					}
+				}
+				supplies
+				{
+					ElectricCharge
+					{
+						message = 0
+					}
+					Food
+					{
+						message = 0
+					}
+					Water
+					{
+						message = 0
+					}
+					Oxygen
+					{
+						message = 0
+					}
+					Nitrogen
+					{
+						message = 0
+					}
+					Hydrogen
+					{
+						message = 0
+					}
+					Ammonia
+					{
+						message = 0
+					}
+				}
+			}
+			3500876270
+			{
+				msg_signal = False
+				msg_belt = False
+				cfg_ec = True
+				cfg_supply = True
+				cfg_signal = True
+				cfg_malfunction = True
+				cfg_storm = True
+				cfg_script = True
+				cfg_highlights = True
+				cfg_showlink = True
+				storm_time = 0
+				storm_age = 0
+				storm_state = 0
+				group = NONE
+				computer
+				{
+					scripts
+					{
+					}
+				}
+				drive
+				{
+					location = 0
+					files
+					{
+					}
+					samples
+					{
+					}
+				}
+				supplies
+				{
+				}
+			}
+			1538000142
+			{
+				msg_signal = False
+				msg_belt = False
+				cfg_ec = True
+				cfg_supply = True
+				cfg_signal = True
+				cfg_malfunction = True
+				cfg_storm = True
+				cfg_script = True
+				cfg_highlights = True
+				cfg_showlink = True
+				storm_time = 0
+				storm_age = 0
+				storm_state = 0
+				group = NONE
+				computer
+				{
+					scripts
+					{
+					}
+				}
+				drive
+				{
+					location = 0
+					files
+					{
+					}
+					samples
+					{
+					}
+				}
+				supplies
+				{
+				}
+			}
+			4112186052
+			{
+				msg_signal = False
+				msg_belt = False
+				cfg_ec = True
+				cfg_supply = True
+				cfg_signal = True
+				cfg_malfunction = True
+				cfg_storm = True
+				cfg_script = True
+				cfg_highlights = True
+				cfg_showlink = True
+				storm_time = 0
+				storm_age = 0
+				storm_state = 0
+				group = NONE
+				computer
+				{
+					scripts
+					{
+					}
+				}
+				drive
+				{
+					location = 0
+					files
+					{
+					}
+					samples
+					{
+					}
+				}
+				supplies
+				{
+				}
+			}
+			934013826
+			{
+				msg_signal = False
+				msg_belt = False
+				cfg_ec = True
+				cfg_supply = True
+				cfg_signal = True
+				cfg_malfunction = True
+				cfg_storm = True
+				cfg_script = True
+				cfg_highlights = True
+				cfg_showlink = True
+				storm_time = 0
+				storm_age = 0
+				storm_state = 0
+				group = NONE
+				computer
+				{
+					scripts
+					{
+					}
+				}
+				drive
+				{
+					location = 0
+					files
+					{
+					}
+					samples
+					{
+					}
+				}
+				supplies
+				{
+				}
+			}
+			0
+			{
+				msg_signal = False
+				msg_belt = False
+				cfg_ec = True
+				cfg_supply = True
+				cfg_signal = True
+				cfg_malfunction = True
+				cfg_storm = True
+				cfg_script = True
+				cfg_highlights = True
+				cfg_showlink = True
+				storm_time = 0
+				storm_age = 0
+				storm_state = 0
+				group = NONE
+				computer
+				{
+					scripts
+					{
+					}
+				}
+				drive
+				{
+					location = 0
+					files
+					{
+					}
+					samples
+					{
+					}
+				}
+				supplies
+				{
+				}
+			}
+			2081584853
+			{
+				msg_signal = False
+				msg_belt = False
+				cfg_ec = True
+				cfg_supply = True
+				cfg_signal = True
+				cfg_malfunction = True
+				cfg_storm = True
+				cfg_script = True
+				cfg_highlights = True
+				cfg_showlink = True
+				storm_time = 0
+				storm_age = 0
+				storm_state = 0
+				group = NONE
+				computer
+				{
+					scripts
+					{
+					}
+				}
+				drive
+				{
+					location = 0
 					files
 					{
 					}
@@ -9435,178 +9765,6 @@ GAME
 					{
 						message = 0
 					}
-				}
-			}
-			3223275914
-			{
-				msg_signal = False
-				msg_belt = False
-				cfg_ec = True
-				cfg_supply = True
-				cfg_signal = True
-				cfg_malfunction = True
-				cfg_storm = True
-				cfg_script = True
-				cfg_highlights = True
-				cfg_showlink = True
-				storm_time = 0
-				storm_age = 0
-				storm_state = 0
-				group = NONE
-				computer
-				{
-					scripts
-					{
-					}
-				}
-				drive
-				{
-					location = 3223275914
-					files
-					{
-					}
-					samples
-					{
-					}
-				}
-				supplies
-				{
-					ElectricCharge
-					{
-						message = 0
-					}
-					Food
-					{
-						message = 0
-					}
-					Water
-					{
-						message = 0
-					}
-					Oxygen
-					{
-						message = 0
-					}
-					Nitrogen
-					{
-						message = 0
-					}
-					Hydrogen
-					{
-						message = 0
-					}
-					Ammonia
-					{
-						message = 0
-					}
-				}
-			}
-			3688384840
-			{
-				msg_signal = False
-				msg_belt = False
-				cfg_ec = True
-				cfg_supply = True
-				cfg_signal = True
-				cfg_malfunction = True
-				cfg_storm = True
-				cfg_script = True
-				cfg_highlights = True
-				cfg_showlink = True
-				storm_time = 0
-				storm_age = 0
-				storm_state = 0
-				group = NONE
-				computer
-				{
-					scripts
-					{
-					}
-				}
-				drive
-				{
-					location = 0
-					files
-					{
-					}
-					samples
-					{
-					}
-				}
-				supplies
-				{
-				}
-			}
-			3466515270
-			{
-				msg_signal = False
-				msg_belt = False
-				cfg_ec = True
-				cfg_supply = True
-				cfg_signal = True
-				cfg_malfunction = True
-				cfg_storm = True
-				cfg_script = True
-				cfg_highlights = True
-				cfg_showlink = True
-				storm_time = 0
-				storm_age = 0
-				storm_state = 0
-				group = NONE
-				computer
-				{
-					scripts
-					{
-					}
-				}
-				drive
-				{
-					location = 0
-					files
-					{
-					}
-					samples
-					{
-					}
-				}
-				supplies
-				{
-				}
-			}
-			1936892588
-			{
-				msg_signal = False
-				msg_belt = False
-				cfg_ec = True
-				cfg_supply = True
-				cfg_signal = True
-				cfg_malfunction = True
-				cfg_storm = True
-				cfg_script = True
-				cfg_highlights = True
-				cfg_showlink = True
-				storm_time = 0
-				storm_age = 0
-				storm_state = 0
-				group = NONE
-				computer
-				{
-					scripts
-					{
-					}
-				}
-				drive
-				{
-					location = 0
-					files
-					{
-					}
-					samples
-					{
-					}
-				}
-				supplies
-				{
 				}
 			}
 		}
@@ -9615,49 +9773,49 @@ GAME
 			Dres
 			{
 				storm_time = 7165697.2537029982
-				storm_age = 873522.59633744135
+				storm_age = 893046.15480069339
 				storm_state = 0
 				msg_storm = 0
 			}
 			Eeloo
 			{
 				storm_time = 5176477.8975660345
-				storm_age = 395856.6546135649
+				storm_age = 404704.16835468652
 				storm_state = 0
 				msg_storm = 0
 			}
 			Kerbin
 			{
 				storm_time = 6725531.2100823643
-				storm_age = 2623112.3784457725
+				storm_age = 2681740.2290118746
 				storm_state = 0
 				msg_storm = 0
 			}
 			Moho
 			{
-				storm_time = 6824322.4395179758
-				storm_age = 6778074.9364478299
+				storm_time = 5326623.8001951128
+				storm_age = 105240.82819658275
 				storm_state = 0
 				msg_storm = 0
 			}
 			Eve
 			{
 				storm_time = 4113620.5208458104
-				storm_age = 3628101.7710805377
+				storm_age = 3709191.4672556082
 				storm_state = 0
 				msg_storm = 0
 			}
 			Duna
 			{
 				storm_time = 7987904.7919753492
-				storm_age = 1721207.8909627923
+				storm_age = 1759677.6115689201
 				storm_state = 0
 				msg_storm = 0
 			}
 			Jool
 			{
 				storm_time = 4800854.1079987092
-				storm_age = 518717.62455383415
+				storm_age = 530311.17007544171
 				storm_state = 0
 				msg_storm = 0
 			}
@@ -9804,7 +9962,7 @@ GAME
 	FLIGHTSTATE
 	{
 		version = 1.3.1
-		UT = 2614804.9539233916
+		UT = 2673321.9415504425
 		activeVessel = 25
 		mapViewFiltering = 3070
 		commNetUIModeTracking = Network
@@ -10733,7 +10891,7 @@ GAME
 				{
 					name = ModuleCryoTank
 					isEnabled = True
-					LastUpdateTime = 2468472.58384487
+					LastUpdateTime = 2526989.45147192
 					CoolingEnabled = False
 					BoiloffOccuring = False
 					stagingEnabled = True
@@ -13479,7 +13637,7 @@ GAME
 				{
 					name = ModuleCryoTank
 					isEnabled = True
-					LastUpdateTime = 2419472.90867686
+					LastUpdateTime = 2477989.75630391
 					CoolingEnabled = False
 					BoiloffOccuring = False
 					stagingEnabled = True
@@ -17386,7 +17544,7 @@ GAME
 				{
 					name = ModuleCryoTank
 					isEnabled = True
-					LastUpdateTime = 1956372.78965917
+					LastUpdateTime = 2014889.63728622
 					CoolingEnabled = False
 					BoiloffOccuring = False
 					stagingEnabled = True
@@ -24499,7 +24657,7 @@ GAME
 				{
 					name = ModuleCryoTank
 					isEnabled = True
-					LastUpdateTime = 1490051.3068502
+					LastUpdateTime = 1548568.19447725
 					CoolingEnabled = False
 					BoiloffOccuring = False
 					stagingEnabled = True
@@ -27101,7 +27259,7 @@ GAME
 				{
 					name = ModuleCryoTank
 					isEnabled = True
-					LastUpdateTime = 1489229.88431038
+					LastUpdateTime = 1547747.09193743
 					CoolingEnabled = False
 					BoiloffOccuring = True
 					stagingEnabled = True
@@ -27295,7 +27453,7 @@ GAME
 				{
 					name = ModuleCryoTank
 					isEnabled = True
-					LastUpdateTime = 1489229.88431038
+					LastUpdateTime = 1547747.09193743
 					CoolingEnabled = False
 					BoiloffOccuring = True
 					stagingEnabled = True
@@ -27324,7 +27482,7 @@ GAME
 				RESOURCE
 				{
 					name = LqdHydrogen
-					amount = 638.43224664329568
+					amount = 599.34847942064528
 					maxAmount = 2400
 					flowState = True
 					isTweakable = True
@@ -27489,7 +27647,7 @@ GAME
 				{
 					name = ModuleCryoTank
 					isEnabled = True
-					LastUpdateTime = 1489229.88431038
+					LastUpdateTime = 1547747.09193743
 					CoolingEnabled = False
 					BoiloffOccuring = True
 					stagingEnabled = True
@@ -28393,7 +28551,7 @@ GAME
 				{
 					name = ModuleCryoTank
 					isEnabled = True
-					LastUpdateTime = 1411907.00991489
+					LastUpdateTime = 1470424.23754194
 					CoolingEnabled = False
 					BoiloffOccuring = False
 					stagingEnabled = True
@@ -30974,7 +31132,7 @@ GAME
 				{
 					name = ModuleCryoTank
 					isEnabled = True
-					LastUpdateTime = 1384638.59120298
+					LastUpdateTime = 1443155.79883003
 					CoolingEnabled = False
 					BoiloffOccuring = False
 					stagingEnabled = True
@@ -33555,7 +33713,7 @@ GAME
 				{
 					name = ModuleCryoTank
 					isEnabled = True
-					LastUpdateTime = 1325569.69296067
+					LastUpdateTime = 1384086.56058772
 					CoolingEnabled = False
 					BoiloffOccuring = False
 					stagingEnabled = True
@@ -37246,7 +37404,7 @@ GAME
 				{
 					name = ModuleCryoTank
 					isEnabled = True
-					LastUpdateTime = 1299787.71450824
+					LastUpdateTime = 1358304.94213529
 					CoolingEnabled = False
 					BoiloffOccuring = True
 					stagingEnabled = True
@@ -37275,7 +37433,7 @@ GAME
 				RESOURCE
 				{
 					name = LqdHydrogen
-					amount = 544.29862461979303
+					amount = 505.21485762938732
 					maxAmount = 9600
 					flowState = True
 					isTweakable = True
@@ -42001,12 +42159,12 @@ GAME
 			ORBIT
 			{
 				SMA = 0
-				ECC = 1.0000000000000002
-				INC = 13.689032900321934
-				LPE = 90.000000000000014
-				LAN = 112.00562209768731
-				MNA = Infinity
-				EPH = 2614358.4190108678
+				ECC = 1
+				INC = 13.689032900320562
+				LPE = 90
+				LAN = 188.28589703514871
+				MNA = 0
+				EPH = 2673257.1215503821
 				REF = 2
 				IDENT = Mun
 			}
@@ -42392,7 +42550,7 @@ GAME
 				{
 					name = ModuleCryoTank
 					isEnabled = True
-					LastUpdateTime = 1267557.1122807
+					LastUpdateTime = 1326074.31990775
 					CoolingEnabled = False
 					BoiloffOccuring = False
 					stagingEnabled = True
@@ -45064,7 +45222,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 190.71970196500661
+					amount = 0
 					maxAmount = 200
 					flowState = True
 					isTweakable = True
@@ -45200,7 +45358,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 190.71970196500661
+					amount = 0
 					maxAmount = 200
 					flowState = True
 					isTweakable = True
@@ -46228,13 +46386,13 @@ GAME
 			cMod = 0
 			ORBIT
 			{
-				SMA = 406423.87710005936
-				ECC = 0.99999999999999989
-				INC = 27.066360066884911
+				SMA = NaN
+				ECC = 1
+				INC = 27.066360066884883
 				LPE = 270
-				LAN = 107.98092529660045
-				MNA = 3.1415926207170166
-				EPH = 2614358.4190108678
+				LAN = 184.26120023406182
+				MNA = 0
+				EPH = 2673257.1215503821
 				REF = 2
 				IDENT = Mun
 			}
@@ -46620,7 +46778,7 @@ GAME
 				{
 					name = ModuleCryoTank
 					isEnabled = True
-					LastUpdateTime = 1266034.8612376
+					LastUpdateTime = 1324551.72886465
 					CoolingEnabled = False
 					BoiloffOccuring = False
 					stagingEnabled = True
@@ -49292,7 +49450,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 190.71970196500655
+					amount = 0
 					maxAmount = 200
 					flowState = True
 					isTweakable = True
@@ -49428,7 +49586,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 190.71970196500655
+					amount = 0
 					maxAmount = 200
 					flowState = True
 					isTweakable = True
@@ -50456,13 +50614,13 @@ GAME
 			cMod = 0
 			ORBIT
 			{
-				SMA = 411924.90991543053
+				SMA = 411924.90991540934
 				ECC = 0.99999999999999989
-				INC = 87.436832839203447
+				INC = 87.436832839203362
 				LPE = 90
-				LAN = 45.386379794056324
+				LAN = 121.66665473151909
 				MNA = 3.1415926207170166
-				EPH = 2614358.4190108678
+				EPH = 2673257.1215503821
 				REF = 2
 				IDENT = Mun
 			}
@@ -50848,7 +51006,7 @@ GAME
 				{
 					name = ModuleCryoTank
 					isEnabled = True
-					LastUpdateTime = 1261556.29623847
+					LastUpdateTime = 1320073.14386552
 					CoolingEnabled = False
 					BoiloffOccuring = False
 					stagingEnabled = True
@@ -55076,7 +55234,7 @@ GAME
 				{
 					name = ModuleCryoTank
 					isEnabled = True
-					LastUpdateTime = 848975.871578649
+					LastUpdateTime = 907492.7392057
 					CoolingEnabled = False
 					BoiloffOccuring = False
 					stagingEnabled = True
@@ -57657,7 +57815,7 @@ GAME
 				{
 					name = ModuleCryoTank
 					isEnabled = True
-					LastUpdateTime = 676419.766129244
+					LastUpdateTime = 734936.633756294
 					CoolingEnabled = False
 					BoiloffOccuring = False
 					stagingEnabled = True
@@ -59385,7 +59543,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 184.5729607723826
+					amount = 200
 					maxAmount = 200
 					flowState = True
 					isTweakable = True
@@ -60243,7 +60401,7 @@ GAME
 				{
 					name = ModuleCryoTank
 					isEnabled = True
-					LastUpdateTime = 330274.377593886
+					LastUpdateTime = 388791.245220936
 					CoolingEnabled = False
 					BoiloffOccuring = False
 					stagingEnabled = True
@@ -61971,7 +62129,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 111.94272169903249
+					amount = 200
 					maxAmount = 200
 					flowState = True
 					isTweakable = True
@@ -62434,11 +62592,11 @@ GAME
 			{
 				SMA = NaN
 				ECC = 1
-				INC = 11.02502146218605
+				INC = 11.025021462191038
 				LPE = 270
-				LAN = 139.26589486404669
+				LAN = 304.1058184834792
 				MNA = 0
-				EPH = 2614358.4190108678
+				EPH = 2673257.1215503821
 				REF = 3
 				IDENT = Minmus
 			}
@@ -62824,7 +62982,7 @@ GAME
 				{
 					name = ModuleCryoTank
 					isEnabled = True
-					LastUpdateTime = 25998.5525731472
+					LastUpdateTime = 84515.420200198
 					CoolingEnabled = False
 					BoiloffOccuring = False
 					stagingEnabled = True
@@ -65496,7 +65654,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 190.71970196500658
+					amount = 200
 					maxAmount = 200
 					flowState = True
 					isTweakable = True
@@ -65632,7 +65790,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 190.71970196500658
+					amount = 200
 					maxAmount = 200
 					flowState = True
 					isTweakable = True
@@ -66662,11 +66820,11 @@ GAME
 			{
 				SMA = NaN
 				ECC = 1
-				INC = 37.431729957393962
+				INC = 37.431729957401828
 				LPE = 270
-				LAN = 208.88700603753148
+				LAN = 13.726929656966831
 				MNA = 0
-				EPH = 2614358.4190108678
+				EPH = 2673257.1215503821
 				REF = 3
 				IDENT = Minmus
 			}
@@ -67052,7 +67210,7 @@ GAME
 				{
 					name = ModuleCryoTank
 					isEnabled = True
-					LastUpdateTime = 24008.6607929557
+					LastUpdateTime = 82525.5284200064
 					CoolingEnabled = False
 					BoiloffOccuring = False
 					stagingEnabled = True
@@ -69724,7 +69882,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 0
+					amount = 200
 					maxAmount = 200
 					flowState = True
 					isTweakable = True
@@ -69860,7 +70018,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 0
+					amount = 200
 					maxAmount = 200
 					flowState = True
 					isTweakable = True
@@ -70888,13 +71046,13 @@ GAME
 			cMod = 0
 			ORBIT
 			{
-				SMA = 120000.35758448212
-				ECC = 0.99999999999999989
-				INC = 16.418599474081336
+				SMA = 0
+				ECC = 1
+				INC = 16.418599474068934
 				LPE = 90
-				LAN = 20.537682050973785
-				MNA = -3.1415926207170166
-				EPH = 2614358.4190108678
+				LAN = 185.3776056704057
+				MNA = 0
+				EPH = 2673257.1215503821
 				REF = 3
 				IDENT = Minmus
 			}
@@ -71280,7 +71438,7 @@ GAME
 				{
 					name = ModuleCryoTank
 					isEnabled = True
-					LastUpdateTime = 16280.1085452056
+					LastUpdateTime = 74797.3361722566
 					CoolingEnabled = False
 					BoiloffOccuring = False
 					stagingEnabled = True
@@ -73952,7 +74110,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 200
+					amount = 0
 					maxAmount = 200
 					flowState = True
 					isTweakable = True
@@ -74088,7 +74246,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 200
+					amount = 0
 					maxAmount = 200
 					flowState = True
 					isTweakable = True
@@ -75088,50 +75246,50 @@ GAME
 		}
 		VESSEL
 		{
-			pid = 40c1517ebf8d45f6b5b0f89bf4e187ab
+			pid = 91a29d080b014e2581b4106e5f9f52d1
 			name = Manned Lander
 			type = Ship
-			sit = SUB_ORBITAL
+			sit = ORBITING
 			landed = False
 			landedAt = 
 			displaylandedAt = 
 			splashed = False
-			met = 429.91491250833496
-			lct = 2614374.9990108833
-			lastUT = 2614804.9539233916
+			met = 58946.422539558727
+			lct = 2614375.4790108837
+			lastUT = 2673321.9415504425
 			root = 0
-			lat = -0.089544970195194196
-			lon = -52.501170601302682
-			alt = 122130.67985049868
+			lat = 0.37251449076511234
+			lon = 8.3927459813951977
+			alt = 36699.980716626043
 			hgt = -1
-			nrm = -7.59722898E-05,0.0102798939,-0.99994719
-			rot = 0.223180458,-0.224499822,-0.670606852,0.670877635
-			CoM = 0.00182301924,-12.789958,-0.00600528717
-			stg = 4
+			nrm = 0.00287094153,0.18056643,-0.983558655
+			rot = 0.489723682,-0.492565721,-0.503580928,0.513766587
+			CoM = -0.000654555857,-3.70002365,-0.00131630898
+			stg = 2
 			prst = False
-			ref = 3223275914
+			ref = 3529116171
 			ctrl = True
-			cPch = -1.196206
-			cHdg = 1.073971
+			cPch = 0.304
+			cHdg = 2.08
 			cMod = 0
 			ORBIT
 			{
-				SMA = 2497908.434508279
-				ECC = 0.0128707776417627
-				INC = 0.096661754698155064
-				LPE = 152.75383032806761
-				LAN = 176.59763436126968
-				MNA = 2.4155644096408038
-				EPH = 2614804.9539233916
-				REF = 1
-				IDENT = Kerbin
+				SMA = 837403.83457084373
+				ECC = 0.0017337354097553799
+				INC = 0.79144527207708559
+				LPE = 327.02143680670002
+				LAN = 72.560956976334694
+				MNA = 1.0626180226194606
+				EPH = 2673321.9415504425
+				REF = 2
+				IDENT = Mun
 			}
 			PART
 			{
 				name = mk1pod
 				cid = 4292453650
-				uid = 3223275914
-				mid = 2676595495
+				uid = 3529116171
+				mid = 2272519823
 				launchID = 22
 				parent = 0
 				position = 0,0,0
@@ -75147,11 +75305,11 @@ GAME
 				attm = 0
 				srfN = , -1
 				attN = bottom, 1
-				attN = top, 41
+				attN = top, 33
 				mass = 0.819999993
 				shielded = False
-				temp = 298.80748445417015
-				tempExt = 297.77470178319919
+				temp = 176.03203246800064
+				tempExt = 176.01631953373081
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -75159,7 +75317,7 @@ GAME
 				autostrutMode = Heaviest
 				rigidAttachment = False
 				flag = ContractConfigurator/Agencies/CollectScience
-				rTrf = mk1pod
+				rTrf = mk1pod (Manned Lander)
 				modCost = 500.5
 				crew = Valentina Kerman
 				EVENTS
@@ -75588,7 +75746,7 @@ GAME
 					critical = False
 					quality = False
 					last = 2614358.4190108678
-					next = 143320202.81555822
+					next = 58830294.231912546
 					stagingEnabled = True
 					EVENTS
 					{
@@ -75629,7 +75787,7 @@ GAME
 					critical = False
 					quality = False
 					last = 2614358.4190108678
-					next = 28151517.987231784
+					next = 20614349.006938264
 					stagingEnabled = True
 					EVENTS
 					{
@@ -75719,6 +75877,12 @@ GAME
 						flight = 0
 						0 = Flight,Kerbin
 						0 = Suborbit,Kerbin
+						0 = Orbit,Kerbin
+						0 = Flyby,Mun
+						0 = Escape,Mun
+						0 = Orbit,Mun
+						0 = Suborbit,Mun
+						0 = Land,Mun
 					}
 					UPGRADESAPPLIED
 					{
@@ -75727,7 +75891,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 99.995819091796875
+					amount = 100
 					maxAmount = 100
 					flowState = True
 					isTweakable = True
@@ -75738,7 +75902,7 @@ GAME
 				RESOURCE
 				{
 					name = MonoPropellant
-					amount = 10
+					amount = 9.2866775938350301
 					maxAmount = 10
 					flowState = True
 					isTweakable = True
@@ -75749,7 +75913,7 @@ GAME
 				RESOURCE
 				{
 					name = Food
-					amount = 31.491405
+					amount = 26.78319570200911
 					maxAmount = 31.491405
 					flowState = True
 					isTweakable = True
@@ -75760,7 +75924,7 @@ GAME
 				RESOURCE
 				{
 					name = Water
-					amount = 12.1
+					amount = 10.288574131865653
 					maxAmount = 12.1
 					flowState = True
 					isTweakable = True
@@ -75771,7 +75935,7 @@ GAME
 				RESOURCE
 				{
 					name = Oxygen
-					amount = 2977.5467037308549
+					amount = 2793.852664116348
 					maxAmount = 2978.6999999999998
 					flowState = True
 					isTweakable = True
@@ -75837,7 +76001,7 @@ GAME
 				RESOURCE
 				{
 					name = Nitrogen
-					amount = 9999.8447431325803
+					amount = 9910.0962483233016
 					maxAmount = 10000
 					flowState = True
 					isTweakable = True
@@ -75850,8 +76014,8 @@ GAME
 			{
 				name = HeatShield1
 				cid = 4292410680
-				uid = 792659116
-				mid = 2676595495
+				uid = 666498692
+				mid = 2272519823
 				launchID = 22
 				parent = 0
 				position = 0,-0.37688446044921875,0
@@ -75871,8 +76035,8 @@ GAME
 				attN = top, 0
 				mass = 0.100000001
 				shielded = False
-				temp = 298.7749606772241
-				tempExt = 297.9921709756303
+				temp = 175.99772009041655
+				tempExt = 176.0682156124515
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -76081,8 +76245,8 @@ GAME
 			{
 				name = stackDecoupler
 				cid = 4292399098
-				uid = 1873719077
-				mid = 2676595495
+				uid = 1876687348
+				mid = 2272519823
 				launchID = 22
 				parent = 1
 				position = 0,-0.6119384765625,0
@@ -76101,8 +76265,8 @@ GAME
 				attN = top, 1
 				mass = 0.0500000007
 				shielded = True
-				temp = 298.05909259638929
-				tempExt = 298.06470670565318
+				temp = 175.8747096122693
+				tempExt = 175.87371221829113
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -76270,8 +76434,8 @@ GAME
 			{
 				name = US.1C10.Wedge.Quadcore
 				cid = 4291969404
-				uid = 2105256725
-				mid = 2676595495
+				uid = 1298958015
+				mid = 2272519823
 				launchID = 22
 				parent = 2
 				position = 0,-0.93778228759765625,0
@@ -76294,8 +76458,8 @@ GAME
 				attN = top, 2
 				mass = 0.0500000007
 				shielded = True
-				temp = 297.87648528764419
-				tempExt = 297.76144732462689
+				temp = 175.45635865798556
+				tempExt = 174.34867981464191
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -76418,8 +76582,8 @@ GAME
 			{
 				name = dmUSGoo
 				cid = 4291959018
-				uid = 1376613734
-				mid = 2676595495
+				uid = 2727471864
+				mid = 2272519823
 				launchID = 22
 				parent = 3
 				position = -0.34389999508857727,-0.93778228759765625,0
@@ -76437,8 +76601,8 @@ GAME
 				attN = back, 3
 				mass = 0.0500000007
 				shielded = False
-				temp = 297.05518047976932
-				tempExt = 295.27434862156252
+				temp = 174.86980461910051
+				tempExt = 174.64868896716976
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -76466,7 +76630,7 @@ GAME
 					experimentNumber = 0
 					experimentsReturned = 0
 					Deployed = False
-					Inoperable = False
+					Inoperable = True
 					cooldownToGo = 0
 					stagingEnabled = True
 					EVENTS
@@ -76602,8 +76766,8 @@ GAME
 			{
 				name = dmUSGoo
 				cid = 4291957346
-				uid = 3899060039
-				mid = 2676595495
+				uid = 2745084367
+				mid = 2272519823
 				launchID = 22
 				parent = 3
 				position = 0,-0.93778228759765625,-0.34390002489089966
@@ -76621,8 +76785,8 @@ GAME
 				attN = back, 3
 				mass = 0.0500000007
 				shielded = False
-				temp = 297.14488573446721
-				tempExt = 295.50391684205164
+				temp = 174.70319566275194
+				tempExt = 175.29028372736869
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -76650,7 +76814,7 @@ GAME
 					experimentNumber = 0
 					experimentsReturned = 0
 					Deployed = False
-					Inoperable = False
+					Inoperable = True
 					cooldownToGo = 0
 					stagingEnabled = True
 					EVENTS
@@ -76786,8 +76950,8 @@ GAME
 			{
 				name = dmUSMat
 				cid = 4291954208
-				uid = 4155054928
-				mid = 2676595495
+				uid = 1065751338
+				mid = 2272519823
 				launchID = 22
 				parent = 3
 				position = 0.34389996528625488,-0.93778228759765625,0
@@ -76805,8 +76969,8 @@ GAME
 				attN = back, 3
 				mass = 0.0500000007
 				shielded = False
-				temp = 297.02931707025562
-				tempExt = 295.25154611477041
+				temp = 174.48268334822589
+				tempExt = 174.26398985345438
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -76834,7 +76998,7 @@ GAME
 					experimentNumber = 0
 					experimentsReturned = 0
 					Deployed = False
-					Inoperable = False
+					Inoperable = True
 					cooldownToGo = 0
 					stagingEnabled = True
 					EVENTS
@@ -76970,8 +77134,8 @@ GAME
 			{
 				name = dmUSMat
 				cid = 4291951478
-				uid = 139929311
-				mid = 2676595495
+				uid = 2106571167
+				mid = 2272519823
 				launchID = 22
 				parent = 3
 				position = -2.9802322387695313E-08,-0.93778228759765625,0.34389996528625488
@@ -76989,8 +77153,8 @@ GAME
 				attN = back, 3
 				mass = 0.0500000007
 				shielded = False
-				temp = 297.03135924081573
-				tempExt = 295.25228176001474
+				temp = 174.5485696052535
+				tempExt = 174.328321699752
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -77154,8 +77318,8 @@ GAME
 			{
 				name = ServiceBay.125
 				cid = 4291454292
-				uid = 3033020463
-				mid = 2676595495
+				uid = 2425201973
+				mid = 2272519823
 				launchID = 22
 				parent = 3
 				position = 0,-1.43157958984375,0
@@ -77171,13 +77335,13 @@ GAME
 				attm = 0
 				srfN = , -1
 				attN = top2, -1
-				attN = bottom2, 39
+				attN = bottom2, 31
 				attN = top, 3
 				attN = bottom, 9
 				mass = 0.100000001
 				shielded = False
-				temp = 297.32487159453137
-				tempExt = 294.53825153321998
+				temp = 209.09572522146473
+				tempExt = 208.75367998672058
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -77351,8 +77515,8 @@ GAME
 			{
 				name = batteryBank
 				cid = 4291795136
-				uid = 2075626166
-				mid = 2676595495
+				uid = 168892121
+				mid = 2272519823
 				launchID = 22
 				parent = 8
 				position = 0,-1.8424339294433594,0
@@ -77371,8 +77535,8 @@ GAME
 				attN = bottom, 10
 				mass = 0.0500000007
 				shielded = False
-				temp = 297.46856771187623
-				tempExt = 295.71601916602395
+				temp = 209.71037202558273
+				tempExt = 209.3627034277697
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -77474,7 +77638,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 999.95820864131463
+					amount = 999.99487185635269
 					maxAmount = 1000
 					flowState = True
 					isTweakable = True
@@ -77487,8 +77651,8 @@ GAME
 			{
 				name = adapterSize2-Size1
 				cid = 4292290364
-				uid = 1795273655
-				mid = 2676595495
+				uid = 1368825202
+				mid = 2272519823
 				launchID = 22
 				parent = 9
 				position = 0,-3.2032890319824219,0
@@ -77507,8 +77671,8 @@ GAME
 				attN = bottom, 13
 				mass = 0.256996006
 				shielded = False
-				temp = 297.49593386096126
-				tempExt = 296.38600512739566
+				temp = 209.92687598728887
+				tempExt = 209.90005766114513
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -77628,7 +77792,7 @@ GAME
 				{
 					name = ModuleCryoTank
 					isEnabled = True
-					LastUpdateTime = 429.91491250833496
+					LastUpdateTime = 57656.508183340542
 					CoolingEnabled = True
 					BoiloffOccuring = False
 					stagingEnabled = True
@@ -77657,7 +77821,7 @@ GAME
 				RESOURCE
 				{
 					name = LqdHydrogen
-					amount = 2400
+					amount = 0
 					maxAmount = 2400
 					flowState = True
 					isTweakable = True
@@ -77668,7 +77832,7 @@ GAME
 				RESOURCE
 				{
 					name = Oxidizer
-					amount = 160
+					amount = 0
 					maxAmount = 160
 					flowState = True
 					isTweakable = True
@@ -77681,8 +77845,8 @@ GAME
 			{
 				name = SurfAntenna
 				cid = 4291442390
-				uid = 287322377
-				mid = 2676595495
+				uid = 2683540172
+				mid = 2272519823
 				launchID = 22
 				parent = 10
 				position = -1.0677599906921387,-3.660675048828125,0
@@ -77700,8 +77864,8 @@ GAME
 				srfN = srfAttach, 10
 				mass = 0.0149999997
 				shielded = False
-				temp = 297.37487878415368
-				tempExt = 296.54667588970864
+				temp = 209.90379420839218
+				tempExt = 209.8396130956005
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -77809,7 +77973,7 @@ GAME
 					critical = False
 					quality = False
 					last = 2614358.4190108678
-					next = 111089044.25529373
+					next = 109741862.02896221
 					stagingEnabled = True
 					EVENTS
 					{
@@ -77858,8 +78022,8 @@ GAME
 			{
 				name = SurfAntenna
 				cid = 4291442306
-				uid = 1117510438
-				mid = 2676595495
+				uid = 2828484896
+				mid = 2272519823
 				launchID = 22
 				parent = 10
 				position = 1.0677599906921387,-3.660675048828125,-1.1920928955078125E-07
@@ -77877,8 +78041,8 @@ GAME
 				srfN = srfAttach, 10
 				mass = 0.0149999997
 				shielded = False
-				temp = 297.37411246485954
-				tempExt = 296.51853075131146
+				temp = 209.90376348166569
+				tempExt = 209.83960271040789
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -77986,7 +78150,7 @@ GAME
 					critical = False
 					quality = False
 					last = 2614358.4190108678
-					next = 87866204.547953248
+					next = 14237881.405590331
 					stagingEnabled = True
 					EVENTS
 					{
@@ -78035,8 +78199,8 @@ GAME
 			{
 				name = fuelTank4-2
 				cid = 4291360386
-				uid = 1197099113
-				mid = 2676595495
+				uid = 284761482
+				mid = 2272519823
 				launchID = 22
 				parent = 10
 				position = 0,-4.9220390319824219,0
@@ -78044,7 +78208,7 @@ GAME
 				mirror = 1,1,1
 				symMethod = Radial
 				istg = 1
-				resPri = 0
+				resPri = 2
 				dstg = 4
 				sqor = -1
 				sepI = 1
@@ -78055,8 +78219,8 @@ GAME
 				attN = bottom, 14
 				mass = 0.186996013
 				shielded = False
-				temp = 297.54364409439876
-				tempExt = 296.64502465567034
+				temp = 209.98621298544339
+				tempExt = 210.10003286603069
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -78176,7 +78340,7 @@ GAME
 				{
 					name = ModuleCryoTank
 					isEnabled = True
-					LastUpdateTime = 429.91491250833496
+					LastUpdateTime = 58946.422539558727
 					CoolingEnabled = True
 					BoiloffOccuring = False
 					stagingEnabled = True
@@ -78205,7 +78369,7 @@ GAME
 				RESOURCE
 				{
 					name = LqdHydrogen
-					amount = 2400
+					amount = 2055.7426287821058
 					maxAmount = 2400
 					flowState = True
 					isTweakable = True
@@ -78216,7 +78380,7 @@ GAME
 				RESOURCE
 				{
 					name = Oxidizer
-					amount = 160
+					amount = 137.04950109094017
 					maxAmount = 160
 					flowState = True
 					isTweakable = True
@@ -78229,8 +78393,8 @@ GAME
 			{
 				name = fuelTank2-2
 				cid = 4292279588
-				uid = 268963428
-				mid = 2676595495
+				uid = 1928894129
+				mid = 2272519823
 				launchID = 22
 				parent = 13
 				position = 0,-6.3282890319824219,0
@@ -78249,8 +78413,8 @@ GAME
 				attN = bottom, 15
 				mass = 0.373992026
 				shielded = False
-				temp = 297.57541983790298
-				tempExt = 296.74102093593393
+				temp = 210.05334366097665
+				tempExt = 210.42467695520415
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -78370,7 +78534,7 @@ GAME
 				{
 					name = ModuleCryoTank
 					isEnabled = True
-					LastUpdateTime = 429.91491250833496
+					LastUpdateTime = 58863.582539481577
 					CoolingEnabled = True
 					BoiloffOccuring = False
 					stagingEnabled = True
@@ -78399,7 +78563,7 @@ GAME
 				RESOURCE
 				{
 					name = LqdHydrogen
-					amount = 4800
+					amount = 0
 					maxAmount = 4800
 					flowState = True
 					isTweakable = True
@@ -78410,7 +78574,7 @@ GAME
 				RESOURCE
 				{
 					name = Oxidizer
-					amount = 320
+					amount = 0
 					maxAmount = 320
 					flowState = True
 					isTweakable = True
@@ -78423,8 +78587,8 @@ GAME
 			{
 				name = cryoengine-125-2
 				cid = 4292266008
-				uid = 2115789038
-				mid = 2676595495
+				uid = 2001250878
+				mid = 2272519823
 				launchID = 22
 				parent = 14
 				position = 0,-8.143463134765625,0
@@ -78440,14 +78604,14 @@ GAME
 				attm = 0
 				srfN = srfAttach, -1
 				attN = top, 14
-				attN = bottom, 16
+				attN = bottom, -1
 				mass = 0.699999988
-				shielded = True
-				temp = 297.73731470553366
-				tempExt = 297.73634659501602
+				shielded = False
+				temp = 210.11081556953479
+				tempExt = 210.27636624283332
 				tempExtUnexp = 4
 				expt = 0.5
-				state = 0
+				state = 1
 				attached = True
 				autostrutMode = Off
 				rigidAttachment = False
@@ -78467,9 +78631,9 @@ GAME
 				{
 					name = ModuleEnginesFX
 					isEnabled = True
-					staged = False
+					staged = True
 					flameout = False
-					EngineIgnited = False
+					EngineIgnited = True
 					engineShutdown = False
 					currentThrottle = 0
 					thrustPercentage = 100
@@ -78507,7 +78671,7 @@ GAME
 					enableYaw = True
 					enablePitch = True
 					enableRoll = True
-					gimbalActive = False
+					gimbalActive = True
 					stagingEnabled = True
 					EVENTS
 					{
@@ -78547,7 +78711,7 @@ GAME
 				{
 					name = FXModuleAnimateThrottle
 					isEnabled = True
-					animState = 0
+					animState = 0.00481934007
 					stagingEnabled = True
 					EVENTS
 					{
@@ -78744,1793 +78908,7 @@ GAME
 					critical = False
 					quality = False
 					last = 2614358.4190108678
-					next = 112256346.26470457
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = KOSNameTag
-					isEnabled = True
-					nameTag = 
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				RESOURCE
-				{
-					name = ElectricCharge
-					amount = 0
-					maxAmount = 0
-					flowState = True
-					isTweakable = False
-					hideFlow = True
-					isVisible = True
-					flowMode = Both
-				}
-			}
-			PART
-			{
-				name = stackDecoupler
-				cid = 4291937050
-				uid = 1555281598
-				mid = 2676595495
-				launchID = 22
-				parent = 15
-				position = 0,-8.460296630859375,0
-				rotation = 0,0,0,1
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 3
-				resPri = 0
-				dstg = 5
-				sqor = 3
-				sepI = 3
-				sidx = 0
-				attm = 0
-				srfN = , -1
-				attN = bottom, 17
-				attN = top, 15
-				mass = 0.0500000007
-				shielded = True
-				temp = 297.7373237144331
-				tempExt = 297.73578471691002
-				tempExtUnexp = 4
-				expt = 0.5
-				state = 0
-				attached = True
-				autostrutMode = Off
-				rigidAttachment = False
-				flag = ContractConfigurator/Agencies/CollectScience
-				rTrf = stackDecoupler
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleDecouple
-					isEnabled = True
-					ejectionForcePercent = 100
-					isDecoupled = False
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-						DecoupleAction
-						{
-							actionGroup = None
-						}
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleToggleCrossfeed
-					isEnabled = True
-					crossfeedStatus = False
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-						ToggleAction
-						{
-							actionGroup = None
-						}
-						EnableAction
-						{
-							actionGroup = None
-						}
-						DisableAction
-						{
-							actionGroup = None
-						}
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleTestSubject
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = TweakScale
-					isEnabled = True
-					currentScale = 1.25
-					defaultScale = 1.25
-					defaultTransformScale = (0, 0, 0)
-					DryCost = 400
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = GeometryPartModule
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = FARAeroPartModule
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = FARPartModule
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = KOSNameTag
-					isEnabled = True
-					nameTag = 
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-			}
-			PART
-			{
-				name = strutCubeMedium
-				cid = 4291818302
-				uid = 486044137
-				mid = 2676595495
-				launchID = 22
-				parent = 16
-				position = 0,-9.1597709655761719,0
-				rotation = 0,0,0,1
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 3
-				resPri = 0
-				dstg = 6
-				sqor = -1
-				sepI = 3
-				sidx = -1
-				attm = 0
-				srfN = srfAttach, -1
-				attN = top, 16
-				attN = bottom, 18
-				mass = 0.00400000019
-				shielded = True
-				temp = 297.72187365535626
-				tempExt = 297.72629808058787
-				tempExtUnexp = 4
-				expt = 0.5
-				state = 0
-				attached = True
-				autostrutMode = Off
-				rigidAttachment = False
-				flag = ContractConfigurator/Agencies/CollectScience
-				rTrf = strutCubeMedium
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = TweakScale
-					isEnabled = True
-					currentScale = 100
-					defaultScale = 100
-					defaultTransformScale = (0, 0, 0)
-					DryCost = 64
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = GeometryPartModule
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = FARAeroPartModule
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = FARPartModule
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = KOSNameTag
-					isEnabled = True
-					nameTag = 
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-			}
-			PART
-			{
-				name = batteryBank
-				cid = 4291193454
-				uid = 2083852761
-				mid = 2676595495
-				launchID = 22
-				parent = 17
-				position = 0,-9.8371047973632813,0
-				rotation = 0,0,0,1
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 3
-				resPri = 3
-				dstg = 6
-				sqor = -1
-				sepI = 3
-				sidx = -1
-				attm = 0
-				srfN = , -1
-				attN = top, 17
-				attN = bottom, 19
-				mass = 0.0500000007
-				shielded = True
-				temp = 297.71832677680908
-				tempExt = 297.7193231044281
-				tempExtUnexp = 4
-				expt = 0.5
-				state = 0
-				attached = True
-				autostrutMode = Off
-				rigidAttachment = False
-				flag = ContractConfigurator/Agencies/CollectScience
-				rTrf = batteryBank
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = TweakScale
-					isEnabled = True
-					currentScale = 1.25
-					defaultScale = 1.25
-					defaultTransformScale = (0, 0, 0)
-					DryCost = 880
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = GeometryPartModule
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = FARAeroPartModule
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = FARPartModule
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = KOSNameTag
-					isEnabled = True
-					nameTag = 
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				RESOURCE
-				{
-					name = ElectricCharge
-					amount = 781.29979643753791
-					maxAmount = 1000
-					flowState = True
-					isTweakable = True
-					hideFlow = False
-					isVisible = True
-					flowMode = Both
-				}
-			}
-			PART
-			{
-				name = advSasModule
-				cid = 4291204726
-				uid = 1168191148
-				mid = 2676595495
-				launchID = 22
-				parent = 18
-				position = 0,-10.146987915039063,0
-				rotation = 0,0,0,1
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 3
-				resPri = 0
-				dstg = 6
-				sqor = -1
-				sepI = 3
-				sidx = -1
-				attm = 0
-				srfN = , -1
-				attN = top, 18
-				attN = bottom, 20
-				mass = 0.100000001
-				shielded = True
-				temp = 297.72093353447258
-				tempExt = 297.71914539324848
-				tempExtUnexp = 4
-				expt = 0.5
-				state = 0
-				attached = True
-				autostrutMode = Off
-				rigidAttachment = False
-				flag = ContractConfigurator/Agencies/CollectScience
-				rTrf = advSasModule
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleReactionWheel
-					isEnabled = True
-					actuatorModeCycle = 0
-					authorityLimiter = 100
-					stateString = Running
-					stagingEnabled = True
-					WheelState = Active
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-						CycleAction
-						{
-							actionGroup = None
-						}
-						Activate
-						{
-							actionGroup = None
-						}
-						Deactivate
-						{
-							actionGroup = None
-						}
-						Toggle
-						{
-							actionGroup = None
-						}
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = AYA_SAS
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = TweakScale
-					isEnabled = True
-					currentScale = 1.25
-					defaultScale = 1.25
-					defaultTransformScale = (0, 0, 0)
-					DryCost = 1200
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = GeometryPartModule
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = FARAeroPartModule
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = FARPartModule
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = Reliability
-					isEnabled = True
-					broken = False
-					critical = False
-					quality = False
-					last = 2614358.4190108678
-					next = 21536645.552158006
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = KOSNameTag
-					isEnabled = True
-					nameTag = 
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-			}
-			PART
-			{
-				name = fairingSize2
-				cid = 4291925456
-				uid = 3024046816
-				mid = 2676595495
-				launchID = 22
-				parent = 19
-				position = 0,-10.566009521484375,0
-				rotation = 0,0,0,1
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 3
-				resPri = 0
-				dstg = 7
-				sqor = 7
-				sepI = 3
-				sidx = 0
-				attm = 0
-				srfN = , -1
-				attN = interstage01a, -1
-				attN = interstage01b, -1
-				attN = interstage02a, -1
-				attN = interstage02b, -1
-				attN = interstage03a, -1
-				attN = interstage03b, -1
-				attN = interstage04a, -1
-				attN = interstage04b, -1
-				attN = interstage05a, -1
-				attN = interstage05b, -1
-				attN = interstage06a, -1
-				attN = interstage06b, -1
-				attN = top, 19
-				attN = bottom, 21
-				mass = 0.479924858
-				shielded = False
-				temp = 297.83901758840915
-				tempExt = 296.85438942296207
-				tempExtUnexp = 4
-				expt = 0.5
-				state = 0
-				attached = True
-				autostrutMode = Off
-				rigidAttachment = False
-				flag = ContractConfigurator/Agencies/CollectScience
-				rTrf = fairingSize2
-				modCost = 304.924866
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleProceduralFairing
-					isEnabled = True
-					interstageCraftID = 4292279588
-					nArcs = 2
-					ejectionForce = 100
-					useClamshell = False
-					stagingEnabled = False
-					fsm = st_idle
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-						DeployFairingAction
-						{
-							actionGroup = None
-						}
-					}
-					XSECTION
-					{
-						h = 0
-						r = 1.25
-					}
-					XSECTION
-					{
-						h = 3.2432251
-						r = 1.24392748
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleTestSubject
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleStructuralNode
-					isEnabled = True
-					spawnState = False
-					visibilityState = True
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleStructuralNode
-					isEnabled = True
-					spawnState = False
-					visibilityState = True
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleStructuralNode
-					isEnabled = True
-					spawnState = False
-					visibilityState = True
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleStructuralNode
-					isEnabled = True
-					spawnState = False
-					visibilityState = True
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleStructuralNode
-					isEnabled = True
-					spawnState = False
-					visibilityState = True
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleStructuralNode
-					isEnabled = True
-					spawnState = False
-					visibilityState = True
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleStructuralNode
-					isEnabled = True
-					spawnState = False
-					visibilityState = True
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleStructuralNode
-					isEnabled = True
-					spawnState = False
-					visibilityState = True
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleStructuralNode
-					isEnabled = True
-					spawnState = False
-					visibilityState = True
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleStructuralNode
-					isEnabled = True
-					spawnState = False
-					visibilityState = True
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleStructuralNode
-					isEnabled = True
-					spawnState = False
-					visibilityState = True
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleStructuralNode
-					isEnabled = True
-					spawnState = False
-					visibilityState = True
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleStructuralNodeToggle
-					isEnabled = True
-					showMesh = True
-					showNodes = False
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = AYA_CargoBay
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = GeometryPartModule
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = FARAeroPartModule
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = FARPartModule
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = KOSNameTag
-					isEnabled = True
-					nameTag = 
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-			}
-			PART
-			{
-				name = fuelTank1-5
-				cid = 4291376726
-				uid = 1131581505
-				mid = 2676595495
-				launchID = 22
-				parent = 20
-				position = 0,-13.515953063964844,0
-				rotation = 0,0,0,1
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 3
-				resPri = 0
-				dstg = 8
-				sqor = -1
-				sepI = 3
-				sidx = -1
-				attm = 0
-				srfN = srfAttach, -1
-				attN = top, 20
-				attN = bottom, 22
-				mass = 1.12197602
-				shielded = False
-				temp = 298.04429163994678
-				tempExt = 297.85633771693335
-				tempExtUnexp = 4
-				expt = 0.5
-				state = 0
-				attached = True
-				autostrutMode = Root
-				rigidAttachment = False
-				flag = ContractConfigurator/Agencies/CollectScience
-				rTrf = fuelTank1-5
-				modCost = -1501.19995
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = TweakScale
-					isEnabled = True
-					currentScale = 2.5
-					defaultScale = 2.5
-					defaultTransformScale = (0, 0, 0)
-					DryCost = 9600
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = GeometryPartModule
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = FARAeroPartModule
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = FARPartModule
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = KOSNameTag
-					isEnabled = True
-					nameTag = 
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleB9PartSwitch
-					isEnabled = True
-					stagingEnabled = True
-					moduleID = fuelSwitch
-					currentSubtype = LH2/O
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleCryoTank
-					isEnabled = True
-					LastUpdateTime = 429.91491250833496
-					CoolingEnabled = True
-					BoiloffOccuring = False
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-						EnableAction
-						{
-							actionGroup = None
-						}
-						DisableAction
-						{
-							actionGroup = None
-						}
-						ToggleAction
-						{
-							actionGroup = None
-						}
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				RESOURCE
-				{
-					name = LqdHydrogen
-					amount = 14400
-					maxAmount = 14400
-					flowState = True
-					isTweakable = True
-					hideFlow = False
-					isVisible = True
-					flowMode = Both
-				}
-				RESOURCE
-				{
-					name = Oxidizer
-					amount = 960
-					maxAmount = 960
-					flowState = True
-					isTweakable = True
-					hideFlow = False
-					isVisible = True
-					flowMode = Both
-				}
-			}
-			PART
-			{
-				name = fuelTank1-5
-				cid = 4291222530
-				uid = 3585474929
-				mid = 2676595495
-				launchID = 22
-				parent = 21
-				position = 0,-19.015834808349609,0
-				rotation = 0,0,0,1
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 3
-				resPri = 1
-				dstg = 8
-				sqor = -1
-				sepI = 3
-				sidx = -1
-				attm = 0
-				srfN = srfAttach, -1
-				attN = top, 21
-				attN = bottom, 23
-				mass = 1.12197602
-				shielded = False
-				temp = 299.06632412429951
-				tempExt = 298.67354812247783
-				tempExtUnexp = 4
-				expt = 0.5
-				state = 0
-				attached = True
-				autostrutMode = Root
-				rigidAttachment = False
-				flag = ContractConfigurator/Agencies/CollectScience
-				rTrf = fuelTank1-5
-				modCost = -1501.19995
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = TweakScale
-					isEnabled = True
-					currentScale = 2.5
-					defaultScale = 2.5
-					defaultTransformScale = (0, 0, 0)
-					DryCost = 9600
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = GeometryPartModule
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = FARAeroPartModule
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = FARPartModule
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = KOSNameTag
-					isEnabled = True
-					nameTag = 
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleB9PartSwitch
-					isEnabled = True
-					stagingEnabled = True
-					moduleID = fuelSwitch
-					currentSubtype = LH2/O
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleCryoTank
-					isEnabled = True
-					LastUpdateTime = 429.91491250833496
-					CoolingEnabled = True
-					BoiloffOccuring = False
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-						EnableAction
-						{
-							actionGroup = None
-						}
-						DisableAction
-						{
-							actionGroup = None
-						}
-						ToggleAction
-						{
-							actionGroup = None
-						}
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				RESOURCE
-				{
-					name = LqdHydrogen
-					amount = 10730.58867777776
-					maxAmount = 14400
-					flowState = True
-					isTweakable = True
-					hideFlow = False
-					isVisible = True
-					flowMode = Both
-				}
-				RESOURCE
-				{
-					name = Oxidizer
-					amount = 715.41682186925811
-					maxAmount = 960
-					flowState = True
-					isTweakable = True
-					hideFlow = False
-					isVisible = True
-					flowMode = Both
-				}
-			}
-			PART
-			{
-				name = cryoengine-25-2
-				cid = 4291376664
-				uid = 2944185666
-				mid = 2676595495
-				launchID = 22
-				parent = 22
-				position = 0,-22.876502990722656,0
-				rotation = 0,0,0,1
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 4
-				resPri = 0
-				dstg = 8
-				sqor = 4
-				sepI = 3
-				sidx = 0
-				attm = 0
-				srfN = srfAttach, -1
-				attN = top, 22
-				attN = bottom, -1
-				mass = 2.75
-				shielded = False
-				temp = 299.49706462990997
-				tempExt = 299.31200104660093
-				tempExtUnexp = 4
-				expt = 0.5
-				state = 1
-				attached = True
-				autostrutMode = Off
-				rigidAttachment = False
-				flag = ContractConfigurator/Agencies/CollectScience
-				rTrf = cryoengine-25-2
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleEnginesFX
-					isEnabled = True
-					staged = True
-					flameout = False
-					EngineIgnited = True
-					engineShutdown = False
-					currentThrottle = 0
-					thrustPercentage = 100
-					manuallyOverridden = False
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-						OnAction
-						{
-							actionGroup = None
-						}
-						ShutdownAction
-						{
-							actionGroup = None
-						}
-						ActivateAction
-						{
-							actionGroup = None
-						}
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleGimbal
-					isEnabled = True
-					gimbalLock = False
-					gimbalLimiter = 100
-					currentShowToggles = False
-					enableYaw = True
-					enablePitch = True
-					enableRoll = True
-					gimbalActive = True
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-						ToggleAction
-						{
-							actionGroup = None
-						}
-						LockAction
-						{
-							actionGroup = None
-						}
-						FreeAction
-						{
-							actionGroup = None
-						}
-						TogglePitchAction
-						{
-							actionGroup = None
-						}
-						ToggleYawAction
-						{
-							actionGroup = None
-						}
-						ToggleRollAction
-						{
-							actionGroup = None
-						}
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = FXModuleAnimateThrottle
-					isEnabled = True
-					animState = 0.0235152394
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleAlternator
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleB9PartSwitch
-					isEnabled = True
-					stagingEnabled = True
-					moduleID = meshSwitch
-					currentSubtype = 2.5m
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = FXModuleLookAtConstraint
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleJettison
-					isEnabled = True
-					isJettisoned = True
-					shroudHideOverride = False
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-						JettisonAction
-						{
-							actionGroup = None
-						}
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleTestSubject
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleSurfaceFX
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = TweakScale
-					isEnabled = True
-					currentScale = 2.5
-					defaultScale = 2.5
-					defaultTransformScale = (0, 0, 0)
-					DryCost = 4600
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = GeometryPartModule
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = FARAeroPartModule
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = FARPartModule
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = Reliability
-					isEnabled = True
-					broken = False
-					critical = False
-					quality = False
-					last = 2614358.4190108678
-					next = 146308627.45247933
+					next = 143083583.85506749
 					stagingEnabled = True
 					EVENTS
 					{
@@ -80574,8 +78952,8 @@ GAME
 			{
 				name = strutCubeMedium
 				cid = 4291849684
-				uid = 2031321089
-				mid = 2676595495
+				uid = 953987251
+				mid = 2272519823
 				launchID = 22
 				parent = 14
 				position = 0.75791525840759277,-7.7282867431640625,1.1920928955078125E-07
@@ -80589,16 +78967,16 @@ GAME
 				sepI = 1
 				sidx = -1
 				attm = 1
-				sym = 26
-				sym = 28
-				sym = 31
+				sym = 18
+				sym = 20
+				sym = 23
 				srfN = srfAttach, 14
 				attN = top, -1
 				attN = bottom, -1
 				mass = 0.00400000019
-				shielded = True
-				temp = 297.76159331086967
-				tempExt = 297.76259081779625
+				shielded = False
+				temp = 209.31777620753303
+				tempExt = 209.55650325486167
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -80702,10 +79080,10 @@ GAME
 			{
 				name = landingLeg1
 				cid = 4291838342
-				uid = 1685470128
-				mid = 2676595495
+				uid = 2448292537
+				mid = 2272519823
 				launchID = 22
-				parent = 24
+				parent = 16
 				position = 0.86253762245178223,-8.2455062866210938,1.1920928955078125E-07
 				rotation = -0.135323569,0.69403702,0.135323569,0.694037259
 				mirror = 1,1,1
@@ -80717,14 +79095,14 @@ GAME
 				sepI = 1
 				sidx = -1
 				attm = 1
-				sym = 27
-				sym = 29
-				sym = 32
-				srfN = srfAttach, 24
+				sym = 19
+				sym = 21
+				sym = 24
+				srfN = srfAttach, 16
 				mass = 0.0500000007
-				shielded = True
-				temp = 297.76185593191445
-				tempExt = 297.76267289634444
+				shielded = False
+				temp = 209.13627672264636
+				tempExt = 210.26945468460741
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -80954,8 +79332,8 @@ GAME
 			{
 				name = strutCubeMedium
 				cid = 4291849394
-				uid = 2221216372
-				mid = 2676595495
+				uid = 3386644514
+				mid = 2272519823
 				launchID = 22
 				parent = 14
 				position = -5.9604644775390625E-08,-7.7282867431640625,0.75791525840759277
@@ -80969,16 +79347,16 @@ GAME
 				sepI = 1
 				sidx = -1
 				attm = 1
-				sym = 24
-				sym = 28
-				sym = 31
+				sym = 16
+				sym = 20
+				sym = 23
 				srfN = srfAttach, 14
 				attN = top, -1
 				attN = bottom, -1
 				mass = 0.00400000019
-				shielded = True
-				temp = 297.76159331086967
-				tempExt = 297.76259081779625
+				shielded = False
+				temp = 208.73765390802092
+				tempExt = 209.46217589558216
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -81082,11 +79460,11 @@ GAME
 			{
 				name = landingLeg1
 				cid = 4291833846
-				uid = 13298204
-				mid = 2676595495
+				uid = 825348821
+				mid = 2272519823
 				launchID = 22
-				parent = 26
-				position = 1.4901161193847656E-07,-8.2455062866210938,0.86253815889358521
+				parent = 18
+				position = 2.0861625671386719E-07,-8.2455062866210938,0.86253827810287476
 				rotation = -0.191376418,-1.78813934E-07,0,0.981516898
 				mirror = 1,1,1
 				symMethod = Radial
@@ -81097,14 +79475,14 @@ GAME
 				sepI = 1
 				sidx = -1
 				attm = 1
-				sym = 25
-				sym = 29
-				sym = 32
-				srfN = srfAttach, 26
+				sym = 17
+				sym = 21
+				sym = 24
+				srfN = srfAttach, 18
 				mass = 0.0500000007
-				shielded = True
-				temp = 297.76185593191445
-				tempExt = 297.76267289634444
+				shielded = False
+				temp = 208.27705652128046
+				tempExt = 209.19123737432227
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -81334,8 +79712,8 @@ GAME
 			{
 				name = strutCubeMedium
 				cid = 4291849344
-				uid = 2010195877
-				mid = 2676595495
+				uid = 620652841
+				mid = 2272519823
 				launchID = 22
 				parent = 14
 				position = -2.9802322387695313E-08,-7.7282867431640625,-0.75791507959365845
@@ -81349,16 +79727,16 @@ GAME
 				sepI = 1
 				sidx = -1
 				attm = 1
-				sym = 24
-				sym = 26
-				sym = 31
+				sym = 16
+				sym = 18
+				sym = 23
 				srfN = srfAttach, 14
 				attN = top, -1
 				attN = bottom, -1
 				mass = 0.00400000019
-				shielded = True
-				temp = 297.76166772777566
-				tempExt = 297.76266814268098
+				shielded = False
+				temp = 208.41597364948387
+				tempExt = 209.33770617266609
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -81462,11 +79840,11 @@ GAME
 			{
 				name = landingLeg1
 				cid = 4291833708
-				uid = 1887186378
-				mid = 2676595495
+				uid = 3616364548
+				mid = 2272519823
 				launchID = 22
-				parent = 28
-				position = 1.1920928955078125E-07,-8.2455062866210938,-0.86253815889358521
+				parent = 20
+				position = 1.7881393432617188E-07,-8.2455062866210938,-0.86253815889358521
 				rotation = 1.49011612E-08,0.981516898,0.191376418,8.94069672E-08
 				mirror = 1,1,1
 				symMethod = Radial
@@ -81477,14 +79855,14 @@ GAME
 				sepI = 1
 				sidx = -1
 				attm = 1
-				sym = 25
-				sym = 27
-				sym = 32
-				srfN = srfAttach, 28
+				sym = 17
+				sym = 19
+				sym = 24
+				srfN = srfAttach, 20
 				mass = 0.0500000007
-				shielded = True
-				temp = 297.76197918339898
-				tempExt = 297.76278111670632
+				shielded = False
+				temp = 208.12079452677489
+				tempExt = 209.07704230189458
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -81714,11 +80092,11 @@ GAME
 			{
 				name = dmsurfacelaser
 				cid = 4291467756
-				uid = 75310150
-				mid = 2676595495
+				uid = 2492341309
+				mid = 2272519823
 				launchID = 22
-				parent = 28
-				position = -0.20000037550926208,-7.7282905578613281,-0.75791507959365845
+				parent = 20
+				position = -0.20000049471855164,-7.7282905578613281,-0.75791507959365845
 				rotation = 0,0,-0.707106829,-0.707106829
 				mirror = 1,1,1
 				symMethod = Radial
@@ -81729,12 +80107,12 @@ GAME
 				sepI = 1
 				sidx = -1
 				attm = 1
-				srfN = srfAttach, 28
+				srfN = srfAttach, 20
 				attN = bottom, -1
 				mass = 0.0149999997
-				shielded = True
-				temp = 297.76197796129082
-				tempExt = 297.76278028444386
+				shielded = False
+				temp = 208.24762318930138
+				tempExt = 208.95077252495091
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -81898,8 +80276,8 @@ GAME
 			{
 				name = strutCubeMedium
 				cid = 4291849294
-				uid = 1603345666
-				mid = 2676595495
+				uid = 3927837023
+				mid = 2272519823
 				launchID = 22
 				parent = 14
 				position = -0.757915198802948,-7.7282867431640625,0
@@ -81913,16 +80291,16 @@ GAME
 				sepI = 1
 				sidx = -1
 				attm = 1
-				sym = 24
-				sym = 26
-				sym = 28
+				sym = 16
+				sym = 18
+				sym = 20
 				srfN = srfAttach, 14
 				attN = top, -1
 				attN = bottom, -1
 				mass = 0.00400000019
-				shielded = True
-				temp = 297.76159331086967
-				tempExt = 297.76259081779625
+				shielded = False
+				temp = 209.38418137941537
+				tempExt = 209.59073533717685
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -82026,10 +80404,10 @@ GAME
 			{
 				name = landingLeg1
 				cid = 4291833570
-				uid = 882940558
-				mid = 2676595495
+				uid = 294153433
+				mid = 2272519823
 				launchID = 22
-				parent = 31
+				parent = 23
 				position = -0.86253774166107178,-8.2455062866210938,0
 				rotation = 0.135323569,0.694037259,0.135323569,-0.69403702
 				mirror = 1,1,1
@@ -82041,14 +80419,14 @@ GAME
 				sepI = 1
 				sidx = -1
 				attm = 1
-				sym = 25
-				sym = 27
-				sym = 29
-				srfN = srfAttach, 31
+				sym = 17
+				sym = 19
+				sym = 21
+				srfN = srfAttach, 23
 				mass = 0.0500000007
-				shielded = True
-				temp = 297.76185593191445
-				tempExt = 297.76267289634444
+				shielded = False
+				temp = 209.20427779246046
+				tempExt = 210.32180870733782
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -82278,8 +80656,8 @@ GAME
 			{
 				name = kerbalism-container-radial-small
 				cid = 4291620174
-				uid = 2220220098
-				mid = 2676595495
+				uid = 2056469738
+				mid = 2272519823
 				launchID = 22
 				parent = 14
 				position = -1.0396180152893066,-7.2231407165527344,1.1920928955078125E-07
@@ -82293,12 +80671,12 @@ GAME
 				sepI = 1
 				sidx = -1
 				attm = 1
-				sym = 34
+				sym = 26
 				srfN = srfAttach, 14
 				mass = 0.00499999989
-				shielded = True
-				temp = 297.73662936607133
-				tempExt = 297.73762913084352
+				shielded = False
+				temp = 210.11188258683546
+				tempExt = 210.26505240757493
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -82398,7 +80776,7 @@ GAME
 				RESOURCE
 				{
 					name = Oxygen
-					amount = 11615.900001344951
+					amount = 10899.279304067715
 					maxAmount = 11620.3992
 					flowState = True
 					isTweakable = True
@@ -82411,8 +80789,8 @@ GAME
 			{
 				name = kerbalism-container-radial-small
 				cid = 4291618280
-				uid = 2353509529
-				mid = 2676595495
+				uid = 354982232
+				mid = 2272519823
 				launchID = 22
 				parent = 14
 				position = 1.0396180152893066,-7.2231407165527344,-1.1920928955078125E-07
@@ -82426,12 +80804,12 @@ GAME
 				sepI = 1
 				sidx = -1
 				attm = 1
-				sym = 33
+				sym = 25
 				srfN = srfAttach, 14
 				mass = 0.00499999989
-				shielded = True
-				temp = 297.73662936607133
-				tempExt = 297.73762913084352
+				shielded = False
+				temp = 210.11027829658391
+				tempExt = 210.28513443304104
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -82531,7 +80909,7 @@ GAME
 				RESOURCE
 				{
 					name = Oxygen
-					amount = 11615.900001344951
+					amount = 10899.279304067715
 					maxAmount = 11620.3992
 					flowState = True
 					isTweakable = True
@@ -82544,8 +80922,8 @@ GAME
 			{
 				name = setiMiniSolarRetr
 				cid = 4291652688
-				uid = 1289769637
-				mid = 2676595495
+				uid = 2613069817
+				mid = 2272519823
 				launchID = 22
 				parent = 14
 				position = -1.2017931938171387,-5.748809814453125,1.1920928955078125E-07
@@ -82559,14 +80937,14 @@ GAME
 				sepI = 1
 				sidx = -1
 				attm = 1
-				sym = 36
-				sym = 37
-				sym = 38
+				sym = 28
+				sym = 29
+				sym = 30
 				srfN = srfAttach, 14
 				mass = 0.0109999999
 				shielded = False
-				temp = 297.39344713869554
-				tempExt = 296.92733949219303
+				temp = 210.79198513385828
+				tempExt = 212.65119308089893
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -82590,10 +80968,10 @@ GAME
 					name = ModuleDeployableSolarPanel
 					isEnabled = True
 					efficiencyMult = 1
-					launchUT = 2614374.9990108833
-					currentRotation = (1.06245252E-05, -0.950452805, 1.63912739E-06, 0.310868979)
+					launchUT = 2614375.4790108837
+					currentRotation = (3.48687081E-06, -0.898746252, 7.45057889E-07, 0.438468993)
 					storedAnimationTime = 0
-					storedAnimationSpeed = 1
+					storedAnimationSpeed = 0
 					deployState = EXTENDED
 					stagingEnabled = True
 					EVENTS
@@ -82701,7 +81079,7 @@ GAME
 					critical = False
 					quality = False
 					last = 2614358.4190108678
-					next = 37991264.803978555
+					next = 54648286.289374769
 					stagingEnabled = True
 					EVENTS
 					{
@@ -82753,8 +81131,8 @@ GAME
 			{
 				name = setiMiniSolarRetr
 				cid = 4291345982
-				uid = 3092985586
-				mid = 2676595495
+				uid = 1380022884
+				mid = 2272519823
 				launchID = 22
 				parent = 14
 				position = 0,-5.748809814453125,1.2017930746078491
@@ -82768,14 +81146,14 @@ GAME
 				sepI = 1
 				sidx = -1
 				attm = 1
-				sym = 35
-				sym = 37
-				sym = 38
+				sym = 27
+				sym = 29
+				sym = 30
 				srfN = srfAttach, 14
 				mass = 0.0109999999
 				shielded = False
-				temp = 296.77407610969726
-				tempExt = 294.88105148478263
+				temp = 210.06968003761529
+				tempExt = 210.10406917251095
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -82799,10 +81177,10 @@ GAME
 					name = ModuleDeployableSolarPanel
 					isEnabled = True
 					efficiencyMult = 1
-					launchUT = 2614374.9990108833
-					currentRotation = (2.89760028E-05, -0.999999523, -8.94069558E-07, 0.00102600176)
+					launchUT = 2614375.4790108837
+					currentRotation = (-5.37349706E-06, -0.999997973, -4.83989606E-05, 0.00202884362)
 					storedAnimationTime = 0
-					storedAnimationSpeed = 1
+					storedAnimationSpeed = 0
 					deployState = EXTENDED
 					stagingEnabled = True
 					EVENTS
@@ -82910,7 +81288,7 @@ GAME
 					critical = False
 					quality = False
 					last = 2614358.4190108678
-					next = 55490107.891455628
+					next = 36411801.109624289
 					stagingEnabled = True
 					EVENTS
 					{
@@ -82962,8 +81340,8 @@ GAME
 			{
 				name = setiMiniSolarRetr
 				cid = 4291345824
-				uid = 2258820854
-				mid = 2676595495
+				uid = 1747681745
+				mid = 2272519823
 				launchID = 22
 				parent = 14
 				position = 1.2017931938171387,-5.748809814453125,-1.1920928955078125E-07
@@ -82977,14 +81355,14 @@ GAME
 				sepI = 1
 				sidx = -1
 				attm = 1
-				sym = 35
-				sym = 36
-				sym = 38
+				sym = 27
+				sym = 28
+				sym = 30
 				srfN = srfAttach, 14
 				mass = 0.0109999999
 				shielded = False
-				temp = 297.45994821733012
-				tempExt = 297.15191158550255
+				temp = 210.79080229847338
+				tempExt = 212.64692735650792
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -83008,10 +81386,10 @@ GAME
 					name = ModuleDeployableSolarPanel
 					isEnabled = True
 					efficiencyMult = 1
-					launchUT = 2614374.9990108833
-					currentRotation = (1.11311647E-05, 0.950452685, -3.24845246E-06, 0.310869098)
+					launchUT = 2614375.4790108837
+					currentRotation = (-1.13099786E-05, 0.898746192, -1.36196577E-05, 0.438469291)
 					storedAnimationTime = 0
-					storedAnimationSpeed = 1
+					storedAnimationSpeed = 0
 					deployState = EXTENDED
 					stagingEnabled = True
 					EVENTS
@@ -83119,7 +81497,7 @@ GAME
 					critical = False
 					quality = False
 					last = 2614358.4190108678
-					next = 37444683.063523516
+					next = 18379631.751139764
 					stagingEnabled = True
 					EVENTS
 					{
@@ -83171,8 +81549,8 @@ GAME
 			{
 				name = setiMiniSolarRetr
 				cid = 4291345666
-				uid = 2313206891
-				mid = 2676595495
+				uid = 3358941167
+				mid = 2272519823
 				launchID = 22
 				parent = 14
 				position = -1.4901161193847656E-07,-5.748809814453125,-1.2017929553985596
@@ -83186,14 +81564,14 @@ GAME
 				sepI = 1
 				sidx = -1
 				attm = 1
-				sym = 35
-				sym = 36
-				sym = 37
+				sym = 27
+				sym = 28
+				sym = 29
 				srfN = srfAttach, 14
 				mass = 0.0109999999
 				shielded = False
-				temp = 297.39870807218045
-				tempExt = 297.00610380498546
+				temp = 210.408403203528
+				tempExt = 211.66102163301574
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -83217,10 +81595,10 @@ GAME
 					name = ModuleDeployableSolarPanel
 					isEnabled = True
 					efficiencyMult = 1
-					launchUT = 2614374.9990108833
-					currentRotation = (-1.71326064E-05, 0.999999523, 4.70876603E-06, 0.00103464164)
+					launchUT = 2614375.4790108837
+					currentRotation = (-9.81997891E-06, 0.999997973, -4.96506582E-05, 0.00200930843)
 					storedAnimationTime = 0
-					storedAnimationSpeed = 1
+					storedAnimationSpeed = 0
 					deployState = EXTENDED
 					stagingEnabled = True
 					EVENTS
@@ -83328,7 +81706,7 @@ GAME
 					critical = False
 					quality = False
 					last = 2614358.4190108678
-					next = 74552375.035475463
+					next = 14739795.767300954
 					stagingEnabled = True
 					EVENTS
 					{
@@ -83380,8 +81758,8 @@ GAME
 			{
 				name = kerbalism-container-inline-0625
 				cid = 4291527806
-				uid = 2053102033
-				mid = 2676595495
+				uid = 4086650268
+				mid = 2272519823
 				launchID = 22
 				parent = 8
 				position = 0,-1.5765800476074219,0
@@ -83396,12 +81774,12 @@ GAME
 				sidx = -1
 				attm = 0
 				srfN = srfAttach, -1
-				attN = top, 40
+				attN = top, 32
 				attN = bottom, 8
 				mass = 0.0199999996
 				shielded = True
-				temp = 297.74297834527425
-				tempExt = 297.74448973059287
+				temp = 180.10093882929868
+				tempExt = 180.07331788430173
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -83501,7 +81879,7 @@ GAME
 				RESOURCE
 				{
 					name = Food
-					amount = 36.843542399999997
+					amount = 31.335147048995449
 					maxAmount = 36.843542399999997
 					flowState = True
 					isTweakable = True
@@ -83512,7 +81890,7 @@ GAME
 				RESOURCE
 				{
 					name = Water
-					amount = 14.1564576
+					amount = 12.03717053406718
 					maxAmount = 14.1564576
 					flowState = True
 					isTweakable = True
@@ -83525,10 +81903,10 @@ GAME
 			{
 				name = kerbalism-container-inline-0625
 				cid = 4291459884
-				uid = 556929209
-				mid = 2676595495
+				uid = 2208439020
+				mid = 2272519823
 				launchID = 22
-				parent = 39
+				parent = 31
 				position = 0,-1.3665809631347656,0
 				rotation = 0,0,0,1
 				mirror = 1,1,1
@@ -83542,11 +81920,11 @@ GAME
 				attm = 0
 				srfN = srfAttach, -1
 				attN = top, -1
-				attN = bottom, 39
+				attN = bottom, 31
 				mass = 0.0199999996
 				shielded = True
-				temp = 297.74632516296236
-				tempExt = 297.74532606496194
+				temp = 180.04924098755464
+				tempExt = 180.05715918568444
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -83646,7 +82024,7 @@ GAME
 				RESOURCE
 				{
 					name = Food
-					amount = 36.843542399999997
+					amount = 31.335147048995449
 					maxAmount = 36.843542399999997
 					flowState = True
 					isTweakable = True
@@ -83657,7 +82035,7 @@ GAME
 				RESOURCE
 				{
 					name = Water
-					amount = 14.1564576
+					amount = 12.03717053406718
 					maxAmount = 14.1564576
 					flowState = True
 					isTweakable = True
@@ -83670,8 +82048,8 @@ GAME
 			{
 				name = setiProbeStack1
 				cid = 4292439038
-				uid = 284362946
-				mid = 2676595495
+				uid = 1123163653
+				mid = 2272519823
 				launchID = 22
 				parent = 0
 				position = 0,0.7023773193359375,0
@@ -83687,11 +82065,11 @@ GAME
 				attm = 0
 				srfN = srfAttach, -1
 				attN = bottom, 0
-				attN = top, 42
+				attN = top, 34
 				mass = 0.0799999982
 				shielded = False
-				temp = 298.71053546972308
-				tempExt = 297.82202976277358
+				temp = 175.83681316017177
+				tempExt = 175.9871118886208
 				tempExtUnexp = 4
 				expt = 0
 				state = 0
@@ -83941,7 +82319,7 @@ GAME
 					critical = False
 					quality = False
 					last = 2614358.4190108678
-					next = 72407479.264761358
+					next = 31196223.434177615
 					stagingEnabled = True
 					EVENTS
 					{
@@ -84031,6 +82409,12 @@ GAME
 						flight = 0
 						0 = Flight,Kerbin
 						0 = Suborbit,Kerbin
+						0 = Orbit,Kerbin
+						0 = Flyby,Mun
+						0 = Escape,Mun
+						0 = Orbit,Mun
+						0 = Suborbit,Mun
+						0 = Land,Mun
 					}
 					UPGRADESAPPLIED
 					{
@@ -84039,7 +82423,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 199.99164172826303
+					amount = 200
 					maxAmount = 200
 					flowState = True
 					isTweakable = True
@@ -84052,10 +82436,10 @@ GAME
 			{
 				name = batteryBankMini
 				cid = 4292433210
-				uid = 1773561716
-				mid = 2676595495
+				uid = 2886447010
+				mid = 2272519823
 				launchID = 22
-				parent = 41
+				parent = 33
 				position = 0,0.86237716674804688,0
 				rotation = 0,0,0,1
 				mirror = 1,1,1
@@ -84068,12 +82452,12 @@ GAME
 				sidx = -1
 				attm = 0
 				srfN = srfAttach, -1
-				attN = top, 43
-				attN = bottom, 41
+				attN = top, 35
+				attN = bottom, 33
 				mass = 0.00999999978
 				shielded = False
-				temp = 298.63246792774385
-				tempExt = 297.71903708680361
+				temp = 175.64831774862321
+				tempExt = 175.7175964808242
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -84175,7 +82559,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 199.99164172826303
+					amount = 200
 					maxAmount = 200
 					flowState = True
 					isTweakable = True
@@ -84188,10 +82572,10 @@ GAME
 			{
 				name = parachuteSingle
 				cid = 4292419924
-				uid = 2319887719
-				mid = 2676595495
+				uid = 3945005526
+				mid = 2272519823
 				launchID = 22
-				parent = 42
+				parent = 34
 				position = 0,0.9744415283203125,0
 				rotation = 0,0,0,1
 				mirror = 1,1,1
@@ -84204,11 +82588,11 @@ GAME
 				sidx = 0
 				attm = 0
 				srfN = srfAttach, -1
-				attN = bottom, 42
+				attN = bottom, 34
 				mass = 0.127734378
 				shielded = False
-				temp = 298.59292962947677
-				tempExt = 297.55361682531964
+				temp = 175.63946268331867
+				tempExt = 175.62485713005728
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -84394,11 +82778,11 @@ GAME
 			}
 			ACTIONGROUPS
 			{
-				Stage = True, 2614662.67392326
-				Gear = False, 0
+				Stage = True, 2671770.50560227
+				Gear = False, 2673248.14155037
 				Light = False, 0
 				RCS = False, 0
-				SAS = True, 2614686.75392328
+				SAS = True, 2672355.52578827
 				Brakes = False, 0
 				Abort = False, 0
 				Custom01 = False, 0
@@ -84424,20 +82808,15 @@ GAME
 			{
 				MANEUVER
 				{
-					UT = 2614945.7377297734
-					dV = 0,0,1808.2708229675943
+					UT = 2677913.3066998711
+					dV = 0,-0.17132474620878529,547.00298385491681
 				}
-			}
-			TARGET
-			{
-				type = CelestialBody
-				tgtId = Mun
 			}
 			CTRLSTATE
 			{
-				pitch = 0.142788619
-				yaw = 0.0165730529
-				roll = 0.000196260444
+				pitch = -3.50103937E-06
+				yaw = -1.75017394E-05
+				roll = 3.75415084E-06
 				trimPitch = 0
 				trimYaw = 0
 				trimRoll = 0
@@ -84472,26 +82851,26 @@ GAME
 		}
 		VESSEL
 		{
-			pid = 3c8a012aeacb41b59b96bbb8e5447438
-			name = Manned Lander Debris
-			type = Debris
-			sit = SUB_ORBITAL
-			landed = False
+			pid = 00000000000000000000000000000000
+			name = First Mun Landing
+			type = Flag
+			sit = LANDED
+			landed = True
 			landedAt = 
 			displaylandedAt = 
 			splashed = False
-			met = 65.66000006115064
-			lct = 2614659.9539232566
-			lastUT = 2614725.6139233178
+			met = 140.28000013064593
+			lct = 2672208.4257881348
+			lastUT = 2672348.7057882654
 			root = 0
-			lat = -0.094097954349190924
-			lon = -60.017775509561083
-			alt = 117287.3213879941
-			hgt = -1
-			nrm = 0.943144143,-0.33142671,-0.0252144933
-			rot = 0.725142896,0.17798765,-0.326762855,0.579408526
-			CoM = -9.25063723E-05,-8.44493771,5.34055798E-05
-			stg = 6
+			lat = -0.544772529919619
+			lon = -61.712207142892211
+			alt = 5777.8490312064532
+			hgt = 0.398010612
+			nrm = 0.0584906079,0.995891154,0.0691336989
+			rot = 0.670478404,0.502286434,-0.225523457,-0.497298926
+			CoM = 0,0,0
+			stg = 0
 			prst = False
 			ref = 0
 			ctrl = False
@@ -84500,50 +82879,48 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = 2234679.8193008048
-				ECC = 0.12647803500663876
-				INC = 0.096708806415685744
-				LPE = 102.76648868889384
-				LAN = 176.40601400440153
-				MNA = 3.1186452689042405
-				EPH = 2614708.3939233017
-				REF = 1
-				IDENT = Kerbin
+				SMA = 402888.92451560323
+				ECC = 0.99999999999999989
+				INC = 0.54477252991904013
+				LPE = 90.000000000000014
+				LAN = 300.44874748226528
+				MNA = 3.1415926207170166
+				EPH = 2673257.1215503821
+				REF = 2
+				IDENT = Mun
 			}
 			PART
 			{
-				name = shortDecoupler1-2
-				cid = 4291376258
-				uid = 1936892588
-				mid = 2676595495
+				name = flag
+				cid = 4287347814
+				uid = 2081584853
+				mid = 2272519823
 				launchID = 22
 				parent = 0
 				position = 0,0,0
-				rotation = 0,0,0,1.00000012
+				rotation = 0,0,0,1
 				mirror = 1,1,1
 				symMethod = Radial
-				istg = 5
+				istg = 0
 				resPri = 0
-				dstg = 9
-				sqor = 5
-				sepI = 5
-				sidx = 0
+				dstg = 0
+				sqor = -1
+				sepI = 0
+				sidx = -1
 				attm = 0
 				srfN = , -1
-				attN = bottom, 1
-				attN = top, -1
-				mass = 0.300000012
+				mass = 0.00999999978
 				shielded = False
-				temp = 315.90492408646963
-				tempExt = 315.83346619355405
+				temp = 4
+				tempExt = 4
 				tempExtUnexp = 4
 				expt = 0.5
-				state = 1
-				attached = False
+				state = 0
+				attached = True
 				autostrutMode = Off
 				rigidAttachment = False
 				flag = ContractConfigurator/Agencies/CollectScience
-				rTrf = shortDecoupler1-2
+				rTrf = flag(Clone)(Clone)
 				modCost = 0
 				EVENTS
 				{
@@ -84556,58 +82933,12 @@ GAME
 				}
 				MODULE
 				{
-					name = ModuleDecouple
+					name = FlagSite
 					isEnabled = True
-					ejectionForcePercent = 100
-					isDecoupled = True
+					placedBy = Valentina Kerman
+					PlaqueText = For Science!
 					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-						DecoupleAction
-						{
-							actionGroup = None
-						}
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleToggleCrossfeed
-					isEnabled = True
-					crossfeedStatus = False
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-						ToggleAction
-						{
-							actionGroup = None
-						}
-						EnableAction
-						{
-							actionGroup = None
-						}
-						DisableAction
-						{
-							actionGroup = None
-						}
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleTestSubject
-					isEnabled = True
-					stagingEnabled = True
+					state = Placed
 					EVENTS
 					{
 					}
@@ -84620,137 +82951,9 @@ GAME
 				}
 				MODULE
 				{
-					name = TweakScale
+					name = FlagDecal
 					isEnabled = True
-					currentScale = 2.5
-					defaultScale = 2.5
-					defaultTransformScale = (0, 0, 0)
-					DryCost = 550
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = GeometryPartModule
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = FARAeroPartModule
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = FARPartModule
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = KOSNameTag
-					isEnabled = True
-					nameTag = 
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-			}
-			PART
-			{
-				name = fuelTank1-5
-				cid = 4291376200
-				uid = 1421668958
-				mid = 2676595495
-				launchID = 22
-				parent = 0
-				position = 0,-2.9789791107177734,0
-				rotation = 0,0,0,1.00000012
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 5
-				resPri = 0
-				dstg = 10
-				sqor = -1
-				sepI = 5
-				sidx = -1
-				attm = 0
-				srfN = srfAttach, -1
-				attN = top, 0
-				attN = bottom, 2
-				mass = 3
-				shielded = False
-				temp = 316.26361880401276
-				tempExt = 316.28898248935838
-				tempExtUnexp = 4
-				expt = 0.5
-				state = 1
-				attached = True
-				autostrutMode = Off
-				rigidAttachment = False
-				flag = ContractConfigurator/Agencies/CollectScience
-				rTrf = fuelTank1-5
-				modCost = 7.62939453E-06
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = TweakScale
-					isEnabled = True
-					currentScale = 2.5
-					defaultScale = 2.5
-					defaultTransformScale = (0, 0, 0)
-					DryCost = 9600
+					flagDisplayed = True
 					stagingEnabled = True
 					EVENTS
 					{
@@ -84825,139 +83028,6 @@ GAME
 				}
 				MODULE
 				{
-					name = ModuleB9PartSwitch
-					isEnabled = True
-					stagingEnabled = True
-					moduleID = fuelSwitch
-					currentSubtype = LF/O
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleCryoTank
-					isEnabled = True
-					LastUpdateTime = 0
-					CoolingEnabled = False
-					BoiloffOccuring = False
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-						EnableAction
-						{
-							actionGroup = None
-						}
-						DisableAction
-						{
-							actionGroup = None
-						}
-						ToggleAction
-						{
-							actionGroup = None
-						}
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				RESOURCE
-				{
-					name = LiquidFuel
-					amount = 0
-					maxAmount = 2160
-					flowState = True
-					isTweakable = True
-					hideFlow = False
-					isVisible = True
-					flowMode = Both
-				}
-				RESOURCE
-				{
-					name = Oxidizer
-					amount = 0
-					maxAmount = 2640
-					flowState = True
-					isTweakable = True
-					hideFlow = False
-					isVisible = True
-					flowMode = Both
-				}
-			}
-			PART
-			{
-				name = fuelTank1-5
-				cid = 4291376138
-				uid = 1746224229
-				mid = 2676595495
-				launchID = 22
-				parent = 1
-				position = 0,-8.4788570404052734,0
-				rotation = 0,0,0,1.00000012
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 5
-				resPri = 0
-				dstg = 10
-				sqor = -1
-				sepI = 5
-				sidx = -1
-				attm = 0
-				srfN = srfAttach, -1
-				attN = top, 1
-				attN = bottom, 3
-				mass = 3
-				shielded = False
-				temp = 320.20305371753733
-				tempExt = 318.30678148973033
-				tempExtUnexp = 4
-				expt = 0.5
-				state = 1
-				attached = True
-				autostrutMode = Root
-				rigidAttachment = False
-				flag = ContractConfigurator/Agencies/CollectScience
-				rTrf = fuelTank1-5
-				modCost = 7.62939453E-06
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = TweakScale
-					isEnabled = True
-					currentScale = 2.5
-					defaultScale = 2.5
-					defaultTransformScale = (0, 0, 0)
-					DryCost = 9600
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
 					name = GeometryPartModule
 					isEnabled = True
 					stagingEnabled = True
@@ -84975,987 +83045,6 @@ GAME
 				{
 					name = FARAeroPartModule
 					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = FARPartModule
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = KOSNameTag
-					isEnabled = True
-					nameTag = 
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleB9PartSwitch
-					isEnabled = True
-					stagingEnabled = True
-					moduleID = fuelSwitch
-					currentSubtype = LF/O
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleCryoTank
-					isEnabled = True
-					LastUpdateTime = 0
-					CoolingEnabled = False
-					BoiloffOccuring = False
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-						EnableAction
-						{
-							actionGroup = None
-						}
-						DisableAction
-						{
-							actionGroup = None
-						}
-						ToggleAction
-						{
-							actionGroup = None
-						}
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				RESOURCE
-				{
-					name = LiquidFuel
-					amount = 0
-					maxAmount = 2160
-					flowState = True
-					isTweakable = True
-					hideFlow = False
-					isVisible = True
-					flowMode = Both
-				}
-				RESOURCE
-				{
-					name = Oxidizer
-					amount = 0
-					maxAmount = 2640
-					flowState = True
-					isTweakable = True
-					hideFlow = False
-					isVisible = True
-					flowMode = Both
-				}
-			}
-			PART
-			{
-				name = Size2MedEngine
-				cid = 4291376076
-				uid = 2582725970
-				mid = 2676595495
-				launchID = 22
-				parent = 2
-				position = 0,-12.749200820922852,0
-				rotation = 0,0,0,1.00000012
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 6
-				resPri = 0
-				dstg = 10
-				sqor = 6
-				sepI = 5
-				sidx = 0
-				attm = 0
-				srfN = , -1
-				attN = top, 2
-				mass = 4.19999981
-				shielded = False
-				temp = 326.0390258099506
-				tempExt = 323.68125231508446
-				tempExtUnexp = 4
-				expt = 0.5
-				state = 1
-				attached = True
-				autostrutMode = Off
-				rigidAttachment = False
-				flag = ContractConfigurator/Agencies/CollectScience
-				rTrf = Size2MedEngine
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleEnginesFX
-					isEnabled = True
-					staged = True
-					flameout = True
-					EngineIgnited = True
-					engineShutdown = False
-					currentThrottle = 0
-					thrustPercentage = 100
-					manuallyOverridden = False
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-						OnAction
-						{
-							actionGroup = None
-						}
-						ShutdownAction
-						{
-							actionGroup = None
-						}
-						ActivateAction
-						{
-							actionGroup = None
-						}
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleGimbal
-					isEnabled = True
-					gimbalLock = False
-					gimbalLimiter = 100
-					currentShowToggles = False
-					enableYaw = True
-					enablePitch = True
-					enableRoll = True
-					gimbalActive = True
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-						ToggleAction
-						{
-							actionGroup = None
-						}
-						LockAction
-						{
-							actionGroup = None
-						}
-						FreeAction
-						{
-							actionGroup = None
-						}
-						TogglePitchAction
-						{
-							actionGroup = None
-						}
-						ToggleYawAction
-						{
-							actionGroup = None
-						}
-						ToggleRollAction
-						{
-							actionGroup = None
-						}
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleAlternator
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = FXModuleAnimateThrottle
-					isEnabled = True
-					animState = 0.0364557207
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleTestSubject
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleSurfaceFX
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = TweakScale
-					isEnabled = True
-					currentScale = 2.5
-					defaultScale = 2.5
-					defaultTransformScale = (0, 0, 0)
-					DryCost = 9500
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = GeometryPartModule
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = FARAeroPartModule
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = FARPartModule
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = Reliability
-					isEnabled = True
-					broken = False
-					critical = False
-					quality = False
-					last = 2614358.4190108678
-					next = 130089415.47912732
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = KOSNameTag
-					isEnabled = True
-					nameTag = 
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-			}
-			PART
-			{
-				name = R8winglet
-				cid = 4291375902
-				uid = 1917573329
-				mid = 2676595495
-				launchID = 22
-				parent = 2
-				position = -1.2533107995986938,-10.822267532348633,-1.2533109188079834
-				rotation = 2.20197123E-08,0.382683486,-5.3160278E-08,-0.923879683
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 5
-				resPri = 0
-				dstg = 10
-				sqor = -1
-				sepI = 5
-				sidx = -1
-				attm = 1
-				sym = 5
-				sym = 6
-				sym = 7
-				srfN = srfAttach, 2
-				mass = 0.0727867186
-				shielded = False
-				temp = 306.34350456751929
-				tempExt = 309.12117254827507
-				tempExtUnexp = 4
-				expt = 0.100000001
-				state = 1
-				attached = True
-				autostrutMode = Off
-				rigidAttachment = False
-				flag = ContractConfigurator/Agencies/CollectScience
-				rTrf = R8winglet
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = TweakScale
-					isEnabled = True
-					currentScale = 100
-					defaultScale = 100
-					defaultTransformScale = (0, 0, 0)
-					DryCost = 640
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = FARControllableSurface
-					isEnabled = True
-					pitchaxis = 100
-					yawaxis = 100
-					rollaxis = 100
-					pitchaxisDueToAoA = 0
-					brakeRudder = 0
-					maxdeflect = 5
-					isFlap = False
-					isSpoiler = False
-					flapDeflectionLevel = 0
-					maxdeflectFlap = 15
-					massMultiplier = 1
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-						ActivateSpoiler
-						{
-							actionGroup = Brakes
-						}
-						IncreaseDeflect
-						{
-							actionGroup = None
-						}
-						DecreaseDeflect
-						{
-							actionGroup = None
-						}
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = GeometryPartModule
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = FARAeroPartModule
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = KOSNameTag
-					isEnabled = True
-					nameTag = 
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-			}
-			PART
-			{
-				name = R8winglet
-				cid = 4291052002
-				uid = 4182722675
-				mid = 2676595495
-				launchID = 22
-				parent = 2
-				position = -1.2533109188079834,-10.822267532348633,1.2533106803894043
-				rotation = -2.20197087E-08,-0.382683456,-5.31602815E-08,-0.923879743
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 5
-				resPri = 0
-				dstg = 10
-				sqor = -1
-				sepI = 5
-				sidx = -1
-				attm = 1
-				sym = 4
-				sym = 6
-				sym = 7
-				srfN = srfAttach, 2
-				mass = 0.0727867186
-				shielded = False
-				temp = 306.3472261809996
-				tempExt = 309.14495512466976
-				tempExtUnexp = 4
-				expt = 0.100000001
-				state = 1
-				attached = True
-				autostrutMode = Off
-				rigidAttachment = False
-				flag = ContractConfigurator/Agencies/CollectScience
-				rTrf = R8winglet
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = TweakScale
-					isEnabled = True
-					currentScale = 100
-					defaultScale = 100
-					defaultTransformScale = (0, 0, 0)
-					DryCost = 640
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = FARControllableSurface
-					isEnabled = True
-					pitchaxis = 100
-					yawaxis = 100
-					rollaxis = 100
-					pitchaxisDueToAoA = 0
-					brakeRudder = 0
-					maxdeflect = 5
-					isFlap = False
-					isSpoiler = False
-					flapDeflectionLevel = 0
-					maxdeflectFlap = 15
-					massMultiplier = 1
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-						ActivateSpoiler
-						{
-							actionGroup = Brakes
-						}
-						IncreaseDeflect
-						{
-							actionGroup = None
-						}
-						DecreaseDeflect
-						{
-							actionGroup = None
-						}
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = GeometryPartModule
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = FARAeroPartModule
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = KOSNameTag
-					isEnabled = True
-					nameTag = 
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-			}
-			PART
-			{
-				name = R8winglet
-				cid = 4291051948
-				uid = 37271086
-				mid = 2676595495
-				launchID = 22
-				parent = 2
-				position = 1.2533106803894043,-10.822267532348633,1.2533107995986938
-				rotation = -5.31602815E-08,-0.923879743,-2.20197087E-08,-0.382683456
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 5
-				resPri = 0
-				dstg = 10
-				sqor = -1
-				sepI = 5
-				sidx = -1
-				attm = 1
-				sym = 4
-				sym = 5
-				sym = 7
-				srfN = srfAttach, 2
-				mass = 0.0727867186
-				shielded = False
-				temp = 306.89083808961294
-				tempExt = 309.65495123929549
-				tempExtUnexp = 4
-				expt = 0.100000001
-				state = 1
-				attached = True
-				autostrutMode = Off
-				rigidAttachment = False
-				flag = ContractConfigurator/Agencies/CollectScience
-				rTrf = R8winglet
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = TweakScale
-					isEnabled = True
-					currentScale = 100
-					defaultScale = 100
-					defaultTransformScale = (0, 0, 0)
-					DryCost = 640
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = FARControllableSurface
-					isEnabled = True
-					pitchaxis = 100
-					yawaxis = 100
-					rollaxis = 100
-					pitchaxisDueToAoA = 0
-					brakeRudder = 0
-					maxdeflect = 5
-					isFlap = False
-					isSpoiler = False
-					flapDeflectionLevel = 0
-					maxdeflectFlap = 15
-					massMultiplier = 1
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-						ActivateSpoiler
-						{
-							actionGroup = Brakes
-						}
-						IncreaseDeflect
-						{
-							actionGroup = None
-						}
-						DecreaseDeflect
-						{
-							actionGroup = None
-						}
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = GeometryPartModule
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = FARAeroPartModule
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = KOSNameTag
-					isEnabled = True
-					nameTag = 
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-			}
-			PART
-			{
-				name = R8winglet
-				cid = 4291051894
-				uid = 1280976796
-				mid = 2676595495
-				launchID = 22
-				parent = 2
-				position = 1.2533105611801147,-10.822267532348633,-1.2533106803894043
-				rotation = -5.31602815E-08,-0.923879743,2.20197087E-08,0.382683456
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 5
-				resPri = 0
-				dstg = 10
-				sqor = -1
-				sepI = 5
-				sidx = -1
-				attm = 1
-				sym = 4
-				sym = 5
-				sym = 6
-				srfN = srfAttach, 2
-				mass = 0.0727867186
-				shielded = False
-				temp = 306.80732023033534
-				tempExt = 309.57304253824509
-				tempExtUnexp = 4
-				expt = 0.100000001
-				state = 1
-				attached = True
-				autostrutMode = Off
-				rigidAttachment = False
-				flag = ContractConfigurator/Agencies/CollectScience
-				rTrf = R8winglet
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = TweakScale
-					isEnabled = True
-					currentScale = 100
-					defaultScale = 100
-					defaultTransformScale = (0, 0, 0)
-					DryCost = 640
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = FARControllableSurface
-					isEnabled = True
-					pitchaxis = 100
-					yawaxis = 100
-					rollaxis = 100
-					pitchaxisDueToAoA = 0
-					brakeRudder = 0
-					maxdeflect = 5
-					isFlap = False
-					isSpoiler = False
-					flapDeflectionLevel = 0
-					maxdeflectFlap = 15
-					massMultiplier = 1
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-						ActivateSpoiler
-						{
-							actionGroup = Brakes
-						}
-						IncreaseDeflect
-						{
-							actionGroup = None
-						}
-						DecreaseDeflect
-						{
-							actionGroup = None
-						}
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = GeometryPartModule
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = FARAeroPartModule
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = KOSNameTag
-					isEnabled = True
-					nameTag = 
 					stagingEnabled = True
 					EVENTS
 					{
@@ -85970,7 +83059,7 @@ GAME
 			}
 			ACTIONGROUPS
 			{
-				Stage = True, 2614494.94900123
+				Stage = False, 0
 				Gear = False, 0
 				Light = False, 0
 				RCS = False, 0
@@ -86301,6 +83390,15 @@ GAME
 				flight = 1
 				1 = Flight,Kerbin
 				1 = Suborbit,Kerbin
+				1 = Orbit,Kerbin
+				1 = Flyby,Mun
+				1 = Escape,Mun
+				1 = Orbit,Mun
+				1 = Suborbit,Mun
+				1 = Land,Mun
+				1 = ExitVessel,Mun
+				1 = PlantFlag,Mun
+				1 = BoardVessel,Mun
 			}
 		}
 		KERBAL
@@ -86364,34 +83462,6 @@ GAME
 			FLIGHT_LOG
 			{
 				flight = 1
-			}
-		}
-		KERBAL
-		{
-			name = Barbara Kerman
-			gender = Female
-			type = Unowned
-			trait = Scientist
-			brave = 0.0631659925
-			dumb = 0.791232228
-			badS = False
-			veteran = False
-			tour = False
-			state = Assigned
-			inactive = False
-			inactiveTimeEnd = 0
-			gExperienced = 0
-			outDueToG = False
-			ToD = 0
-			idx = -1
-			extraXP = 0
-			CAREER_LOG
-			{
-				flight = 0
-			}
-			FLIGHT_LOG
-			{
-				flight = 0
 			}
 		}
 		KERBAL
@@ -86543,6 +83613,62 @@ GAME
 			brave = 0.112167433
 			dumb = 0.371558547
 			badS = False
+			veteran = False
+			tour = False
+			state = Assigned
+			inactive = False
+			inactiveTimeEnd = 0
+			gExperienced = 0
+			outDueToG = False
+			ToD = 0
+			idx = -1
+			extraXP = 0
+			CAREER_LOG
+			{
+				flight = 0
+			}
+			FLIGHT_LOG
+			{
+				flight = 0
+			}
+		}
+		KERBAL
+		{
+			name = Sandard Kerman
+			gender = Female
+			type = Unowned
+			trait = Engineer
+			brave = 0.73374778
+			dumb = 0.618824959
+			badS = False
+			veteran = False
+			tour = False
+			state = Assigned
+			inactive = False
+			inactiveTimeEnd = 0
+			gExperienced = 0
+			outDueToG = False
+			ToD = 0
+			idx = -1
+			extraXP = 0
+			CAREER_LOG
+			{
+				flight = 0
+			}
+			FLIGHT_LOG
+			{
+				flight = 0
+			}
+		}
+		KERBAL
+		{
+			name = Trisey Kerman
+			gender = Female
+			type = Unowned
+			trait = Pilot
+			brave = 0.668401301
+			dumb = 0.980504632
+			badS = True
 			veteran = False
 			tour = False
 			state = Assigned
