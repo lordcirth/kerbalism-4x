@@ -221,7 +221,7 @@ GAME
 	{
 		name = ContractSystem
 		scene = 7, 8, 5, 6
-		update = 3500043.31840401
+		update = -1000
 		version = 1.3.1
 		WEIGHTS
 		{
@@ -3705,7 +3705,7 @@ GAME
 	{
 		name = Funding
 		scene = 7, 8, 5, 6
-		funds = 2481450.0212676176
+		funds = 2428050.0212676176
 	}
 	SCENARIO
 	{
@@ -4068,7 +4068,7 @@ GAME
 	{
 		name = ResearchAndDevelopment
 		scene = 7, 8, 5, 6
-		sci = 976.490479
+		sci = 676.490479
 		Tech
 		{
 			id = start
@@ -4348,6 +4348,7 @@ GAME
 			cost = 90
 			part = MK2VApod
 			part = mk2LanderCabin
+			part = landerCabinSmall
 		}
 		Tech
 		{
@@ -4385,6 +4386,13 @@ GAME
 			cost = 300
 			part = nuclearEngine
 			part = hydrogen-125-1
+		}
+		Tech
+		{
+			id = largeVolumeContainment
+			state = Available
+			cost = 300
+			part = Size3LargeTank
 		}
 		Science
 		{
@@ -10414,49 +10422,49 @@ GAME
 			Dres
 			{
 				storm_time = 7165697.2537029982
-				storm_age = 1168964.0014912642
+				storm_age = 1168997.0558903199
 				storm_state = 0
 				msg_storm = 0
 			}
 			Eeloo
 			{
 				storm_time = 5176477.8975660345
-				storm_age = 529742.50925233983
+				storm_age = 529757.46746125747
 				storm_state = 0
 				msg_storm = 0
 			}
 			Kerbin
 			{
 				storm_time = 6725531.2100823643
-				storm_age = 3510302.0606434271
+				storm_age = 3510401.1806412116
 				storm_state = 0
 				msg_storm = 0
 			}
 			Moho
 			{
 				storm_time = 5326623.8001951128
-				storm_age = 2246227.5774596138
+				storm_age = 2246483.7014788976
 				storm_state = 0
 				msg_storm = 0
 			}
 			Eve
 			{
 				storm_time = 8100422.3319983212
-				storm_age = 740423.37336517137
+				storm_age = 740560.46879721771
 				storm_state = 0
 				msg_storm = 0
 			}
 			Duna
 			{
 				storm_time = 7987904.7919753492
-				storm_age = 2303353.5059564742
+				storm_age = 2303418.5453292779
 				storm_state = 0
 				msg_storm = 0
 			}
 			Jool
 			{
 				storm_time = 4800854.1079987092
-				storm_age = 694157.71022787073
+				storm_age = 694177.3110182028
 				storm_state = 0
 				msg_storm = 0
 			}
@@ -10682,7 +10690,7 @@ GAME
 	FLIGHTSTATE
 	{
 		version = 1.3.1
-		UT = 3500043.31840401
+		UT = 3500142.4584041024
 		activeVessel = 0
 		mapViewFiltering = 3070
 		commNetUIModeTracking = Network
@@ -11611,7 +11619,7 @@ GAME
 				{
 					name = ModuleCryoTank
 					isEnabled = True
-					LastUpdateTime = 3353711.00832549
+					LastUpdateTime = 3353810.00832558
 					CoolingEnabled = False
 					BoiloffOccuring = False
 					stagingEnabled = True
@@ -14357,7 +14365,7 @@ GAME
 				{
 					name = ModuleCryoTank
 					isEnabled = True
-					LastUpdateTime = 3304710.99315748
+					LastUpdateTime = 3304810.33315757
 					CoolingEnabled = False
 					BoiloffOccuring = False
 					stagingEnabled = True
@@ -17756,7 +17764,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 197.51809702795092
+					amount = 200
 					maxAmount = 200
 					flowState = True
 					isTweakable = True
@@ -18264,7 +18272,7 @@ GAME
 				{
 					name = ModuleCryoTank
 					isEnabled = True
-					LastUpdateTime = 2841610.79413978
+					LastUpdateTime = 2841710.15413988
 					CoolingEnabled = False
 					BoiloffOccuring = False
 					stagingEnabled = True
@@ -25377,7 +25385,7 @@ GAME
 				{
 					name = ModuleCryoTank
 					isEnabled = True
-					LastUpdateTime = 2375289.39133082
+					LastUpdateTime = 2375388.67133091
 					CoolingEnabled = False
 					BoiloffOccuring = False
 					stagingEnabled = True
@@ -27979,7 +27987,7 @@ GAME
 				{
 					name = ModuleCryoTank
 					isEnabled = True
-					LastUpdateTime = 2374468.288791
+					LastUpdateTime = 2374567.60879109
 					CoolingEnabled = False
 					BoiloffOccuring = True
 					stagingEnabled = True
@@ -28173,7 +28181,7 @@ GAME
 				{
 					name = ModuleCryoTank
 					isEnabled = True
-					LastUpdateTime = 2374468.288791
+					LastUpdateTime = 2374567.60879109
 					CoolingEnabled = False
 					BoiloffOccuring = True
 					stagingEnabled = True
@@ -28202,7 +28210,7 @@ GAME
 				RESOURCE
 				{
 					name = LqdHydrogen
-					amount = 47.03298737940861
+					amount = 46.966787563812375
 					maxAmount = 2400
 					flowState = True
 					isTweakable = True
@@ -28367,7 +28375,7 @@ GAME
 				{
 					name = ModuleCryoTank
 					isEnabled = True
-					LastUpdateTime = 2374468.288791
+					LastUpdateTime = 2374567.60879109
 					CoolingEnabled = False
 					BoiloffOccuring = True
 					stagingEnabled = True
@@ -29271,7 +29279,7 @@ GAME
 				{
 					name = ModuleCryoTank
 					isEnabled = True
-					LastUpdateTime = 2297145.39439551
+					LastUpdateTime = 2297244.7343956
 					CoolingEnabled = False
 					BoiloffOccuring = False
 					stagingEnabled = True
@@ -31852,7 +31860,7 @@ GAME
 				{
 					name = ModuleCryoTank
 					isEnabled = True
-					LastUpdateTime = 2269877.0356836
+					LastUpdateTime = 2269976.31568369
 					CoolingEnabled = False
 					BoiloffOccuring = False
 					stagingEnabled = True
@@ -34433,7 +34441,7 @@ GAME
 				{
 					name = ModuleCryoTank
 					isEnabled = True
-					LastUpdateTime = 2210807.91744129
+					LastUpdateTime = 2210907.21744138
 					CoolingEnabled = False
 					BoiloffOccuring = False
 					stagingEnabled = True
@@ -43265,7 +43273,7 @@ GAME
 				{
 					name = ModuleCryoTank
 					isEnabled = True
-					LastUpdateTime = 2152795.49676132
+					LastUpdateTime = 2152894.81676141
 					CoolingEnabled = False
 					BoiloffOccuring = False
 					stagingEnabled = True
@@ -45937,7 +45945,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 180.18182955072018
+					amount = 178.19622959510446
 					maxAmount = 200
 					flowState = True
 					isTweakable = True
@@ -46073,7 +46081,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 180.18182955072018
+					amount = 178.19622959510446
 					maxAmount = 200
 					flowState = True
 					isTweakable = True
@@ -47493,7 +47501,7 @@ GAME
 				{
 					name = ModuleCryoTank
 					isEnabled = True
-					LastUpdateTime = 2151273.22571822
+					LastUpdateTime = 2151372.56571831
 					CoolingEnabled = False
 					BoiloffOccuring = False
 					stagingEnabled = True
@@ -50165,7 +50173,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 180.18182955072035
+					amount = 178.19622959510463
 					maxAmount = 200
 					flowState = True
 					isTweakable = True
@@ -50301,7 +50309,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 180.18182955072035
+					amount = 178.19622959510463
 					maxAmount = 200
 					flowState = True
 					isTweakable = True
@@ -51721,7 +51729,7 @@ GAME
 				{
 					name = ModuleCryoTank
 					isEnabled = True
-					LastUpdateTime = 2146794.72071909
+					LastUpdateTime = 2146894.00071918
 					CoolingEnabled = False
 					BoiloffOccuring = False
 					stagingEnabled = True
@@ -55949,7 +55957,7 @@ GAME
 				{
 					name = ModuleCryoTank
 					isEnabled = True
-					LastUpdateTime = 1734214.27605927
+					LastUpdateTime = 1734313.23605936
 					CoolingEnabled = False
 					BoiloffOccuring = False
 					stagingEnabled = True
@@ -58530,7 +58538,7 @@ GAME
 				{
 					name = ModuleCryoTank
 					isEnabled = True
-					LastUpdateTime = 1561658.03060986
+					LastUpdateTime = 1561757.01060995
 					CoolingEnabled = False
 					BoiloffOccuring = False
 					stagingEnabled = True
@@ -60258,7 +60266,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 141.14111392124616
+					amount = 137.18351400970244
 					maxAmount = 200
 					flowState = True
 					isTweakable = True
@@ -61116,7 +61124,7 @@ GAME
 				{
 					name = ModuleCryoTank
 					isEnabled = True
-					LastUpdateTime = 1215512.7420745
+					LastUpdateTime = 1215611.7420746
 					CoolingEnabled = False
 					BoiloffOccuring = False
 					stagingEnabled = True
@@ -63697,7 +63705,7 @@ GAME
 				{
 					name = ModuleCryoTank
 					isEnabled = True
-					LastUpdateTime = 911236.937053766
+					LastUpdateTime = 911335.877053858
 					CoolingEnabled = False
 					BoiloffOccuring = False
 					stagingEnabled = True
@@ -66369,7 +66377,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 172.89063731648727
+					amount = 170.91183736071955
 					maxAmount = 200
 					flowState = True
 					isTweakable = True
@@ -66505,7 +66513,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 172.89063731648727
+					amount = 170.91183736071955
 					maxAmount = 200
 					flowState = True
 					isTweakable = True
@@ -67925,7 +67933,7 @@ GAME
 				{
 					name = ModuleCryoTank
 					isEnabled = True
-					LastUpdateTime = 909247.145273574
+					LastUpdateTime = 909346.105273666
 					CoolingEnabled = False
 					BoiloffOccuring = False
 					stagingEnabled = True
@@ -70597,7 +70605,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 173.93057232320999
+					amount = 171.95177236744226
 					maxAmount = 200
 					flowState = True
 					isTweakable = True
@@ -70733,7 +70741,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 173.93057232320999
+					amount = 171.95177236744226
 					maxAmount = 200
 					flowState = True
 					isTweakable = True
@@ -72153,7 +72161,7 @@ GAME
 				{
 					name = ModuleCryoTank
 					isEnabled = True
-					LastUpdateTime = 901518.673025824
+					LastUpdateTime = 901617.653025916
 					CoolingEnabled = False
 					BoiloffOccuring = False
 					stagingEnabled = True
@@ -79608,21 +79616,5 @@ GAME
 	MESSAGESYSTEM
 	{
 		flash = True
-		MESSAGE
-		{
-			title = Rewards from strategy 'To Boldly Go II'
-			message = Science from new biomes:~n    Minmus's Lowlands: <color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 25,000</color>~n
-			color = 2
-			icon = 6
-			read = False
-		}
-		MESSAGE
-		{
-			title = World First Milestones
-			message = The recent accomplishments of our space program have attracted contributions from numerous organizations!~n~nWe have returned home from the surface of Minmus.~n<color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 41,760 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 2 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 5 </color>~n~n We have returned home from a fly by of Minmus.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  34,800 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 2 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 4 </color>~n~n We have returned home from orbit of Minmus.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  33,408 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 2 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 4 </color>~n
-			color = 3
-			icon = 6
-			read = False
-		}
 	}
 }
