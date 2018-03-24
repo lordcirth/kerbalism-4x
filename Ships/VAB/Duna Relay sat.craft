@@ -7,7 +7,7 @@ PART
 {
 	part = setiProbeStack1_4294309406
 	partName = Part
-	pos = 0.00328147202,30.2574387,-0.028856542
+	pos = 0.00328409858,30.2574329,-0.0288656056
 	attPos = 0,0,0
 	attPos0 = 0.00328147202,30.2574387,-0.028856542
 	rot = 0,0,0,1
@@ -27,7 +27,6 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	link = miniFuelTank_4294331800
 	link = batteryBankMini_4290200736
 	link = SurfAntenna_4292892234
 	link = SurfAntenna_4290192480
@@ -376,7 +375,7 @@ PART
 {
 	part = miniFuelTank_4294331800
 	partName = Part
-	pos = 0.00328147202,30.0231647,-0.028856542
+	pos = 0.00328409858,30.023159,-0.0288656056
 	attPos = 0,0,0
 	attPos0 = 0.00388526078,30.0967999,-0.0255808905
 	rot = 0,0,0,1
@@ -396,11 +395,11 @@ PART
 	modCost = -9.53674316E-07
 	modMass = -9.31322575E-10
 	modSize = 0,0,0
-	link = microEngine_4294319340
 	link = setiMiniSolarExt_4290175576
 	link = setiMiniSolarExt_4290162374
 	link = setiMiniSolarExt_4290162236
 	link = setiMiniSolarExt_4290162098
+	link = setiProbeStack1_4294309406
 	attN = top,setiProbeStack1_4294309406
 	attN = bottom,microEngine_4294319340
 	EVENTS
@@ -581,7 +580,7 @@ PART
 {
 	part = batteryBankMini_4290200736
 	partName = Part
-	pos = 0.00328147202,30.4174385,-0.028856542
+	pos = 0.00328409858,30.4174328,-0.0288656056
 	attPos = 0,0,0
 	attPos0 = 0,0.159999847,0
 	rot = 0,0,0,1
@@ -709,7 +708,7 @@ PART
 {
 	part = batteryBankMini_4290193282
 	partName = Part
-	pos = 0.00328147202,30.6174393,-0.028856542
+	pos = 0.00328409858,30.6174335,-0.0288656056
 	attPos = 0,0,0
 	attPos0 = 0,0.200000763,0
 	rot = 0,0,0,1
@@ -837,7 +836,7 @@ PART
 {
 	part = SurfAntenna_4292892234
 	partName = Part
-	pos = -0.336367458,30.2260933,-0.028856514
+	pos = -0.336364836,30.2260876,-0.0288655777
 	attPos = 0,0,0
 	attPos0 = -0.339648932,-0.0313453674,2.79396772E-08
 	rot = 0.707106829,-0.707106769,-8.42936956E-08,6.32202699E-08
@@ -1006,7 +1005,7 @@ PART
 {
 	part = SurfAntenna_4290192480
 	partName = Part
-	pos = 0.342930406,30.2260933,-0.0288565997
+	pos = 0.342933029,30.2260876,-0.0288656633
 	attPos = 0,0,0
 	attPos0 = 0.339648932,-0.0313453674,-5.77419996E-08
 	rot = -1.15202319E-07,9.4128886E-08,-0.707106829,0.707106769
@@ -1175,9 +1174,9 @@ PART
 {
 	part = microEngine_4294319340
 	partName = Part
-	pos = 0.00328147202,29.8488903,-0.028856542
+	pos = 0.00328409858,29.8488846,-0.0288656056
 	attPos = 0,0,0
-	attPos0 = 0,-0.174274445,0
+	attPos0 = 0.00328409858,29.8488846,-0.0288656056
 	rot = 0,0,0,1
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
@@ -1195,6 +1194,7 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
+	link = miniFuelTank_4294331800
 	attN = top,miniFuelTank_4294331800
 	EVENTS
 	{
@@ -1401,7 +1401,7 @@ PART
 {
 	part = commDish_4290216144
 	partName = Part
-	pos = 0.00328147202,30.8474388,-0.028856542
+	pos = 0.00328409858,30.8474331,-0.0288656056
 	attPos = 0,0,0
 	attPos0 = 0,0.229999542,0
 	rot = 0,0,0,1
@@ -1612,7 +1612,7 @@ PART
 {
 	part = setiMiniSolarExt_4290175576
 	partName = Part
-	pos = 0.220608324,30.0262184,-0.24618338
+	pos = 0.220610946,30.0262127,-0.24619244
 	attPos = 0,0,0
 	attPos0 = 0.21732685,0.00305366516,-0.217326835
 	rot = 1.1681577E-07,0.923879743,-4.83866174E-08,-0.382683009
@@ -1653,7 +1653,7 @@ PART
 		launchUT = -1
 		currentRotation = (0, 0, 0, 1)
 		storedAnimationTime = 0
-		storedAnimationSpeed = -10
+		storedAnimationSpeed = 1
 		deployState = RETRACTED
 		stagingEnabled = True
 		EVENTS
@@ -1815,7 +1815,7 @@ PART
 {
 	part = setiMiniSolarExt_4290162374
 	partName = Part
-	pos = -0.214045331,30.0262184,-0.246183395
+	pos = -0.214042708,30.0262127,-0.246192455
 	attPos = 0,0,0
 	attPos0 = -0.217326805,0.00305366516,-0.21732685
 	rot = 4.83867169E-08,0.382683873,-1.16815727E-07,-0.923879385
@@ -1856,7 +1856,7 @@ PART
 		launchUT = -1
 		currentRotation = (0, 0, 0, 1)
 		storedAnimationTime = 0
-		storedAnimationSpeed = -10
+		storedAnimationSpeed = 1
 		deployState = RETRACTED
 		stagingEnabled = True
 		EVENTS
@@ -2018,7 +2018,7 @@ PART
 {
 	part = setiMiniSolarExt_4290162236
 	partName = Part
-	pos = -0.214045361,30.0262184,0.188470304
+	pos = -0.214042738,30.0262127,0.188461244
 	attPos = 0,0,0
 	attPos0 = -0.217326835,0.00305366516,0.21732685
 	rot = -4.83866209E-08,-0.382683039,-1.1681577E-07,-0.923879743
@@ -2059,7 +2059,7 @@ PART
 		launchUT = -1
 		currentRotation = (0, 0, 0, 1)
 		storedAnimationTime = 0
-		storedAnimationSpeed = -10
+		storedAnimationSpeed = 1
 		deployState = RETRACTED
 		stagingEnabled = True
 		EVENTS
@@ -2221,7 +2221,7 @@ PART
 {
 	part = setiMiniSolarExt_4290162098
 	partName = Part
-	pos = 0.220608309,30.0262184,0.188470274
+	pos = 0.220610932,30.0262127,0.188461214
 	attPos = 0,0,0
 	attPos0 = 0.217326835,0.00305366516,0.21732682
 	rot = -1.16815727E-07,-0.923879385,-4.83867169E-08,-0.382683873
@@ -2262,7 +2262,7 @@ PART
 		launchUT = -1
 		currentRotation = (0, 0, 0, 1)
 		storedAnimationTime = 0
-		storedAnimationSpeed = -10
+		storedAnimationSpeed = 1
 		deployState = RETRACTED
 		stagingEnabled = True
 		EVENTS
